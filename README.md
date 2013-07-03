@@ -16,8 +16,5 @@ the aim here is to cultivate the following qualities:
 - readability
 - uniformity
 
-##folder *SOURCE*
 
-####all source files of documents in folder *SELECTION*
-
-for anyone to meddle with
+**all the documents's source files should be submitted into folder *SOURCE*** for anyone to meddle with
