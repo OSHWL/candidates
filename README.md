@@ -6,8 +6,7 @@ documents not yet compliant with the following **rules**, waiting to be adapted 
 
 1. possible **formats**:
   - if not exceeding 50 lines: Markdown
-  - LaTeX-generated PDF (A4 pages, unique class to be determined)
-  - EPUB
+  - LaTeX (unique class to be determined) in order to generate PDF and/or EPUB files (in *SELECTION*, each document's PDF and EPUB files will be made available side by side, ready to be read, while its LaTeX file will be located in the *SELCECTION/SOURCE* folder)
 2. english **language**
 3. structurally **complete** (subjective)
 
