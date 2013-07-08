@@ -11,3 +11,6 @@ documents not yet "selected". please try to have the documents meet the followin
 3. subjective qualities such as completeness, readability and uniformity among others.
 
 **please upload all the documents's source files to the same folder as the document itself**, to allow collaboration.
+
+
+OSHW? http://en.wikipedia.org/wiki/Open-source_hardware
