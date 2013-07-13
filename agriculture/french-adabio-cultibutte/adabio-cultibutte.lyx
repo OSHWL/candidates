@@ -1,0 +1,291 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass paper
+\begin_preamble
+\usepackage{babel}
+\setlength{\columnsep}{1.3cm}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref section
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language french
+\papercolumns 2
+\papersides 2
+\paperpagestyle plain
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Cultibutte
+\end_layout
+
+\begin_layout Institution
+ADABio-Autoconstruction
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "URL"
+target "http://www.adabio-autoconstruction.org/outils/tous-les-outils/cultibutte-des-jardins-du-temple.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Le Cultibutte a été baptisé ainsi car les principaux organes de travail
+ sont des dents de cultivateur complétées par une paire de disques.
+ Il permet le travail en butte et en planche permanente pour la reprise
+ d’un labour ou d’une fin de culture.
+ Il est conçu pour façonner ou entretenir les buttes.
+\end_layout
+
+\begin_layout Standard
+Ses dents ne permettent toutefois pas l’enfouissement des végétaux.
+ Ceux-ci doivent être broyés et/ou mixés avec la fraise pour faciliter l’incorpo
+ration.
+ Mais leur évolution dans le sol s’en trouve facilitée, car elle se fait
+ dans le volume de la butte en milieu aéré et bien drainé.
+ L’amplitude de travail de l’outil est de 0 à 30 cm de profondeur par rapport
+ au niveau des allées.
+ Ce réglage s’effectue facilement en ajustant la hauteur des roues de jauge.
+ Aux Jardins du Temple, cet outil est réglé pour travailler à 10 cm maximum
+ sous le niveau des allées.
+ Dans une terre préservée, comme ce peut être le cas en planches permanentes,
+ le décompactage profond n’est pas indispensable.
+ Ce respect du sol induit également des économies d’usure des socs, d’énergie
+ et de temps par la vitesse ainsi autorisée (2 à 4 km/heure).
+ Le rendement du chantier est ainsi multiplié par cinq ou six, comparativement
+ à la rotobêche.
+ De plus, le résultat est nettement meilleur car la structure du sol n’est
+ pas brisée artificiellement, limitant ainsi les phénomènes de battance
+ ou de prise en masse.
+ Avec des socs appropriés et des changements de réglages, le Cultibutte
+ peut aussi déchaumer, sarcler et même éventuellement décompacter.
+ Il est également possible de travailler plus superficiellement grâce à
+ l’articulation du châssis tout en conservant la forme de la butte.
+ Et avec l’option des socs démontables, des pattes-d’oie plus larges peuvent
+ être installées rapidement pour détruire un engrais vert jeune ou une levée
+ importante d’adventices.
+\end_layout
+
+\begin_layout Section*
+Les limites
+\end_layout
+
+\begin_layout Standard
+Le Cultibutte a tendance à « bourrer » si les déchets de culture ou d’engrais
+ vert sont trop importants.
+ Le broyage et/ou le mixage sont indispensables pour permettre un passage
+ ultérieur, une fois la végétation décomposée.
+ L’utilisation de l’outil avec seulement trois dents limite le problème.
+ La terre est légèrement déplacée ce qui oblige à alterner les sens de passage
+ pour peaufiner le travail en bout de planche.
+ La lutte contre les vivaces à rhizomes n’est pas optimale en bout de planche
+ car les outils à dents nécessitent quelques mètres pour atteindre leur
+ position de travail.
+\end_layout
+
+\begin_layout Section*
+Les adaptations possibles
+\end_layout
+
+\begin_layout Standard
+Le bâti ouvert sur les côtés permet l’ajout d’une ou deux dents latérales
+ équipées de pattes-d’oie pour le sarclage des allées.
+ Il est facile et pratique de construire des chapes de fixation des dents
+ par emboîtement et des broches pour un démontage rapide quand deux ou trois
+ dents suffisent à faire un bon travail.
+ L’effort de traction est ainsi réduit, l’usure des outils et le brassage
+ excessif du sol également.
+\end_layout
+
+\begin_layout Section*
+Liens
+\end_layout
+
+\begin_layout Standard
+plans dans le 
+\begin_inset CommandInset href
+LatexCommand href
+name "guide"
+target "http://www.adabio-autoconstruction.org/le-livre/le-livre.html"
+
+\end_inset
+
+ à acheter
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "photo 1"
+target "http://www.adabio-autoconstruction.org/IMG/jpg/dsc03425.jpg"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "photo 2"
+target "http://www.adabio-autoconstruction.org/IMG/jpg/dsc03391.jpg"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "photo 3"
+target "http://www.adabio-autoconstruction.org/IMG/jpg/dsc03395.jpg"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "photo 4"
+target "http://www.adabio-autoconstruction.org/IMG/jpg/p1110750.jpg"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "photo 5"
+target "http://www.adabio-autoconstruction.org/IMG/jpg/copie_de_p1110795.jpg"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "forum"
+target "http://forum.adabio-autoconstruction.org/viewforum.php?f=38"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Vidéos
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "cultibutte en action"
+target "http://www.dailymotion.com/video/xtbmw5_cultibutte-en-action_tech#.UPAMcmfs-ZQ"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "changement de soc"
+target "http://www.dailymotion.com/video/xtbdvn_cultibutte-changement-de-soc_tech#.UPAMyGfs-ZQ"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "réglages"
+target "http://www.dailymotion.com/video/xtbdqq_reglages-cultibutte_tech#.UPAM-Wfs-ZQ"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
