@@ -1,0 +1,83 @@
+agriculture
+electronics
+energy
+  -conservation
+    -cogen
+  -electric
+    -batteries
+    -machines
+    -pv
+    -thermo
+  -fuels
+    -bio
+    -cells
+    -combustion
+    -gasifier
+  -human
+  -hydraulics
+  -hydro
+    -tidal
+  -marine
+    -osmotic
+    -wave
+  -molecular-machines
+  -monitoring
+  -pneumatics
+  -thermal
+    -bio
+    -geo
+    -heat-engines
+    -hvac
+    -solar
+  -wind
+floss4oshw
+household
+  -clean
+  -food
+  -health
+manufacturing
+  -additive
+  -casting-molding
+  -control
+  -forming
+  -subtractive
+  -textile
+materials
+  -ceramics
+    -glass
+  -composites
+  -fibers
+  -foams
+  -membrane-like
+  -metals
+    -Al
+    -Cu
+    -Fe
+  -minerals
+    -mining
+  -oils
+  -plastics
+    -elastomers
+  -recycling
+  -resins
+  -wood
+    -forestry
+    -woodworking
+oshw-mgmt
+  -osi-projects
+structures
+  -assembly
+  -construction
+transport
+  -aerospace
+  -propulsion
+  -road
+    -pedals
+  -traffic
+  -water
+water
+  -harvesting
+  -irrigation
+  -plumbing
+  -storage
+  -treatment

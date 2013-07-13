@@ -1,0 +1,2 @@
+wikispeed
+local motors
