@@ -16,7 +16,14 @@ energy
   -human
   -hydraulics
   -hydro
-    -tidal
+    -conventional
+      -francis
+      -pelton
+      -turgo
+    -low-head
+      -ror
+      -tidal
+      -turbines
   -marine
     -osmotic
     -wave
