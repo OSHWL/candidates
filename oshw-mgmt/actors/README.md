@@ -1,5 +1,0 @@
-Worldwide
-
-Europe
-
-North America
