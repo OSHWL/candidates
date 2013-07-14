@@ -10,8 +10,10 @@ N55: Denmark, transport/road/pedals
 Atomic Duck: UK, transport/road/pedals
 ADABio-Autoconstruction: France, agriculture
 OpenEnergyMonitor: UK, energy/monitoring
-.../OSEG: Germany, structures/assembly
-.../OSEG: Germany, energy/wind
+OSEG: Germany, various
+Apollo-NG: Germany, various
+Bam-Bi: Germany, materials/wood/bamboo
+Verbund Offener Werkstätten: Germany, "DIY centers", offene-werkstaetten.org
 
 mainly North America
 P3P/Mark Norton/OSE: US, energy/thermal/heat-engines

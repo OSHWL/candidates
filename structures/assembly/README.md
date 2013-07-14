@@ -1,6 +1,10 @@
 maybe write something about fasteners, lubrication
+
 http://en.wikipedia.org/wiki/Fastener
 
+lubrication
+
+***************************
 
 others
 

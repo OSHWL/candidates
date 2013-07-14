@@ -11,3 +11,5 @@ http://www.solarbubblebuild.com/overview/overview.php
 
 http://solarflower.org/
 http://www.solarfire.org/Construction-guides,313
+
+https://apollo.open-resource.org/mission:tech:odyssey:sku:solar-prediction-model
