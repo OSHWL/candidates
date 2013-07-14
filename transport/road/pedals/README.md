@@ -11,34 +11,6 @@ http://sheldonbrown.com/upgrade.html
 
 
 
-sharing
-
-http://www.velogistics.net/en/idea
-
-http://www.velogistics.net/en/
-
-
-
-
-
-
-
-Postfossil Mobil / Werkstatt-Lastenrad / Workshop Cargobike
-
-http://www.werkstatt-lastenrad.de/index.php?title=Hauptseite
-
-
-
-
-N55
+N55's XYZ Spaceframes
 
   - http://www.n55.dk/MANUALS/SPACEFRAMEVEHICLES/spaceframevehicles.html
-  - http://www.n55.dk/MANUALS/SPACEFRAMEVEHICLES/xyzcargo.html
-
-
-
-
-Atomic Duck
-
-  - http://www.deferredprocrastination.co.uk/projects/atomicduck/
-  - http://www.deferredprocrastination.co.uk/blog/category/def-proc/atomicduck/

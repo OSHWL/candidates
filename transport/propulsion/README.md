@@ -5,3 +5,12 @@ http://en.wikipedia.org/wiki/Human-powered_transport
 http://en.wikipedia.org/wiki/Terrestrial_locomotion
 
 http://en.wikipedia.org/wiki/Sail
+
+
+see also: 
+
+energy/thermal/heat-engines
+energy/electric
+energy/fuels
+energy/human
+energy/pneumatics

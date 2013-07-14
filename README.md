@@ -11,3 +11,6 @@ it would be nice to have the documents meet the following criteria:
 
 
 OSHW? http://en.wikipedia.org/wiki/Open-source_hardware
+GitHub
+Markdown
+LaTeX

@@ -7,3 +7,5 @@ http://en.wikipedia.org/wiki/Water_filter
 http://en.wikipedia.org/wiki/Wastewater
 
 http://en.wikipedia.org/wiki/Sewage
+
+http://en.wikipedia.org/wiki/Ecological_sanitation

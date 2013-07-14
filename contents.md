@@ -1,18 +1,21 @@
-agriculture
+cleaning
+  -agents
+  -body
+  -dishes
+  -environmental
+  -laundry
+  -vacuum
 electronics
 energy
-  -conservation
-    -cogen
   -electric
     -batteries
+    -grid
     -machines
     -pv
     -thermo
   -fuels
     -bio
     -cells
-    -combustion
-    -gasifier
   -human
   -hydraulics
   -hydro
@@ -32,16 +35,21 @@ energy
   -pneumatics
   -thermal
     -bio
+    -cogen
     -geo
     -heat-engines
+    -heat-pumps
     -hvac
+    -insulation
     -solar
+    -stoves
+      -gasifier
   -wind
 floss4oshw
-household
-  -clean
-  -food
-  -health
+food
+  -grow
+    -various folders in relation with agriculture
+  -prepare
 manufacturing
   -additive
   -casting-molding
@@ -60,27 +68,36 @@ materials
     -Al
     -Cu
     -Fe
+    -induction
   -minerals
     -mining
   -oils
   -plastics
     -elastomers
-  -recycling
   -resins
+  -waste
   -wood
     -forestry
     -woodworking
+monitoring
+  -energy
+  -geiger
 oshw-mgmt
-  -osi-projects
+  -actors
+  -appropedia
+  -fablabs
 structures
   -assembly
   -construction
+    -ceb
 transport
   -aerospace
   -propulsion
   -road
+    -cars
     -pedals
-  -traffic
+      -freight
+      -velomobile
   -water
 water
   -harvesting
