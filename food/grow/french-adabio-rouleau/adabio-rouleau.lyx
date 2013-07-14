@@ -1,0 +1,235 @@
+#LyX 2.0 created this file. For more info see http://www.lyx.org/
+\lyxformat 413
+\begin_document
+\begin_header
+\textclass paper
+\begin_preamble
+\usepackage{babel}
+\setlength{\columnsep}{1.3cm}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding utf8
+\fontencoding T1
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family sfdefault
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref section
+\pdf_pdfusetitle true
+\papersize a4paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\use_mhchem 0
+\use_mathdots 0
+\cite_engine basic
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2cm
+\topmargin 2cm
+\rightmargin 2cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 2
+\paragraph_separation skip
+\defskip smallskip
+\quotes_language french
+\papercolumns 2
+\papersides 2
+\paperpagestyle plain
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Rouleau perceur
+\end_layout
+
+\begin_layout Institution
+ADABio-Autoconstruction
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "URL"
+target "http://www.adabio-autoconstruction.org/outils/tous-les-outils/rouleau-perceur.html"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Abstract
+Le rouleau perceur est un outil qui permet de percer le paillage plastique
+ ou de tracer en terre nue pour pouvoir semer ou transplanter.
+ Cet outil est très modulable.
+ Il est ainsi possible de choisir le nombre de rangs et l’écartement entre
+ les plants.
+\end_layout
+
+\begin_layout Standard
+Il est constitué d’un châssis auquel est fixé un rouleau muni de plusieurs
+ roues sur lesquelles sont vissées des pointes.
+ L’utilisateur tire l’outil en marchant le long de la planche.
+ Il est également possible de le pousser pour assurer une meilleure pénétration
+ des éléments perceurs.
+\end_layout
+
+\begin_layout Section*
+Détails des équipements
+\end_layout
+
+\begin_layout Paragraph*
+Le châssis
+\end_layout
+
+\begin_layout Standard
+Ce genre de pièce se réalise facilement avec du matériel de récupération
+ tels des restes de structures de serre.
+ Le choix de profilés est donné à titre indicatif.
+ La dimension des profilés importe peu, les efforts en présence n’étant
+ pas très importants.
+ L’assemblage de tubes de serre peut se faire de plusieurs façons.
+ Il est souvent utile de façonner les tubes au marteau et à l’aide d’un
+ étau pour augmenter les surfaces de contact.
+ Une soudure peut être réalisée mais il est délicat de faire du travail
+ très propre.
+ Il est également possible d’écraser complètement le tube et de le percer
+ pour un assemblage par vis ou rivets, mais ce montage est moins solide
+ car le profil n’a plus sa résistance structurelle.
+\end_layout
+
+\begin_layout Paragraph*
+L’axe
+\end_layout
+
+\begin_layout Standard
+Sa forme, un profilé carré de 40 mm, permet l’entraînement des roues qui
+ viendront se glisser dessus.
+ La partie centrale des roues est un profilé carré de 45 mm de large pour
+ 2 mm d’épaisseur, laissant un jeu fonctionnel de 1 mm.
+\end_layout
+
+\begin_layout Paragraph*
+Les roues
+\end_layout
+
+\begin_layout Standard
+Les roues ont un diamètre de 410 mm et s’obtiennent en cintrant un plat
+ de 60 x 5.
+ Le perçage de ce plat ne doit pas être effectué avant le cintrage sous
+ peine d’obtenir une roue bosselée.
+ Quarante perçages espacés de 32 mm laissent une grande liberté pour régler
+ l’espacement.
+ La roue est bloquée sur l’axe dans la position voulue à l’aide d’une grosse
+ vis papillon.
+ Le rouleau peut être utilisé avec deux, trois, quatre ou cinq roues.
+ Autre cas : une seule roue est équipée de pointes alors que deux autres,
+ laissées lisses, servent à stabiliser le rouleau (courges, courgettes,
+ par exemple).
+\end_layout
+
+\begin_layout Paragraph*
+Les pointes
+\end_layout
+
+\begin_layout Standard
+Elles sont réalisées en soudant dos à dos deux cornières biseautées au préalable.
+ De une à huit pointes peuvent être montées sur chaque roue.
+\end_layout
+
+\begin_layout Section*
+Les limites
+\end_layout
+
+\begin_layout Standard
+Le faible poids de cet outil ne permet pas toujours un perçage optimum.
+ Il faut alors alourdir la structure, mais cela demandera plus d’énergie
+ à l’utilisateur pour tirer le rouleau.
+ Pousser au lieu de tirer améliore le travail tout en offrant une meilleure
+ visibilité.
+ 
+\end_layout
+
+\begin_layout Standard
+Par ailleurs, la forme du guidon permet d’opérer en bordure de serre sans
+ être gêné par les parois.
+\end_layout
+
+\begin_layout Section*
+Liens
+\end_layout
+
+\begin_layout Standard
+plans dans le 
+\begin_inset CommandInset href
+LatexCommand href
+name "guide"
+target "http://www.adabio-autoconstruction.org/le-livre/le-livre.html"
+
+\end_inset
+
+ à acheter
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "photo 1"
+target "http://www.adabio-autoconstruction.org/IMG/jpg/photo_rouleau_perceur_6_.jpg"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset href
+LatexCommand href
+name "photo 2"
+target "http://www.adabio-autoconstruction.org/IMG/jpg/l1010307.jpg"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
