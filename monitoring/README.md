@@ -9,5 +9,12 @@ http://en.wikipedia.org/wiki/Category:Measuring_instruments
 
 http://en.wikipedia.org/wiki/Environmental_monitoring
 
+****************
+
+https://atlas.ripe.net/
+
+http://hackerspaces.org/wiki/RIPE_Atlas
+
+*****************
 
 check out: PLOTS

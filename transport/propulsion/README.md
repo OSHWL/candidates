@@ -6,6 +6,7 @@ http://en.wikipedia.org/wiki/Terrestrial_locomotion
 
 http://en.wikipedia.org/wiki/Sail
 
+***************
 
 see also: 
 
@@ -14,3 +15,12 @@ energy/electric
 energy/fuels
 energy/human
 energy/pneumatics
+
+*****************
+
+
+http://www.instructables.com/id/How-to-build-your-own-Jet-Engine/
+
+http://www.salvatoreaiello.com/main.shtml
+
+http://robokite.blogspot.fr/

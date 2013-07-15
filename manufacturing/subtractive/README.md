@@ -1,15 +1,20 @@
 http://labs.nortd.com/lasersaur/
 
+http://opensourceecology.org/wiki/Torch_Table
+
 https://apollo.open-resource.org/mission:resources:picojet
 
+http://opensourceecology.org/wiki/Cold_Saw
 
-
+http://www.instructables.com/id/How-to-Make-Your-own-Plasma-Cutter/#intro
 
 
 conventional
 
+...
 
 unconventional
+
 http://en.wikipedia.org/wiki/Laser_cutting
 
 http://en.wikipedia.org/wiki/Chemical_milling

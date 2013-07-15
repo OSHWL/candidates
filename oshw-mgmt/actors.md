@@ -28,7 +28,7 @@ Bam-Bi: Germany, materials/wood/bamboo
 
 Verbund Offener Werkstätten: Germany, oshw-mgmt/fablabs
 
-
+fablabo.net (somehow associated to Open Source Energy and others): France, oshw-mgmt/fablabs
 
 
 ##mainly North America

@@ -21,4 +21,7 @@ http://solarflower.org/
 http://www.solarfire.org/Construction-guides,313
 
 
+http://fablabo.net/wiki/DYR
+
+
 https://apollo.open-resource.org/mission:tech:odyssey:sku:solar-prediction-model
