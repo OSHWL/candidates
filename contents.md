@@ -40,7 +40,6 @@ categories of OSHW work
     - osmotic
     - wave
   - molecular-machines
-  - monitoring
   - pneumatics
   - thermal
     - bio
