@@ -10,6 +10,11 @@ http://sheldonbrown.com/upgrade.html
 
 
 
+http://letsremake.info/PDFs/Pedal_Power_lores.pdf
+
+
+
+
 
 N55's XYZ Spaceframes
 

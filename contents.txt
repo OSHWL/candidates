@@ -1,254 +1,122 @@
 .
 ├── cleaning
-│   ├── agents
-│   │   └── README.md
-│   ├── body
-│   │   └── README.md
-│   ├── dishes
-│   │   └── README.md
-│   ├── environmental
-│   │   └── README.md
-│   ├── laundry
-│   │   └── README.md
-│   ├── README.md
-│   └── vacuum
-│       └── README.md
-├── contents.md
+│   ├── agents
+│   ├── body
+│   ├── dishes
+│   ├── environmental
+│   ├── laundry
+│   └── vacuum
 ├── electronics
-│   └── README.md
 ├── energy
-│   ├── electric
-│   │   ├── batteries
-│   │   │   └── README.md
-│   │   ├── grid
-│   │   │   └── README.md
-│   │   ├── machines
-│   │   │   └── README.md
-│   │   ├── pv
-│   │   │   └── README.md
-│   │   ├── README.md
-│   │   └── thermo
-│   │       └── README.md
-│   ├── fuels
-│   │   ├── bio
-│   │   │   └── README.md
-│   │   ├── cells
-│   │   │   └── README.md
-│   │   └── README.md
-│   ├── human
-│   │   └── README.md
-│   ├── hvac
-│   │   └── README.md
-│   ├── hydraulics
-│   │   └── README.md
-│   ├── hydro
-│   │   ├── conventional
-│   │   │   ├── francis.md
-│   │   │   ├── pelton.md
-│   │   │   └── turgo.md
-│   │   ├── low-head
-│   │   │   ├── ror
-│   │   │   │   └── README.md
-│   │   │   ├── tidal
-│   │   │   │   └── README.md
-│   │   │   └── turbines
-│   │   │       └── README.md
-│   │   └── README.md
-│   ├── light
-│   │   └── README.md
-│   ├── marine
-│   │   ├── osmotic
-│   │   │   └── README.md
-│   │   ├── README.md
-│   │   └── wave
-│   │       └── README.md
-│   ├── molecular-machines
-│   │   └── README.md
-│   ├── pneumatics
-│   │   └── README.md
-│   ├── README.md
-│   ├── thermal
-│   │   ├── bio
-│   │   │   └── README.md
-│   │   ├── cogen
-│   │   │   └── README.md
-│   │   ├── geo
-│   │   │   └── README.md
-│   │   ├── heat-engines
-│   │   │   └── README.md
-│   │   ├── heat-pumps
-│   │   │   └── README.md
-│   │   ├── insulation
-│   │   │   └── README.md
-│   │   ├── README.md
-│   │   ├── refrigeration
-│   │   │   └── README.md
-│   │   ├── solar
-│   │   │   └── README.md
-│   │   └── stoves
-│   │       ├── gasifier
-│   │       │   └── README.md
-│   │       └── README.md
-│   └── wind
-│       └── README.md
+│   ├── electric
+│   │   ├── batteries
+│   │   ├── grid
+│   │   ├── machines
+│   │   ├── pv
+│   │   └── thermo
+│   ├── fuels
+│   │   ├── bio
+│   │   └── cells
+│   ├── human
+│   ├── hvac
+│   ├── hydraulics
+│   ├── hydro
+│   │   ├── conventional
+│   │   └── low-head
+│   │       ├── ror
+│   │       ├── tidal
+│   │       └── turbines
+│   ├── light
+│   ├── marine
+│   │   ├── osmotic
+│   │   └── wave
+│   ├── molecular-machines
+│   ├── pneumatics
+│   ├── thermal
+│   │   ├── bio
+│   │   ├── cogen
+│   │   ├── geo
+│   │   ├── heat-engines
+│   │   ├── heat-pumps
+│   │   ├── insulation
+│   │   ├── refrigeration
+│   │   ├── solar
+│   │   └── stoves
+│   │       └── gasifier
+│   └── wind
 ├── floss4oshw
-│   └── README.md
 ├── food
-│   ├── grow
-│   │   ├── french-adabio-barre
-│   │   │   ├── adabio-barre.lyx
-│   │   │   ├── adabio-barre.pdf
-│   │   │   └── adabio-barre.tex
-│   │   ├── french-adabio-bascule
-│   │   │   ├── adabio-bascule.lyx
-│   │   │   ├── adabio-bascule.pdf
-│   │   │   ├── adabio-bascule.tex
-│   │   │   └── files
-│   │   │       ├── triangle_attelage_-_schema_avec_lumiere-9e61b.jpg
-│   │   │       └── triangle_attelage_-_schema_sans_lumiere-52a8c.jpg
-│   │   ├── french-adabio-butteuse
-│   │   │   ├── adabio-butteuse.lyx
-│   │   │   ├── adabio-butteuse.pdf
-│   │   │   └── adabio-butteuse.tex
-│   │   ├── french-adabio-cultibutte
-│   │   │   ├── adabio-cultibutte.lyx
-│   │   │   ├── adabio-cultibutte.pdf
-│   │   │   └── adabio-cultibutte.tex
-│   │   ├── french-adabio-planteuse
-│   │   │   ├── adabio-planteuse.lyx
-│   │   │   ├── adabio-planteuse.pdf
-│   │   │   ├── adabio-planteuse.tex
-│   │   │   └── files
-│   │   │       ├── dscn2789.jpg
-│   │   │       └── dscn2791.jpg
-│   │   ├── french-adabio-rouleau
-│   │   │   ├── adabio-rouleau.lyx
-│   │   │   ├── adabio-rouleau.pdf
-│   │   │   └── adabio-rouleau.tex
-│   │   ├── french-adabio-triangle
-│   │   │   ├── adabio-triangle.lyx
-│   │   │   ├── adabio-triangle.pdf
-│   │   │   └── adabio-triangle.tex
-│   │   ├── french-adabio-vibroplanche
-│   │   │   ├── adabio-vibroplanche.lyx
-│   │   │   ├── adabio-vibroplanche.pdf
-│   │   │   └── adabio-vibroplanche.tex
-│   │   ├── ose-lifetrac
-│   │   │   └── README.md
-│   │   ├── ose-microtrac
-│   │   │   └── README.md
-│   │   ├── ose-rototiller
-│   │   │   └── README.md
-│   │   └── README.md
-│   └── prepare
-│       └── README.md
+│   ├── grow
+│   │   ├── draft-animals
+│   │   ├── french-adabio-barre
+│   │   ├── french-adabio-bascule
+│   │   │   └── files
+│   │   ├── french-adabio-butteuse
+│   │   ├── french-adabio-cultibutte
+│   │   ├── french-adabio-planteuse
+│   │   │   └── files
+│   │   ├── french-adabio-rouleau
+│   │   ├── french-adabio-triangle
+│   │   ├── french-adabio-vibroplanche
+│   │   ├── ose-lifetrac
+│   │   ├── ose-microtrac
+│   │   └── ose-rototiller
+│   └── prepare
 ├── manufacturing
-│   ├── additive
-│   │   └── README.md
-│   ├── casting-molding
-│   │   └── README.md
-│   ├── forming
-│   │   └── README.md
-│   ├── README.md
-│   ├── subtractive
-│   │   └── README.md
-│   └── textile
-│       └── README.md
+│   ├── additive
+│   ├── casting-molding
+│   ├── forming
+│   ├── subtractive
+│   └── textile
 ├── materials
-│   ├── ceramics
-│   │   └── glass
-│   │       └── README.md
-│   ├── composite
-│   │   └── README.md
-│   ├── fibers
-│   │   └── README.md
-│   ├── foams
-│   │   └── README.md
-│   ├── membrane-like
-│   │   └── README.md
-│   ├── metals
-│   │   ├── Al
-│   │   │   └── README.md
-│   │   ├── Cu
-│   │   │   └── README.md
-│   │   ├── Fe
-│   │   │   └── README.md
-│   │   └── induction
-│   │       └── README.md
-│   ├── minerals
-│   │   └── mining
-│   │       └── README.md
-│   ├── oils
-│   │   └── README.md
-│   ├── plastics
-│   │   ├── elastomers
-│   │   │   └── rubber
-│   │   └── README.md
-│   ├── resins
-│   │   └── README.md
-│   ├── waste
-│   │   └── README.md
-│   └── wood
-│       ├── bamboo
-│       │   └── README.md
-│       ├── forestry
-│       │   └── README.md
-│       └── woodworking
-│           └── README.md
+│   ├── ceramics
+│   │   └── glass
+│   ├── composite
+│   ├── fibers
+│   ├── foams
+│   ├── membrane-like
+│   ├── metals
+│   │   ├── Al
+│   │   ├── Cu
+│   │   ├── Fe
+│   │   └── induction
+│   ├── minerals
+│   │   └── mining
+│   ├── oils
+│   ├── plastics
+│   │   └── elastomers
+│   ├── resins
+│   ├── waste
+│   └── wood
+│       ├── bamboo
+│       ├── forestry
+│       └── woodworking
 ├── monitoring
-│   ├── energy
-│   │   └── README.md
-│   ├── gas
-│   │   └── README.md
-│   ├── geiger
-│   │   └── README.md
-│   └── README.md
+│   ├── energy
+│   ├── gas
+│   └── geiger
 ├── oshw-mgmt
-│   ├── actors.md
-│   ├── appropedia.md
-│   └── fablabs
-│       └── README.md
-├── README.md
+│   └── fablabs
 ├── structures
-│   ├── assembly
-│   │   ├── fastening
-│   │   │   └── README.md
-│   │   ├── mechanisms
-│   │   │   └── README.md
-│   │   └── README.md
-│   ├── construction
-│   │   ├── ceb
-│   │   │   └── README.md
-│   │   └── README.md
-│   └── README.md
+│   ├── assembly
+│   │   ├── fastening
+│   │   └── mechanisms
+│   └── construction
+│       └── ceb
 ├── transport
-│   ├── aerospace
-│   │   └── README.md
-│   ├── propulsion
-│   │   └── README.md
-│   ├── README.md
-│   ├── road
-│   │   ├── cars
-│   │   │   └── README.md
-│   │   └── pedals
-│   │       ├── freight
-│   │       │   └── README.md
-│   │       ├── README.md
-│   │       └── velomobile
-│   │           └── README.md
-│   └── water
-│       └── README.md
+│   ├── aerospace
+│   ├── propulsion
+│   ├── road
+│   │   ├── cars
+│   │   └── pedals
+│   │       ├── freight
+│   │       └── velomobile
+│   └── water
 └── water
     ├── harvesting
-    │   └── README.md
     ├── irrigation
-    │   └── README.md
     ├── plumbing
-    │   └── README.md
-    ├── README.md
     ├── storage
-    │   └── README.md
     └── treatment
-        └── README.md
 
-118 directories, 133 files
+119 directories

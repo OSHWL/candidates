@@ -20,7 +20,7 @@ ADABio-Autoconstruction: France, agriculture
 
 OpenEnergyMonitor: UK, energy/monitoring
 
-OSEG: Germany, various
+OSEG (http://wiki.opensourceecology.de/Open_Source_Ecology_Germany/Netzwerk): Germany, various
 
 Apollo-NG: Germany, various
 
