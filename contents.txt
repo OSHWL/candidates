@@ -1,0 +1,124 @@
+.
+├── cleaning
+│   ├── agents
+│   ├── body
+│   ├── dishes
+│   ├── environmental
+│   ├── laundry
+│   └── vacuum
+├── electronics
+├── energy
+│   ├── electric
+│   │   ├── batteries
+│   │   ├── grid
+│   │   ├── machines
+│   │   ├── pv
+│   │   └── thermo
+│   ├── fuels
+│   │   ├── bio
+│   │   └── cells
+│   ├── human
+│   ├── hvac
+│   ├── hydraulics
+│   ├── hydro
+│   │   ├── conventional
+│   │   └── low-head
+│   │       ├── ror
+│   │       ├── tidal
+│   │       └── turbines
+│   ├── light
+│   ├── marine
+│   │   ├── osmotic
+│   │   └── wave
+│   ├── molecular-machines
+│   ├── pneumatics
+│   ├── thermal
+│   │   ├── bio
+│   │   ├── cogen
+│   │   ├── geo
+│   │   ├── heat-engines
+│   │   ├── heat-pumps
+│   │   ├── insulation
+│   │   ├── refrigeration
+│   │   ├── solar
+│   │   └── stoves
+│   │       └── gasifier
+│   └── wind
+├── floss4oshw
+├── food
+│   ├── grow
+│   │   ├── draft-animals
+│   │   ├── french-adabio-barre
+│   │   ├── french-adabio-bascule
+│   │   │   └── files
+│   │   ├── french-adabio-butteuse
+│   │   ├── french-adabio-cultibutte
+│   │   ├── french-adabio-planteuse
+│   │   │   └── files
+│   │   ├── french-adabio-rouleau
+│   │   ├── french-adabio-triangle
+│   │   ├── french-adabio-vibroplanche
+│   │   ├── ose-lifetrac
+│   │   ├── ose-microtrac
+│   │   └── ose-rototiller
+│   └── prepare
+├── manufacturing
+│   ├── additive
+│   ├── casting-molding
+│   ├── forming
+│   ├── subtractive
+│   └── textile
+├── materials
+│   ├── ceramics
+│   │   └── glass
+│   ├── composite
+│   ├── fibers
+│   ├── foams
+│   ├── membrane-like
+│   ├── metals
+│   │   ├── Al
+│   │   ├── Cu
+│   │   ├── Fe
+│   │   └── induction
+│   ├── minerals
+│   │   └── mining
+│   ├── oils
+│   ├── plastics
+│   │   └── elastomers
+│   ├── resins
+│   ├── waste
+│   └── wood
+│       ├── bamboo
+│       ├── forestry
+│       └── woodworking
+├── monitoring
+│   ├── energy
+│   ├── gas
+│   └── geiger
+├── oshw-mgmt
+│   └── fablabs
+├── structures
+│   ├── assembly
+│   │   ├── fastening
+│   │   └── mechanisms
+│   └── construction
+│       └── ceb
+├── transport
+│   ├── aerospace
+│   ├── propulsion
+│   ├── road
+│   │   ├── cars
+│   │   └── pedals
+│   │       ├── freight
+│   │       └── velomobile
+│   └── water
+│       └── triloboat
+└── water
+    ├── harvesting
+    ├── irrigation
+    ├── plumbing
+    ├── storage
+    └── treatment
+
+120 directories
+
