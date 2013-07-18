@@ -19,3 +19,7 @@ http://hackerspaces.org/wiki/Welding_tools
 ***********************
 
 http://en.wikipedia.org/wiki/Sintering
+
+***********************
+
+http://icanbuild.it/category/reprap/

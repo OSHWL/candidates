@@ -26,6 +26,8 @@ Apollo-NG: Germany, various
 
 Bam-Bi: Germany, materials/wood/bamboo
 
+oshw.it / fablabpisa.org / leaninglab.org / icanbuild.it/about/ / Salvatore Balestrino: Italy, various, electronics
+
 Verbund Offener Werkstätten: Germany, oshw-mgmt/fablabs
 
 fablabo.net (somehow associated to Open Source Energy and others): France, oshw-mgmt/fablabs
