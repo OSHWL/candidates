@@ -1,0 +1,5 @@
+- if not exceeding 50 lines: Markdown format
+- otherwise LaTeX, in order to generate PDF & EPUB files
+- english language
+- relevance of content, technically and (with exceptions) economically
+- all the documents's source files in the same folder as the document itself
