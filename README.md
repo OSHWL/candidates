@@ -10,7 +10,7 @@ it would be nice to have the documents meet the following criteria:
 - all the documents's source files in the same folder as the document itself
 
 
-##FIY
+##for your information
 
 
 OSHW
