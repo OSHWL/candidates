@@ -1,4 +1,6 @@
 .
+├── audio-visual
+│   └── optics
 ├── cleaning
 │   ├── agents
 │   ├── body
@@ -6,13 +8,17 @@
 │   ├── environmental
 │   ├── laundry
 │   └── vacuum
-├── electronics
+├── electro-it-monitoring
+│   ├── electro-it
+│   └── monitoring
+│       ├── energy
+│       ├── gas
+│       └── geiger
 ├── energy
 │   ├── electric
 │   │   ├── batteries
 │   │   ├── grid
 │   │   ├── machines
-│   │   ├── pv
 │   │   └── thermo
 │   ├── fuels
 │   │   ├── bio
@@ -32,6 +38,8 @@
 │   │   └── wave
 │   ├── molecular-machines
 │   ├── pneumatics
+│   ├── solar
+│   │   └── pv
 │   ├── thermal
 │   │   ├── bio
 │   │   ├── cogen
@@ -40,7 +48,6 @@
 │   │   ├── heat-pumps
 │   │   ├── insulation
 │   │   ├── refrigeration
-│   │   ├── solar
 │   │   └── stoves
 │   │       └── gasifier
 │   └── wind
@@ -62,12 +69,7 @@
 │   │   ├── ose-microtrac
 │   │   └── ose-rototiller
 │   └── prepare
-├── manufacturing
-│   ├── additive
-│   ├── casting-molding
-│   ├── forming
-│   ├── subtractive
-│   └── textile
+├── health
 ├── materials
 │   ├── ceramics
 │   │   └── glass
@@ -91,16 +93,18 @@
 │       ├── bamboo
 │       ├── forestry
 │       └── woodworking
-├── monitoring
-│   ├── energy
-│   ├── gas
-│   └── geiger
 ├── oshw-mgmt
 │   └── fablabs
+├── robotics-manufacturing
+│   └── manufacturing
+│       ├── additive
+│       ├── casting-molding
+│       ├── forming
+│       ├── subtractive
+│       └── textile
 ├── structures
 │   ├── assembly
-│   │   ├── fastening
-│   │   └── mechanisms
+│   │   └── locks
 │   └── construction
 │       └── ceb
 ├── transport
@@ -120,5 +124,4 @@
     ├── storage
     └── treatment
 
-120 directories
-
+124 directories

@@ -4,7 +4,7 @@ Open Source Energy: France, energy/electric/machines
 
 Open Structures: Belgium, structures/assembly
 
-SolarFlower: UK/?, energy/thermal/solar
+SolarFlower: UK/NZ, energy/thermal/solar
 
 SolarFire: multiple locations, energy/thermal/solar
 
