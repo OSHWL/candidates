@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+
+  <head>
+		<base href="http://open-innovation-projects.org/" />
+		
+			
+				
+					<title>Neuros OSD - Open Innovation Projects</title>
+				
+			
+			
+		
+		<meta name="generator" http-equiv="generator" content="SilverStripe 2.0 - http://www.silverstripe.com" />
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en"/>
+
+		<link rel="shortcut icon" href="/favicon.ico" />
+		
+		<!--[if IE 6]>
+			<style type="text/css">
+			 @import url(themes/blackcandy/css/ie6.css);
+			</style> 
+		<![endif]-->
+		
+		<!--[if IE 7]>
+			<style type="text/css">
+			 @import url(themes/blackcandy/css/ie7.css);
+			</style> 
+		<![endif]-->
+	<script type="text/javascript" src="tooltip/js/ajax-dynamic-content.js"></script>
+<script type="text/javascript" src="tooltip/js/ajax.js"></script>
+<script type="text/javascript" src="tooltip/js/ajax-tooltip.js"></script>
+<script type="text/javascript" src="sapphire/javascript/Validator.js"></script>
+<script type="text/javascript" src="jsparty/prototype.js"></script>
+<script type="text/javascript" src="jsparty/behaviour.js"></script>
+<script type="text/javascript" src="jsparty/prototype_improvements.js"></script>
+<script type="text/javascript" src="sapphire/javascript/ToggleCompositeField.js"></script>
+<script type="text/javascript" src="jsparty/loader.js"></script>
+<script type="text/javascript" src="jsparty/tabstrip/tabstrip.js"></script>
+<script type="text/javascript">
+//<![CDATA[
+Behaviour.register({
+	'#ProjectDetailEntry_Form_EditDetailsForm': {
+		validate : function(fromAnOnBlur) {
+			initialiseForm(this, fromAnOnBlur);
+			
+			
+			var error = hasHadFormError();
+			if(!error && fromAnOnBlur) clearErrorMessage(fromAnOnBlur);
+			
+			return !error;
+		},
+		onsubmit : function() {
+			if(typeof this.bypassValidation == 'undefined' || !this.bypassValidation) return this.validate();
+		}
+	},
+	'#ProjectDetailEntry_Form_EditDetailsForm input' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+			if(!this.old_onfocus) this.old_onfocus = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				return $('ProjectDetailEntry_Form_EditDetailsForm').validate(this);
+			}
+		}
+	},
+	'#ProjectDetailEntry_Form_EditDetailsForm select' : {
+		initialise: function() {
+			if(!this.old_onblur) this.old_onblur = function() { return true; } 
+		},
+		onblur : function() {
+			if(this.old_onblur()) {
+				return $('ProjectDetailEntry_Form_EditDetailsForm').validate(this); 
+			}
+		}
+	}
+});
+// TODO Performance-issue: Behaviour is possibly applied twice
+Behaviour.apply('#ProjectDetailEntry_Form_EditDetailsForm');	
+
+//]]>
+</script>
+<link rel="stylesheet" type="text/css" href="sharethis/css/ShareThis.css" />
+<link rel="stylesheet" type="text/css" href="themes/openinno/css/layout.css" />
+<link rel="stylesheet" type="text/css" href="themes/openinno/css/typography.css" />
+<link rel="stylesheet" type="text/css" href="themes/openinno/css/form.css" />
+<link rel="stylesheet" type="text/css" href="themes/openinno/css/tabs.css" />
+<link rel="stylesheet" type="text/css" href="tooltip/css/ajax-tooltip.css" />
+<link rel="stylesheet" type="text/css" href="jsparty/tabstrip/tabstrip.css" />
+</head>
+<body>
+<div id="BgContainer">
+	<div id="Container">
+		<div id="Header">
+	   		<h1>Open Innovation Projects</h1>
+	    	<p>global community for enthusiasts of open development</p>
+		</div>
+		
+		<div id="Navigation">
+			<ul>
+ 		  
+  		<li><a href="/home/" title="Go to the Open Source Innovation Community page" class="link"><span>Home</span></a></li>
+   		  
+  		<li><a href="/project-list/" title="Go to the Project List page" class="section"><span>Project List</span></a></li>
+   		  
+  		<li><a href="/about-this-project/" title="Go to the About This Project page" class="link"><span>About This Project</span></a></li>
+   		  
+  		<li><a href="/help/" title="Go to the Help page" class="link"><span>Help</span></a></li>
+   	
+ </ul>
+	  	</div>
+	  	
+	  	<div class="clear"><!-- --></div>
+		
+		<div id="Layout">
+		
+		
+		<div id="MemberInformationHeader" class="typography">
+		
+	
+	<p><span><a href="/projects/userlogin" title="Click here to login">Login</a> |
+			<!-- <a href="Security/lostpassword" title="Click here to retrieve your password">forgot password</a> | //-->
+			<a href="ForumMemberProfile/register" title="Click here to register">register</a> |
+			<a href="ForumMemberProfile/registerwithopenid" title="Click here to register with OpenID">register with OpenID <img src="sapphire/images/openid-small.gif" alt="Click here to register with OpenID" style="border:none;vertical-align:top" /></a>
+		</span>
+		</p>
+	
+</div>
+		<div id="BreadDiv" class="typography">
+	  	
+	<div id="Breadcrumbs">
+	   	<p>
+		<a href="/project-list/">Project List</a> &raquo; Neuros OSD</p>
+	</div>
+
+		</div>
+
+		
+		  <div class="typography">
+	
+			
+
+	
+		<h2>Neuros OSD</h2>
+		
+		<div><ul class="tabs">
+<li class="current  "><a href="/projects/show/53/neuros-osd" >Project Details</a></li>
+<li class=""><a href="/projects/search/53/neuros-osd" >Search</a></li>
+<li><a href="discuss-projects/discuss/53" rel="nofollow">Forum</a></li>
+</ul></div>
+<div class="mytab ">
+		
+		
+		
+		
+
+		
+<form id="ProjectDetailEntry_Form_EditDetailsForm" action="/projects/edit/53/neuros-osd?executeForm=EditDetailsForm" method="post" enctype="application/x-www-form-urlencoded">
+
+	
+	<p id="ProjectDetailEntry_Form_EditDetailsForm_error" class="message " style="display: none"></p>
+	
+	<fieldset>
+		
+			<input class="hidden" type="hidden" id="ProjectDetailEntry_Form_EditDetailsForm_ID" name="ID" value="276" />
+		
+			<input class="hidden" type="hidden" id="ProjectDetailEntry_Form_EditDetailsForm_ProjectID" name="ProjectID" value="53" />
+		
+			<div id="Description" class="field textarea readonly  nolabel"><span class="middleColumn"><span  readonly="readonly" class="readonly nolabel" id="ProjectDetailEntry_Form_EditDetailsForm_Description" name="Description" rows="5" cols="20">The Neuros OSD connects to your TV or home theater system and allows you to archive all of your DVD and video content.</span></span></div>
+		
+			<div id="ProjectDetails" class=" toggleCompositeField  ">	
+	<h3 style="cursor: pointer;" class="trigger">
+		<img class="triggerClosed" src="/assets/toggle-hide.png" alt="[-]" style="display:none;border:none;vertical-align:center;margin-right:4px;" title="Hide" /> 
+		<img class="triggerOpened" src="/assets/toggle-show.png" alt="[+]" style="display:none;border:none;vertical-align:center;margin-right:4px;" title="Show" />
+
+		Project Details
+	</h3>
+	<div class="contentMore">
+	
+	<div id="ProjectLink" class="field labelledliteral "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_ProjectLink">Project Link</label><span class="middleColumn"><a href="http://www.neurostechnology.com/" target="_blank" title="http://www.neurostechnology.com/">http://www.neurostechnology.com/</a></span></div>
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="ProjectType" class="field lookup readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_ProjectType">Project Entry Type <span class="help"><a href="/entry-details-help/#project-type" target="_blank" onmouseover="ajax_showTooltip('project-type/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_ProjectType">Single project</span><input type="hidden" name="ProjectType" value="Single" /></span></div>
+</div>
+
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="DevelopmentStatus" class="field lookup readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_DevelopmentStatus">Development Status <span class="help"><a href="/entry-details-help/#development-status" target="_blank" onmouseover="ajax_showTooltip('development-status/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_DevelopmentStatus">4 - Production stable</span><input type="hidden" name="DevelopmentStatus" value="4" /></span></div>
+</div>
+
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="Community" class="field lookup readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_Community">Community Size <span class="help"><a href="/entry-details-help/#community" target="_blank" onmouseover="ajax_showTooltip('community/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_Community">>5.000</span><input type="hidden" name="Community" value="8" /></span></div>
+</div>
+
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="Developers" class="field lookup readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_Developers">Developers <span class="help"><a href="/entry-details-help/#developers" target="_blank" onmouseover="ajax_showTooltip('developers/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_Developers">11 - 100</span><input type="hidden" name="Developers" value="4" /></span></div>
+</div>
+
+	
+	<label class="left">License and trademark <span class="help"><a href="/entry-details-help/#license" target="_blank" onmouseover="ajax_showTooltip('license/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label>
+	
+	<div id="LicenseGPLLineBreakLicenseBSDLineBreakLicenseCCLineBreakLicenseOtherLineBreakLicenseCommercialLineBreakLicenseNoLineBreakLicenseTrademark" class="field fieldgroup  nolabel"><span class="middleColumn"><span class="fieldgroup"><input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_LicenseGPL" name="LicenseGPL"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_LicenseGPL">GPL, LGPL or similar copyleft license</label>  <br /> <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_LicenseBSD" name="LicenseBSD" checked="checked"  disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_LicenseBSD">BSD, MIT or similar permissive license</label>  <br /> <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_LicenseCC" name="LicenseCC"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_LicenseCC">Creative Commons license</label>  <br /> <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_LicenseOther" name="LicenseOther"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_LicenseOther">Other open license</label>  <br /> <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_LicenseCommercial" name="LicenseCommercial"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_LicenseCommercial">Commercial license</label>  <br /> <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_LicenseNo" name="LicenseNo"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_LicenseNo">No license</label>  <br /> <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_LicenseTrademark" name="LicenseTrademark" checked="checked"  disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_LicenseTrademark">Registered trademark</label>  </span></span></div>
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="HomeCountry" class="field lookup readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_HomeCountry">Country <span class="help"><a href="/entry-details-help/#country" target="_blank" onmouseover="ajax_showTooltip('country/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_HomeCountry">United States</span><input type="hidden" name="HomeCountry" value="US" /></span></div>
+</div>
+
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="StartYear" class="field readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_StartYear">Start Year <span class="help"><a href="/entry-details-help/#start-year" target="_blank" onmouseover="ajax_showTooltip('start-year/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_StartYear">2003</span>
+<input type="hidden" name="StartYear" value="2003" /></span></div>
+</div>
+
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="MainContact" class="field readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_MainContact">Project Contact (Name) <span class="help"><a href="/entry-details-help/#project-contact" target="_blank" onmouseover="ajax_showTooltip('project-contact/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_MainContact">Joe Born (CEO)</span>
+<input type="hidden" name="MainContact" value="Joe Born (CEO)" /></span></div>
+</div>
+
+	
+	<div id="MainContactEmail" class="field readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_MainContactEmail">Project Contact (E-Mail)</label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_MainContactEmail"><i>(not set)</i></span>
+<input type="hidden" name="MainContactEmail" value="" /></span></div>
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="IntendedAudience" class="field lookup readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_IntendedAudience">Intended Audience <span class="help"><a href="/entry-details-help/#intended-audience" target="_blank" onmouseover="ajax_showTooltip('intended-audience/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_IntendedAudience">End User</span><input type="hidden" name="IntendedAudience" value="End User" /></span></div>
+</div>
+
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="Keywords" class="field readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_Keywords">Keywords<br />(Comma seperated) <span class="help"><a href="/entry-details-help/#keywords-help" target="_blank" onmouseover="ajax_showTooltip('keywords-help/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_Keywords"><i>(not set)</i></span>
+<input type="hidden" name="Keywords" value="" /></span></div>
+</div>
+
+	
+	</div>
+</div>
+		
+			<div id="ProductDetails" class=" toggleCompositeField  ">	
+	<h3 style="cursor: pointer;" class="trigger">
+		<img class="triggerClosed" src="/assets/toggle-hide.png" alt="[-]" style="display:none;border:none;vertical-align:center;margin-right:4px;" title="Hide" /> 
+		<img class="triggerOpened" src="/assets/toggle-show.png" alt="[+]" style="display:none;border:none;vertical-align:center;margin-right:4px;" title="Show" />
+
+		Product Details
+	</h3>
+	<div class="contentMore">
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="Innovativeness" class="field lookup readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_Innovativeness">Product Innovativeness <span class="help"><a href="/entry-details-help/#product-innovativeness" target="_blank" onmouseover="ajax_showTooltip('product-innovativeness/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_Innovativeness">2 - Incremental innovation</span><input type="hidden" name="Innovativeness" value="2" /></span></div>
+</div>
+
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="Complexity" class="field lookup readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_Complexity">Product Complexity <span class="help"><a href="/entry-details-help/#product-complexity" target="_blank" onmouseover="ajax_showTooltip('product-complexity/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_Complexity">3 - Medium complexity</span><input type="hidden" name="Complexity" value="3" /></span></div>
+</div>
+
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="Industry" class="field lookup readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_Industry">Industry <span class="help"><a href="/entry-details-help/#industry" target="_blank" onmouseover="ajax_showTooltip('industry/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_Industry">Consumer Electronics</span><input type="hidden" name="Industry" value="Consumer Electronics" /></span></div>
+</div>
+
+	
+	</div>
+</div>
+		
+			<div id="InstitutionalDesignandProduction" class=" toggleCompositeField  ">	
+	<h3 style="cursor: pointer;" class="trigger">
+		<img class="triggerClosed" src="/assets/toggle-hide.png" alt="[-]" style="display:none;border:none;vertical-align:center;margin-right:4px;" title="Hide" /> 
+		<img class="triggerOpened" src="/assets/toggle-show.png" alt="[+]" style="display:none;border:none;vertical-align:center;margin-right:4px;" title="Show" />
+
+		Institutional Design and Production
+	</h3>
+	<div class="contentMore">
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="UserContribution" class="field lookup readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_UserContribution">User/Private Contribution <span class="help"><a href="/entry-details-help/#user-contribution" target="_blank" onmouseover="ajax_showTooltip('user-contribution/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_UserContribution">Yes</span><input type="hidden" name="UserContribution" value="Yes" /></span></div>
+</div>
+
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="CommercialContribution" class="field lookup readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_CommercialContribution">Commercial Contribution <span class="help"><a href="/entry-details-help/#commercial-contribution" target="_blank" onmouseover="ajax_showTooltip('commercial-contribution/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_CommercialContribution">Yes</span><input type="hidden" name="CommercialContribution" value="Yes" /></span></div>
+</div>
+
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="ResearchContribution" class="field lookup readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_ResearchContribution">Research Contribution <span class="help"><a href="/entry-details-help/#research-contribution" target="_blank" onmouseover="ajax_showTooltip('research-contribution/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_ResearchContribution"><i>(not set)</i></span><input type="hidden" name="ResearchContribution" value="" /></span></div>
+</div>
+
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="DevelopmentType" class="field lookup readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_DevelopmentType">Type of Collaboration <span class="help"><a href="/entry-details-help/#type-of-collaboration" target="_blank" onmouseover="ajax_showTooltip('type-of-collaboration/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_DevelopmentType">Collective development of one common product</span><input type="hidden" name="DevelopmentType" value="OneProduct" /></span></div>
+</div>
+
+	
+	<div class="field CompositeField  nolabel">
+
+<div id="Activity" class="field lookup readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_Activity">Activity <span class="help"><a href="/entry-details-help/#activity" target="_blank" onmouseover="ajax_showTooltip('activity/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_Activity">3 - High</span><input type="hidden" name="Activity" value="3" /></span></div>
+</div>
+
+	
+	<label class="left">Community Communication <span class="help"><a href="/entry-details-help/#community-communication" target="_blank" onmouseover="ajax_showTooltip('community-communication/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label>
+	
+	<div id="CommunicationFaceToFaceCommunicationMailLineBreakCommunicationChatCommunicationBoardCommunicationOther" class="field fieldgroup  nolabel"><span class="middleColumn"><span class="fieldgroup"><input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_CommunicationFaceToFace" name="CommunicationFaceToFace" checked="checked"  disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_CommunicationFaceToFace">Face-to-face</label>  <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_CommunicationMail" name="CommunicationMail" checked="checked"  disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_CommunicationMail">Mailinglists</label>  <br /> <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_CommunicationChat" name="CommunicationChat" checked="checked"  disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_CommunicationChat">Chat</label>  <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_CommunicationBoard" name="CommunicationBoard" checked="checked"  disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_CommunicationBoard">Board</label>  <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_CommunicationOther" name="CommunicationOther"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_CommunicationOther">Other</label>  </span></span></div>
+	
+	<label class="left">Degree of Openness <span class="help"><a href="/entry-details-help/#degree-of-openness" target="_blank" onmouseover="ajax_showTooltip('degree-of-openness/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label>
+	
+	<div id="OpenSoftwareOpenInterfacesLineBreakOpenCaseDesignOpenMechanicsLineBreakOpenAllLineBreakLineBreakOpenComment" class="field fieldgroup  nolabel"><span class="middleColumn"><span class="fieldgroup"><input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_OpenSoftware" name="OpenSoftware" checked="checked"  disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_OpenSoftware">Software</label>  <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_OpenInterfaces" name="OpenInterfaces" checked="checked"  disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_OpenInterfaces">Hardware interfaces</label>  <br /> <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_OpenCaseDesign" name="OpenCaseDesign" checked="checked"  disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_OpenCaseDesign">Case Design</label>  <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_OpenMechanics" name="OpenMechanics"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_OpenMechanics">Mechanics/Schematics</label>  <br /> <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_OpenAll" name="OpenAll"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_OpenAll">Entirely open</label>  <br /> <br /> <label for="ProjectDetailEntry_Form_EditDetailsForm_OpenComment">Comments</label>
+<span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_OpenComment"><i>(not set)</i></span>
+<input type="hidden" name="OpenComment" value="" /> </span></span></div>
+	
+	<label class="left">Development mainly driven by <span class="help"><a href="/entry-details-help/#development-driver" target="_blank" onmouseover="ajax_showTooltip('development-driver/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label>
+	
+	<div id="DriverProjectLeaderDriverCoreTeamLineBreakDriverCommunityDriverUserLineBreakDriverCompanyLineBreakDriverOther" class="field fieldgroup  nolabel"><span class="middleColumn"><span class="fieldgroup"><input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_DriverProjectLeader" name="DriverProjectLeader"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_DriverProjectLeader">Project leader</label>  <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_DriverCoreTeam" name="DriverCoreTeam"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_DriverCoreTeam">Core Team</label>  <br /> <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_DriverCommunity" name="DriverCommunity"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_DriverCommunity">Developer community</label>  <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_DriverUser" name="DriverUser"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_DriverUser">User community</label>  <br /> <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_DriverCompany" name="DriverCompany" checked="checked"  disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_DriverCompany">Related Company or Association</label>  <br /> <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_DriverOther" name="DriverOther"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_DriverOther">Other</label>  </span></span></div>
+	
+	<label class="left">Product produced by <span class="help"><a href="/entry-details-help/#production" target="_blank" onmouseover="ajax_showTooltip('production/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label>
+	
+	<div id="ProductionProjectLeaderProductionCoreTeamLineBreakProductionCommunityProductionUserLineBreakProductionCompanyLineBreakProductionOutsourcedProductionOtherProductionUnclear" class="field fieldgroup  nolabel"><span class="middleColumn"><span class="fieldgroup"><input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_ProductionProjectLeader" name="ProductionProjectLeader"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_ProductionProjectLeader">Project leader</label>  <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_ProductionCoreTeam" name="ProductionCoreTeam"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_ProductionCoreTeam">Core Team</label>  <br /> <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_ProductionCommunity" name="ProductionCommunity"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_ProductionCommunity">Developer community</label>  <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_ProductionUser" name="ProductionUser"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_ProductionUser">User community</label>  <br /> <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_ProductionCompany" name="ProductionCompany" checked="checked"  disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_ProductionCompany">Related Company or Association</label>  <br /> <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_ProductionOutsourced" name="ProductionOutsourced"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_ProductionOutsourced">Outsourced</label>  <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_ProductionOther" name="ProductionOther"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_ProductionOther">Other</label>  <input class="checkbox" type="checkbox" value="1" id="ProjectDetailEntry_Form_EditDetailsForm_ProductionUnclear" name="ProductionUnclear"   disabled="disabled" /><label for="ProjectDetailEntry_Form_EditDetailsForm_ProductionUnclear">Not yet clear</label>  </span></span></div>
+	
+	</div>
+</div>
+		
+				<ul class="tabstrip">
+	
+		<li class="first "><a href="/projects/show/53/neuros-osd#InformationTabSet_Aboutcurrententry" id="tab-InformationTabSet_Aboutcurrententry">About current entry</a></li>
+	
+		<li class="last "><a href="/projects/show/53/neuros-osd#InformationTabSet_Otherentries" id="tab-InformationTabSet_Otherentries">Other entries</a></li>
+	
+	</ul>
+	
+	
+		<div class="tab" id="InformationTabSet_Aboutcurrententry">
+		
+			
+			<div class="field CompositeField  nolabel">
+
+<div id="MemberPosition" class="field lookup readonly "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_MemberPosition">Member's project position <span class="help"><a href="/entry-details-help/#member-s-position" target="_blank" onmouseover="ajax_showTooltip('member-s-position/helptext/',this);return false" onmouseout="ajax_hideTooltip()">*</a></span></label><span class="middleColumn"><span class="readonly" id="ProjectDetailEntry_Form_EditDetailsForm_MemberPosition">Unlinked</span><input type="hidden" name="MemberPosition" value="Unlinked" /></span></div>
+</div>
+
+			
+			<div id="EntryDetails" class="field labelledliteral "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_EntryDetails">Entry post details</label><span class="middleColumn"><a href="ForumMemberProfile/show/30">TeXimo</a> on 2008-11-25 20:50:26</span></div>
+			
+			<div id="EntryDetails2" class="field labelledliteral "><label class="left" for="ProjectDetailEntry_Form_EditDetailsForm_EntryDetails2">Approval Status</label><span class="middleColumn"><span class="Trusted_Member">Trusted Member</span></span></div>
+			
+		
+		</div>
+	
+		<div class="tab" id="InformationTabSet_Otherentries">
+		
+			
+			<table id="ProjectViewDetailEntryTable">
+		<tr><th>User</th><th>Position</th><th>Approval-Status</th><th>Last Edited</th></tr>
+			
+			  
+			    <tr>
+					<td>
+						
+							
+	<a href="ForumMemberProfile/show/30" title="Click here to view 's profile">TeXimo</a>
+
+						
+					</td>
+					<td>
+						Unlinked
+					</td>
+					<td>
+						Trusted Member
+					</td>
+					<td>
+						2008-11-25 20:50:26
+					</td>
+					<td>
+						<a href="/projects/detail/276/">View</a>
+						
+					</td>
+				</tr>
+			  
+			    <tr>
+					<td>
+						
+							
+	<a href="ForumMemberProfile/show/30" title="Click here to view 's profile">TeXimo</a>
+
+						
+					</td>
+					<td>
+						Unlinked
+					</td>
+					<td>
+						Trusted Member
+					</td>
+					<td>
+						2008-11-25 20:50:26
+					</td>
+					<td>
+						<a href="/projects/detail/331/">View</a>
+						
+					</td>
+				</tr>
+			  
+			    <tr>
+					<td>
+						
+							
+	<a href="ForumMemberProfile/show/27" title="Click here to view 's profile">Tina</a>
+
+						
+					</td>
+					<td>
+						Unlinked
+					</td>
+					<td>
+						Trusted Member
+					</td>
+					<td>
+						2008-11-24 19:27:27
+					</td>
+					<td>
+						<a href="/projects/detail/229/">View</a>
+						
+					</td>
+				</tr>
+			  
+			    <tr>
+					<td>
+						
+							
+	<a href="ForumMemberProfile/show/30" title="Click here to view 's profile">TeXimo</a>
+
+						
+					</td>
+					<td>
+						Unlinked
+					</td>
+					<td>
+						Trusted Member
+					</td>
+					<td>
+						2008-11-23 13:58:31
+					</td>
+					<td>
+						<a href="/projects/detail/181/">View</a>
+						
+					</td>
+				</tr>
+			  
+			    <tr>
+					<td>
+						
+							
+	<a href="ForumMemberProfile/show/2" title="Click here to view 's profile">Kerstin</a>
+
+						
+					</td>
+					<td>
+						Unlinked
+					</td>
+					<td>
+						Trusted Member
+					</td>
+					<td>
+						2008-08-29 09:59:59
+					</td>
+					<td>
+						<a href="/projects/detail/49/">View</a>
+						
+					</td>
+				</tr>
+			  
+			
+		</table>
+			
+		
+		</div>
+	
+
+		
+			<br />
+		
+		<div class="clear"><!-- --></div>
+	</fieldset>
+
+
+	<div class="Actions">
+			<input class="action " id="ProjectDetailEntry_Form_EditDetailsForm_action_edit" type="submit" name="action_edit" value="Edit"  />
+
+	</div>
+
+
+</form>
+
+
+</div>		
+		
+		
+<div id="ShareThis">
+		<h4>Share this page</h4>
+		<ul class="share-list"><li><a href="http://del.icio.us/post?v=4&amp;noui&amp;jump=close&amp;url=http://www.open-innovation-projects.org/projects/show/53/neuros-osd&amp;title=Neuros OSD"><img src="sharethis/images/icons/delicious.gif" alt="Add to del.icio.us" title="Add to del.icio.us"/></a></li><li><a href="http://digg.com/submit?phase=2&amp;url=http://www.open-innovation-projects.org/projects/show/53/neuros-osd&amp;title=Neuros OSD"><img src="sharethis/images/icons/digg.gif" alt="Digg this!" title="Digg this!"/></a></li><li><a href="http://www.mister-wong.de/index.php?action=addurl&amp;bm_url=http://www.open-innovation-projects.org/projects/show/53/neuros-osd&amp;bm_description=Neuros OSD"><img src="sharethis/images/icons/misterwong.gif" alt="Add to Mister Wong" title="Add to Mister Wong"/></a></li><li><a href="http://reddit.com/submit?url=http://www.open-innovation-projects.org/projects/show/53/neuros-osd&amp;title=Neuros OSD"><img src="sharethis/images/icons/reddit.gif" alt="Reddit!" title="Reddit!"/></a></li><li><a href="http://www.furl.net/storeIt.jsp?t=Neuros OSD&amp;u=http://www.open-innovation-projects.org/projects/show/53/neuros-osd"><img src="sharethis/images/icons/furl.gif" alt="Furl this!" title="Furl this!"/></a></li><li><a href="http://ma.gnolia.com/bookmarklet/add?url=http://www.open-innovation-projects.org/projects/show/53/neuros-osd&amp;title=Neuros OSD"><img src="sharethis/images/icons/ma.gnolia.gif" alt="Add to ma.gnolia" title="Add to ma.gnolia"/></a></li><li><a href="http://www.newsvine.com/_tools/seed&amp;save?u=http://www.open-innovation-projects.org/projects/show/53/neuros-osd&amp;h=Neuros OSD"><img src="sharethis/images/icons/newsvine.gif" alt="Save to Newsvine!" title="Save to Newsvine!"/></a></li><li><a href="https://favorites.live.com/quickadd.aspx?marklet=1&amp;mkt=en-us&amp;url=http://www.open-innovation-projects.org/projects/show/53/neuros-osd&amp;title=Neuros OSD&amp;top=1"><img src="sharethis/images/icons/live.gif" alt="Add to Windows Live" title="Add to Windows Live"/></a></li><li><a href="http://myweb.yahoo.com/myresults/bookmarklet?t=Neuros OSD&amp;u=http://www.open-innovation-projects.org/projects/show/53/neuros-osd&amp;ei=UTF"><img src="sharethis/images/icons/myweb.gif" alt="Add to Yahoo MyWeb" title="Add to Yahoo MyWeb"/></a></li><li><a href="http://www.google.com/bookmarks/mark?op=edit&amp;output=popup&amp;bkmk=http://www.open-innovation-projects.org/projects/show/53/neuros-osd&amp;title=Neuros OSD"><img src="sharethis/images/icons/google.gif" alt="Googlize this post!" title="Googlize this post!"/></a></li><li><a href="http://www.stumbleupon.com/submit?url=http://www.open-innovation-projects.org/projects/show/53/neuros-osd&amp;title=Neuros OSD"><img src="sharethis/images/icons/stumbleupon.gif" alt="Stumble It!" title="Stumble It!"/></a></li><li><a href="http://simpy.com/simpy/LinkAdd.do?title=Neuros OSD&amp;href=http://www.open-innovation-projects.org/projects/show/53/neuros-osd"><img src="sharethis/images/icons/simpy.gif" alt="Add to Simpy" title="Add to Simpy"/></a></li><li><a href="http://www.facebook.com/share.php?u=http://www.open-innovation-projects.org/projects/show/53/neuros-osd&amp;t=Neuros OSD"><img src="sharethis/images/icons/facebook.gif" alt="Share on Facebook" title="Share on Facebook"/></a></li><li><a href="mailto:?body=http://www.open-innovation-projects.org/projects/show/53/neuros-osd&amp;subject=Neuros OSD"><img src="sharethis/images/icons/email.gif" alt="Email" title="Email"/></a></li></ul>
+</div>
+
+	
+</div>
+		</div>
+	   <div class="clear"><!-- --></div>
+	   
+	</div>
+	<div id="Footer">
+		<div class="footerTop">
+	<!-- -->
+</div>
+<p><a href="http://open-innovation-projects.org">Open Innovation Projects</a> | <a href="/sitemap/">Sitemap</a> | developed by <a href="http://www.sist.biz">sist.biz [de]</a> | <a href="/terms-of-use">Terms Of Use</a> | <a href="/impress">Impress</a></p>
+
+
+<div id="PopularProjects">
+
+<h4>Most Popular</h4>
+
+<ul>
+
+	
+		
+			<li><a href="/projects/show/119/beagle-board">Beagle Board</a></li>
+		
+	
+
+	
+		
+			<li><a href="/projects/show/82/avr-butterfly-logger">AVR Butterfly Logger</a></li>
+		
+	
+
+	
+		
+			<li><a href="/projects/show/45/etherrape">Etherrape</a></li>
+		
+	
+
+	
+		
+			<li><a href="/projects/show/64/daisy-mp3">Daisy mp3</a></li>
+		
+	
+
+	
+		
+			<li><a href="/projects/show/78/oscar-project">OScar project</a></li>
+		
+	
+
+</ul>
+</div>
+
+
+
+<div id="NewestProjects">
+
+<h4>Newest Details</h4>
+	<ul>
+	
+		<li><a href="/projects/detail/504/">Open Source Ecology</a></li>
+	
+		<li><a href="/projects/detail/502/">Wireless Electricity Transmission</a></li>
+	
+		<li><a href="/projects/detail/501/">LED Stripe</a></li>
+	
+		<li><a href="/projects/detail/500/">ViewTonic - a hologram in a drink</a></li>
+	
+		<li><a href="/projects/detail/496/">SolorProjects</a></li>
+	
+	</ul>
+	
+</div>
+
+	</div> 
+	<p id="Licensing">
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">
+<img alt="Creative Commons License" style="border-width:0" src="http://creativecommons.org/images/public/somerights20.png" /></a><br /><strong><span xmlns:dc="http://purl.org/dc/elements/1.1/" property="dc:title">Open Innovation Projects</span></strong> copyright 2008-2011 by <a xmlns:cc="http://creativecommons.org/ns#" href="http://open-innovation-projects.org/cc" property="cc:attributionName" rel="cc:attributionURL">Kerstin Balka</a>. 
+Except where otherwise noted, web-pages on this site are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-Share Alike 3.0 License</a>
+</p>
+</div>
+
+
+</body>
+</html>
