@@ -9,11 +9,9 @@
 │   ├── laundry
 │   └── vacuum
 ├── electro-it-monitoring
-│   ├── electro-it
-│   └── monitoring
-│       ├── energy
-│       ├── gas
-│       └── geiger
+│   ├── energy-monitoring
+│   ├── gas-monitoring
+│   └── geiger-monitoring
 ├── energy
 │   ├── electric
 │   │   ├── batteries
@@ -39,7 +37,9 @@
 │   ├── molecular-machines
 │   ├── pneumatics
 │   ├── solar
-│   │   └── pv
+│   │   ├── pv
+│   │   ├── thermal
+│   │   └── tracking
 │   ├── thermal
 │   │   ├── bio
 │   │   ├── cogen
@@ -51,7 +51,6 @@
 │   │   └── stoves
 │   │       └── gasifier
 │   └── wind
-├── floss4oshw
 ├── food
 │   ├── grow
 │   │   ├── draft-animals
@@ -94,7 +93,8 @@
 │       ├── forestry
 │       └── woodworking
 ├── oshw-mgmt
-│   └── fablabs
+│   ├── fablabs
+│   └── floss4oshw
 ├── robotics-manufacturing
 │   └── manufacturing
 │       ├── additive
@@ -103,7 +103,7 @@
 │       ├── subtractive
 │       └── textile
 ├── structures
-│   ├── assembly
+│   ├── assemblies
 │   │   └── locks
 │   └── construction
 │       └── ceb

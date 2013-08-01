@@ -20,3 +20,17 @@ http://fablabo.net/wiki/Eolien
 (see under monitoring/energy: WiLSSEN: Wireless / Wind Logging System for Sourcing ENergy http://wiki.opensourceecology.de/Wilssen)
 
 (see under energy/electric/grid: DiVER: Direct Current low Voltage Electrical Grid for Renewable energies  http://wiki.opensourceecology.de/DiVER)
+
+
+***************
+
+http://www.scoraigwind.com/
+
+
+**************
+
+http://www.applied-sciences.net/library/zoetrope.php
+
+http://www.applied-sciences.net/library/data/zoetrope-wind-turbine.pdf
+
+*****************
