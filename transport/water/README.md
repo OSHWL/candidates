@@ -13,3 +13,10 @@ http://en.wikipedia.org/wiki/Swimfins
 
 
 http://www.thingiverse.com/thing:28631
+
+
+
+
+openmini 650 sailboat
+
+open waterbike project

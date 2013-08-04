@@ -14,7 +14,6 @@
 \usepackage{rotating}
 \usepackage{refstyle}
 \usepackage{float}
-\usepackage{calc}
 \usepackage{multirow}
 \usepackage{subscript}
 
@@ -49,9 +48,6 @@
 \usepackage{footnote}
 \makesavenoteenv{tabular}
 
-\@ifundefined{showcaptionsetup}{}{%
- \PassOptionsToPackage{caption=false}{subfig}}
-\usepackage{subfig}
 \makeatother
 
 \usepackage{babel}
@@ -60,260 +56,285 @@
 \title{\emph{Open Innovation Projects} website}
 
 \maketitle
+\tableofcontents{}
+
+\listoftables
+
+
+\pagebreak{}
+
+
+\section{Introduction}
+
 open-innovation-projects.org (\emph{OIP} in the text following) lists
 mostly OSHW projects and systematically categorizes them. Out of the
 \textsubscript{\textasciitilde{}}150 listed entries, the following
-109 retained our attention in the context of OSHWL (\tabref{OIP-entries-treated}):
+109 retained our attention in the context of OSHWL:
 
-\begin{table}
-\subfloat[1/3]{\noindent \begin{raggedright}
+{\footnotesize }
+\begin{table}[H]
+\noindent \begin{raggedright}
 {\footnotesize }%
-\begin{tabular}{|c|c|}
+\begin{tabular}{|c|c|c|}
 \hline 
-{\footnotesize title} & {\footnotesize OSHWL path}\tabularnewline
+{\footnotesize title} & {\footnotesize OSHWL path} & {\footnotesize keywords from OIP}\tabularnewline
 \hline 
 \hline 
-{\footnotesize 3G Stoves} & {\footnotesize en./thermal/stoves}\tabularnewline
+{\footnotesize 3G Stoves} & {\footnotesize energy/thermal/stoves} & {\footnotesize stove, 3g, woodgas, tlud, biomass}\tabularnewline
 \hline 
-{\footnotesize Absorber Roof} & {\footnotesize en./solar/thermal}\tabularnewline
+{\footnotesize Absorber Roof} & {\footnotesize energy/solar/thermal} & {\footnotesize solar, thermal, collector, roof, intergrated}\tabularnewline
 \hline 
-{\footnotesize Abundant Water} & {\footnotesize water treatment}\tabularnewline
+{\footnotesize Abundant Water} & {\footnotesize water treatment} & {\footnotesize Clean Drinking Water, clay pot water filter, water,
+appropriate technology}\tabularnewline
 \hline 
-{\footnotesize Agua Clara} & {\footnotesize water treatment}\tabularnewline
+{\footnotesize Agua Clara} & {\footnotesize water treatment} & {\footnotesize water treatment, water, development, water purification}\tabularnewline
 \hline 
-{\footnotesize Akvo} & {\footnotesize water}\tabularnewline
+{\footnotesize Akvo} & {\footnotesize water} & {\footnotesize water sanitation development}\tabularnewline
 \hline 
-{\footnotesize Always Innovating} & \multirow{2}{*}{{\footnotesize electro.-it-monit.}}\tabularnewline
-{\footnotesize Touch Book} & \tabularnewline
+{\footnotesize Always Innovating} & \multirow{2}{*}{{\footnotesize electro-it-monit}} & \multirow{2}{*}{}\tabularnewline
+{\footnotesize Touch Book (AITB)} &  & \tabularnewline
 \hline 
-{\footnotesize Arduino} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Arduino} & {\footnotesize electro-it-monit} & {\footnotesize -}\tabularnewline
 \hline 
-{\footnotesize Atari Coldfire} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Atari Coldfire} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Aurora OS Mixer} & \multirow{1}{*}{{\footnotesize audio-visual}}\tabularnewline
+{\footnotesize Aurora OS Mixer} & \multirow{1}{*}{{\footnotesize audio-visual}} & \tabularnewline
 \hline 
-{\footnotesize AVR Butterfly} & \multirow{2}{*}{{\footnotesize electro.-it-monit.}}\tabularnewline
-{\footnotesize Logger} & \tabularnewline
+{\footnotesize AVR Butterfly} & \multirow{2}{*}{{\footnotesize electro-it-monit}} & \multirow{2}{*}{}\tabularnewline
+{\footnotesize Logger (AVR BL)} &  & \tabularnewline
 \hline 
-{\footnotesize AVR Butterfly} & \multirow{2}{*}{{\footnotesize audio-visual}}\tabularnewline
-{\footnotesize MP3} & \tabularnewline
+{\footnotesize AVR Butterfly} & \multirow{2}{*}{{\footnotesize audio-visual}} & \multirow{2}{*}{}\tabularnewline
+{\footnotesize MP3 (AVR BM)} &  & \tabularnewline
 \hline 
-{\footnotesize AX84 Firefly} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize AX84 Firefly} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize Balloon} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Balloon} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Beagle Board} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Beagle Board} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Ben NanoNote} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Ben NanoNote} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Biobricks} & {\footnotesize health}\tabularnewline
+{\footnotesize Biobricks} & {\footnotesize health} & \tabularnewline
 \hline 
-{\footnotesize BitsFromBytes} & {\footnotesize robo.-man.}\tabularnewline
+{\footnotesize BitsFromBytes} & {\footnotesize robo-manuf} & \tabularnewline
 \hline 
-{\footnotesize Brewtopia} & {\footnotesize food/prepare}\tabularnewline
+{\footnotesize Brewtopia} & {\footnotesize food/prepare} & \tabularnewline
 \hline 
-{\footnotesize Canuckle LEDlights} & {\footnotesize en./light}\tabularnewline
+{\footnotesize Canuckle } & \multirow{2}{*}{{\footnotesize energy/light}} & {\footnotesize solar, energy, green, DIY, alternative, sun, heating,}\tabularnewline
+{\footnotesize LEDlights} &  & {\footnotesize electricity, solar cooking, solar concentration, heliostat}\tabularnewline
 \hline 
-{\footnotesize Cfree OS Optics} & \multirow{1}{*}{{\footnotesize audio-visual/optics}}\tabularnewline
+\multirow{2}{*}{{\footnotesize Cfree OS Optics}} & \multirow{2}{*}{{\footnotesize audio-visual/optics}} & {\footnotesize Optics, Telescope, Renewable Thermoplastic Resin,}\tabularnewline
+ &  & {\footnotesize Membrane Mirror, Renewable Thin Film Mirror, Cosmos}\tabularnewline
 \hline 
-{\footnotesize Chumby} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Chumby} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Contraptor} & {\footnotesize struct./assemblies}\tabularnewline
+{\footnotesize Contraptor} & {\footnotesize structures/assemblies} & {\footnotesize cnc, cartesian robot, construction set, arduino, 3d
+printer, g-code}\tabularnewline
 \hline 
-{\footnotesize Craftster} & {\footnotesize oshw-mgmt}\tabularnewline
+{\footnotesize Craftster} & {\footnotesize oshw-mgmt} & \tabularnewline
 \hline 
-{\footnotesize Crypto Stick} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Crypto Stick} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Cubespawn} & {\footnotesize robo.-man.}\tabularnewline
+{\footnotesize Cubespawn} & {\footnotesize robo-manuf} & {\footnotesize open source, flexible manufacturing system, FMS, factory,
+robot}\tabularnewline
 \hline 
-{\footnotesize Daisy MP3} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize Daisy MP3} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize diy\_efi} & {\footnotesize transp./propulsion}\tabularnewline
+{\footnotesize diy\_efi} & {\footnotesize transport/propulsion} & \tabularnewline
 \hline 
-{\footnotesize Elphel} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize Elphel} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize Ethernut} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Ethernut} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Etherrape} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Etherrape} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Fab Camera} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize Fab Camera} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize Fab@Home} & {\footnotesize robo.-man.}\tabularnewline
+{\footnotesize Fab@Home} & {\footnotesize robo-manuf} & \tabularnewline
 \hline 
-{\footnotesize Flash-Plaice} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Flash-Plaice} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Fnordlicht} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize Fnordlicht} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize Formica} & {\footnotesize robo.-man.}\tabularnewline
+{\footnotesize Formica} & {\footnotesize robo-manuf} & \tabularnewline
 \hline 
 \end{tabular}{\footnotesize{} }
 \par\end{raggedright}{\footnotesize \par}
 
-}\subfloat[2/3]{{\footnotesize }%
-\begin{tabular}{|c|c|}
+{\footnotesize \caption{OIP entries treated by OSHWL (1/3)}
+}
+\end{table}
+{\footnotesize }
+\begin{table}[H]
+{\footnotesize }%
+\begin{tabular}{|c|c|c|}
 \hline 
-{\footnotesize title} & {\footnotesize OSHWL path}\tabularnewline
+{\footnotesize title} & {\footnotesize OSHWL path} & {\footnotesize keywords from OIP}\tabularnewline
 \hline 
 \hline 
-{\footnotesize Free Art Bureau} & {\footnotesize oshw-mgmt}\tabularnewline
+{\footnotesize Free Art Bureau} & {\footnotesize oshw-mgmt} & \tabularnewline
 \hline 
-{\footnotesize Free Beer} & {\footnotesize food/prepare}\tabularnewline
+{\footnotesize Free Beer} & {\footnotesize food/prepare} & \tabularnewline
 \hline 
-{\footnotesize Freeduino} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Freeduino} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Gumstix} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Gumstix} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize HD Video Capture} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize HD Video Capture} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize Hexayurt} & {\footnotesize struct./construction}\tabularnewline
+{\footnotesize Hexayurt} & {\footnotesize structures/construction} & \tabularnewline
 \hline 
-{\footnotesize Im-FFeeder} & {\footnotesize food/grow}\tabularnewline
+{\footnotesize Im-FFeeder} & {\footnotesize food/grow} & {\footnotesize automatic, feeder, fish, pet, pond, aquarium}\tabularnewline
 \hline 
-{\footnotesize IP04 4-Port} & \multirow{2}{*}{{\footnotesize electro.-it-monit.}}\tabularnewline
-{\footnotesize IP-PBX} & \tabularnewline
+{\footnotesize IP04} & \multirow{2}{*}{{\footnotesize electro-it-monit}} & \multirow{2}{*}{}\tabularnewline
+{\footnotesize (4-Port IP-PBX)} &  & \tabularnewline
 \hline 
-{\footnotesize IP08 8-Port} & \multirow{2}{*}{{\footnotesize electro.-it-monit.}}\tabularnewline
-{\footnotesize IP-PBX} & \tabularnewline
+{\footnotesize IP08} & \multirow{2}{*}{{\footnotesize electro-it-monit}} & \multirow{2}{*}{}\tabularnewline
+{\footnotesize (8-Port IP-PBX)} &  & \tabularnewline
 \hline 
-{\footnotesize iRobot} & {\footnotesize robo.-man.}\tabularnewline
+{\footnotesize iRobot} & {\footnotesize robo-manuf} & \tabularnewline
 \hline 
-{\footnotesize K People} & {\footnotesize oshw-mgmt}\tabularnewline
+{\footnotesize K People} & {\footnotesize oshw-mgmt} & {\footnotesize knowledge worker}\tabularnewline
 \hline 
-{\footnotesize LED Stripe} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize LED Stripe} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize Linux omap} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Linux omap} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Local Motors} & {\footnotesize transp./road/cars}\tabularnewline
+{\footnotesize Local Motors} & {\footnotesize transport/road/cars} & \tabularnewline
 \hline 
-{\footnotesize MakerBot} & \multirow{1}{*}{{\footnotesize robo.-man.}}\tabularnewline
+{\footnotesize MakerBot} & \multirow{1}{*}{{\footnotesize robo-manuf}} & \tabularnewline
 \hline 
-{\footnotesize Mikrokopter} & {\footnotesize transp./aeronautics}\tabularnewline
+{\footnotesize Mikrokopter} & {\footnotesize transport/aeronautics} & \tabularnewline
 \hline 
-{\footnotesize Milkymist} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize Milkymist} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize MISA} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize MISA} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize MyOpenRouter} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize MyOpenRouter} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Neuros Link} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize Neuros Link} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize Neuros OSD} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize Neuros OSD} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize Niftymitter} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Niftymitter} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize oBiCo} & {\footnotesize transp./road/bicycle}\tabularnewline
+{\footnotesize oBiCo} & {\footnotesize transport/road/bicycle} & \tabularnewline
 \hline 
-{\footnotesize OMFootCtrl} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize OMFootCtrl} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize OLPC} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize OLPC} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize O. Architecture} & \multirow{2}{*}{{\footnotesize struct./construction}}\tabularnewline
-{\footnotesize Network} & \tabularnewline
+{\footnotesize O. Architecture} & \multirow{2}{*}{{\footnotesize structures/construction}} & \multirow{2}{*}{}\tabularnewline
+{\footnotesize Network (OAN)} &  & \tabularnewline
 \hline 
-{\footnotesize O. Garments} & {\footnotesize r-m/man./textile}\tabularnewline
+{\footnotesize O. Garments} & {\footnotesize robo-manuf/manuf/textile} & \tabularnewline
 \hline 
-{\footnotesize O. Moto X} & {\footnotesize transp./road}\tabularnewline
+{\footnotesize O. Moto X} & {\footnotesize transport/road} & {\footnotesize Race, motorcycle, ttxgp, electric}\tabularnewline
 \hline 
-{\footnotesize O. Pandora} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize O. Pandora} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize O. Prosthetics} & \multirow{2}{*}{{\footnotesize health}}\tabularnewline
-{\footnotesize Project} & \tabularnewline
+{\footnotesize O. Prosthetics} & \multirow{2}{*}{{\footnotesize health}} & \multirow{2}{*}{}\tabularnewline
+{\footnotesize Project (OPP)} &  & \tabularnewline
 \hline 
-{\footnotesize OS Cookbook} & \multirow{1}{*}{{\footnotesize food/prepare}}\tabularnewline
+{\footnotesize OS Cookbook} & \multirow{1}{*}{{\footnotesize food/prepare}} & \tabularnewline
 \hline 
-{\footnotesize OS Ecology} & {\footnotesize oshw-mgmt}\tabularnewline
+{\footnotesize OS Ecology} & {\footnotesize oshw-mgmt} & {\footnotesize open source economy, efficient economy}\tabularnewline
 \hline 
-{\footnotesize OS Washing} & \multirow{2}{*}{{\footnotesize cleaning/laundry}}\tabularnewline
-{\footnotesize Machine} & \tabularnewline
+{\footnotesize OS Washing} & \multirow{2}{*}{{\footnotesize cleaning/laundry}} & \multirow{2}{*}{}\tabularnewline
+{\footnotesize Machine (OSWM)} &  & \tabularnewline
 \hline 
 \end{tabular}{\footnotesize{} }{\footnotesize \par}
 
-}\subfloat[3/3]{{\footnotesize }%
-\begin{tabular}{|c|c|}
+{\footnotesize \caption{OIP entries treated by OSHWL (2/3)}
+}
+\end{table}
+{\footnotesize }
+\begin{table}[H]
+{\footnotesize }%
+\begin{tabular}{|c|c|c|}
 \hline 
-{\footnotesize title} & {\footnotesize OSHWL path}\tabularnewline
+{\footnotesize title} & {\footnotesize OSHWL path} & {\footnotesize keywords from OIP}\tabularnewline
 \hline 
 \hline 
-{\footnotesize O. Waterbike} & \multirow{2}{*}{{\footnotesize transp./water}}\tabularnewline
-{\footnotesize Project} & \tabularnewline
+{\footnotesize O. Waterbike} & \multirow{2}{*}{{\footnotesize transport/water}} & \multirow{2}{*}{}\tabularnewline
+{\footnotesize Project (OWbP)} &  & \tabularnewline
 \hline 
-{\footnotesize OS BHKW} & {\footnotesize en./thermal/cogen}\tabularnewline
+{\footnotesize OS BHKW} & {\footnotesize energy/thermal/cogen} & \tabularnewline
 \hline 
-{\footnotesize OpenBeacon} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize OpenBeacon} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize OpenCola} & {\footnotesize food/prepare}\tabularnewline
+{\footnotesize OpenCola} & {\footnotesize food/prepare} & \tabularnewline
 \hline 
-{\footnotesize OpenEEG} & {\footnotesize health}\tabularnewline
+{\footnotesize OpenEEG} & {\footnotesize health} & \tabularnewline
 \hline 
-{\footnotesize openenergymonitor} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize openenergymonitor} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize openEyes} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize openEyes} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize OpenMini} & \multirow{2}{*}{{\footnotesize transp./water}}\tabularnewline
-{\footnotesize 650 Sailboat} & \tabularnewline
+{\footnotesize OpenMini 650} & \multirow{2}{*}{{\footnotesize transport/water}} & \multirow{2}{*}{}\tabularnewline
+{\footnotesize Sailboat (OM650)} &  & \tabularnewline
 \hline 
-{\footnotesize OpenMoko} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize OpenMoko} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize OpenPCD} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize OpenPCD} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize OpenRemote} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize OpenRemote} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize OpenServo} & {\footnotesize robo.-man.}\tabularnewline
+{\footnotesize OpenServo} & {\footnotesize robo-manuf} & \tabularnewline
 \hline 
-{\footnotesize OpenSpace} & {\footnotesize oshw-mgmt}\tabularnewline
+{\footnotesize OpenSpace} & {\footnotesize oshw-mgmt} & {\footnotesize creativity brainstorming documentation}\tabularnewline
 \hline 
-{\footnotesize OpenSPARC} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize OpenSPARC} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize OpenWrt} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize OpenWrt} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize OScar project} & {\footnotesize transp./road/cars}\tabularnewline
+{\footnotesize OScar project} & {\footnotesize transport/road/cars} & \tabularnewline
 \hline 
-{\footnotesize PC Engines} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize PC Engines} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Rallylog} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Rallylog} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Ravelry} & {\footnotesize r-m/man./textile}\tabularnewline
+{\footnotesize Ravelry} & {\footnotesize robo-manuf/manuf/textile} & \tabularnewline
 \hline 
-{\footnotesize RepRap} & {\footnotesize robo.-man.}\tabularnewline
+{\footnotesize RepRap} & {\footnotesize robo-manuf} & {\footnotesize printer, 3d printer}\tabularnewline
 \hline 
-{\footnotesize RFID door opener} & {\footnotesize struct./ass./locks}\tabularnewline
+{\footnotesize RFID door opener} & {\footnotesize structures/assemblies/locks} & \tabularnewline
 \hline 
-{\footnotesize RiverSimple} & {\footnotesize transport/road}\tabularnewline
+{\footnotesize RiverSimple} & {\footnotesize transport/road} & {\footnotesize hydrogen, electric vehicle}\tabularnewline
 \hline 
-{\footnotesize RONJA} & {\footnotesize audio-visual/optics}\tabularnewline
+{\footnotesize RONJA} & {\footnotesize audio-visual/optics} & \tabularnewline
 \hline 
-{\footnotesize Sanguino} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize Sanguino} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Semitone Dimmers} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize Semitone Dimmers} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize Solar Cooking} & \multirow{2}{*}{{\footnotesize en./solar/thermal}}\tabularnewline
-{\footnotesize Archive} & \tabularnewline
+{\footnotesize Solar Cooking} & \multirow{2}{*}{{\footnotesize energy/solar/thermal}} & \multirow{2}{*}{}\tabularnewline
+{\footnotesize Archive (SCA)} &  & \tabularnewline
 \hline 
-{\footnotesize solar tracking} & {\footnotesize en./solar/tracking}\tabularnewline
+{\footnotesize solar tracking} & {\footnotesize energy/solar/tracking} & \tabularnewline
 \hline 
-{\footnotesize Spiffchorder} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize Spiffchorder} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize SquidBee} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize SquidBee} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Stribe} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize Stribe} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize StrobIt Triggr} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize StrobIt Triggr} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize Thingiverse} & {\footnotesize robo.-man.}\tabularnewline
+{\footnotesize Thingiverse} & {\footnotesize robo-manuf} & {\footnotesize Designs}\tabularnewline
 \hline 
-{\footnotesize Traxmod} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize Traxmod} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
-{\footnotesize zeroclock} & {\footnotesize electro.-it-monit.}\tabularnewline
+{\footnotesize zeroclock} & {\footnotesize electro-it-monit} & \tabularnewline
 \hline 
-{\footnotesize Zoybar} & {\footnotesize audio-visual}\tabularnewline
+{\footnotesize Zoybar} & {\footnotesize audio-visual} & \tabularnewline
 \hline 
 \end{tabular}{\footnotesize \par}
 
-}\caption{OIP entries treated by OSHWL\label{tab:OIP-entries-treated}}
-
-
+{\footnotesize \caption{OIP entries treated by OSHWL (3/3)}
+}
 \end{table}
-
+{\footnotesize \par}
 
 \noindent \begin{flushleft}
 \pagebreak{}
@@ -322,26 +343,27 @@ mostly OSHW projects and systematically categorizes them. Out of the
 We will also apply the same ``standardized'' categorization effort
 to the following OSHW(L) projects, not listed by OIP (\tabref{OSHWL-projects-categorized}):
 
+{\footnotesize }
 \begin{table}[H]
 {\footnotesize }%
-\begin{tabular}{|c|c|}
+\begin{tabular}{|c|c|c|}
 \hline 
-{\footnotesize title} & {\footnotesize OSHWL path}\tabularnewline
+{\footnotesize title} & {\footnotesize OSHWL path} & {\footnotesize keywords}\tabularnewline
 \hline 
 \hline 
- & \tabularnewline
+ &  & \tabularnewline
 \hline 
 \end{tabular}{\footnotesize \par}
 
-\caption{other OSHWL projects categorized according to OIP's method\label{tab:OSHWL-projects-categorized}}
+{\footnotesize \caption{other OSHWL projects categorized according to OIP's method\label{tab:OSHWL-projects-categorized}}
+}
 \end{table}
 \pagebreak{}
 
 The following is the categorization itself (in tables making overview
 and comparison easy, as opposed to individual project sheets as is
 the case on open-innovation-projects.org), copied from OIP for the
-projects they list and complemented (\emph{italic}) with the projects
-from \tabref{OSHWL-projects-categorized}.
+projects they list and complemented with the projects from \tabref{OSHWL-projects-categorized}.
 
 There are three groups of criteria:
 \begin{itemize}
@@ -350,120 +372,219 @@ There are three groups of criteria:
 \item institutional design and production
 \end{itemize}
 
-\section*{Project details}
+\section{Project details}
 
-\framebox{\begin{minipage}[t]{0.9\textwidth}%
-
-\subsection*{Legend}
+First, a description of the categories in the table directly following.
 
 
-\paragraph{\textrm{\footnotesize Project Type}}
+\paragraph{project type}
 \begin{lyxlist}{00.00.0000}
-\item [{{\footnotesize S}}] {\footnotesize One or more specific product(s)
-is/are shown and/or developed }{\footnotesize \par}
-\item [{{\footnotesize C}}] {\footnotesize Overview over several different
-projects or product, e.g. OIP itself}{\footnotesize \par}
+\item [{single\ project\hspace{3.3em}}] \noindent One or more specific
+product(s) is/are shown and/or developed 
+\item [{collection\ of\ projects}] Overview over several different projects
+or product, e.g. OIP itself
 \end{lyxlist}
 
-\paragraph{\textrm{\footnotesize Development Status}}
+\paragraph{development Status}
 
-{\footnotesize Current stage of development according to the following:}{\footnotesize \par}
+Current stage of development according to the following:
 \begin{lyxlist}{00.00.0000}
-\item [{{\footnotesize 1}}] {\footnotesize Planning/Virtual development
-- Ideas and digital dev. evolving }{\footnotesize \par}
-\item [{{\footnotesize 2}}] {\footnotesize Prototyping started - First
-physical proto. assembled, testing phase }{\footnotesize \par}
-\item [{{\footnotesize 3}}] {\footnotesize First working proto. - Working
-proto. av., release to community, further dev. needed }{\footnotesize \par}
-\item [{{\footnotesize 4}}] {\footnotesize Production stable - Fully functional
-product permanently av. on market, further dev. possible }{\footnotesize \par}
-\item [{{\footnotesize 5}}] {\footnotesize Mature - Final dev. stage reached,
-no further dev. necessary }{\footnotesize \par}
-\item [{{\footnotesize Inactive}}] {\footnotesize Dev. stopped, no final
-product av.}{\footnotesize \par}
+\item [{1}] Planning/Virtual development - Ideas and digital dev. evolving 
+\item [{2}] Prototyping started - First physical proto. assembled, testing
+phase 
+\item [{3}] First working proto. - Working proto. av., release to community,
+further dev. needed 
+\item [{4}] Production stable - Fully functional product permanently av.
+on market, further dev. possible 
+\item [{5}] Mature - Final dev. stage reached, no further dev. necessary 
+\item [{Inactive}] Dev. stopped, no final product av.
 \end{lyxlist}
-{\footnotesize In case several products are being developed, the stage
-of the most advanced product is indicated. }{\footnotesize \par}
+In case several products are being developed, the stage of the most
+advanced product is indicated. 
 
 
-\paragraph{\textrm{\footnotesize Community}}
+\paragraph{community size}
 
-{\footnotesize Approximate community size or number of users involved. }{\footnotesize \par}
-
-
-\paragraph{\textrm{\footnotesize Developers}}
-
-{\footnotesize Approximate number of active developers. }{\footnotesize \par}
+Approximate community size or number of users involved. 
 
 
-\paragraph{\textrm{\footnotesize License}}
+\paragraph{number of developers}
+
+Approximate number of active developers. 
+
+
+\paragraph{license and trademark}
 \begin{itemize}
-\item {\footnotesize whether the project is using an open license and of
-which type}{\footnotesize \par}
-\item {\footnotesize whether they have a registered trademark}{\footnotesize \par}
+\item whether the project is using an open license and of which type
+\item whether they have a registered trademark
 \end{itemize}
 
-\paragraph{\textrm{\footnotesize Country}}
+\paragraph{country}
 
-{\footnotesize Main location, i.e. home country of the project leader,
-the core team or the office location. }{\footnotesize \par}
-
-
-\paragraph{\textrm{\footnotesize Start year}}
-
-{\footnotesize Year in which the project was initiated.}{\footnotesize \par}
+Main location, i.e. home country of the project leader, the core team
+or the office location. 
 
 
-\paragraph{\textrm{\footnotesize Intended Audience}}
+\paragraph{start year}
 
-{\footnotesize Target group of the project according to the following
-criteria: }{\footnotesize \par}
+Year in which the project was initiated.
+
+
+\paragraph{project contact}
+
+Project contact person and/or address
+
+
+\paragraph{intended audience}
+
+Target group of the project according to the following criteria: 
 \begin{lyxlist}{00.00.0000}
-\item [{{\footnotesize EU}}] \noindent {\footnotesize Everybody from school
-kids to your grandmother. }{\footnotesize \par}
-\item [{{\footnotesize AEU}}] \noindent {\footnotesize Product will target
-end users, but usage may require specific knowledge. }{\footnotesize \par}
-\item [{{\footnotesize Developer}}] {\footnotesize No intention to reach
-end users, high specific knowledge necessary. }{\footnotesize \par}
-\item [{{\footnotesize Other}}] {\footnotesize All other groups, for example
-educational purposes }{\footnotesize \par}
+\item [{end\ user}] \noindent Everybody from school kids to your grandmother. 
+\item [{adv.\ end\ user}] \noindent Product will target end users, but
+usage may require specific knowledge. 
+\item [{developer}] No intention to reach end users, high specific knowledge
+necessary. 
+\item [{other}] All other groups, for example educational purposes 
 \end{lyxlist}
-
-\paragraph{\textrm{\footnotesize Project contact}}
-
-{\footnotesize Project contact person and/or address}{\footnotesize \par}
-
-
-\paragraph{\textrm{\footnotesize Keywords}}
-
-{\footnotesize Comma separated list of keywords. The title of another
-project can be used.}%
-\end{minipage}}
-
 
 \subsection*{Tables}
 
 {\footnotesize }
 \begin{table}[H]
 {\footnotesize }%
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+\begin{tabular}{|c|cc|c|cccccccc|ccccccc|}
 \hline 
-\multirow{2}{*}{{\footnotesize title}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize entry type}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize development status}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize community size}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize developers}
-\end{sideways}} & \multicolumn{8}{c|}{{\footnotesize licence and TM}} & \multirow{2}{*}{\begin{sideways}
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{2}{c|}{{\footnotesize entry type}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize dev. status}
+\end{sideways}} & \multicolumn{8}{c|}{{\footnotesize community size}} & \multicolumn{7}{c|}{{\footnotesize developers}}\tabularnewline
+ & \begin{sideways}
+{\footnotesize Coll. of proj.}
+\end{sideways} & \begin{sideways}
+{\footnotesize Single proj.}
+\end{sideways} &  & \begin{sideways}
+{\footnotesize 1}
+\end{sideways} & \begin{sideways}
+{\footnotesize 2-5}
+\end{sideways} & \begin{sideways}
+{\footnotesize 6-10}
+\end{sideways} & \begin{sideways}
+{\footnotesize 11-100}
+\end{sideways} & \begin{sideways}
+{\footnotesize 101-500}
+\end{sideways} & \begin{sideways}
+{\footnotesize 501-1000}
+\end{sideways} & \begin{sideways}
+{\footnotesize 1001-5000}
+\end{sideways} & \begin{sideways}
+{\footnotesize >5000}
+\end{sideways} & \begin{sideways}
+{\footnotesize 1}
+\end{sideways} & \begin{sideways}
+{\footnotesize 2-5}
+\end{sideways} & \begin{sideways}
+{\footnotesize 6-10}
+\end{sideways} & \begin{sideways}
+{\footnotesize 11-100}
+\end{sideways} & \begin{sideways}
+{\footnotesize 101-500}
+\end{sideways} & \begin{sideways}
+{\footnotesize 501-1000}
+\end{sideways} & \begin{sideways}
+{\footnotesize >1000}
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+{\footnotesize 3G Stoves} & {\footnotesize x} &  & {\footnotesize 3} &  &  &  &  &  &  &  & {\footnotesize x} & {\footnotesize x} &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Absorber Roof} &  & {\footnotesize x} & {\footnotesize 3} & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Abundant Water} &  & {\footnotesize x} & {\footnotesize 3} &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize Agua Clara} &  & {\footnotesize x} & {\footnotesize 5} &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize Akvo} & {\footnotesize x} &  & {\footnotesize 4} &  &  &  &  &  & {\footnotesize x} &  &  &  &  & {\footnotesize x} &  &  &  & \tabularnewline
+\hline 
+{\footnotesize AITB} & \multirow{1}{*}{} &  & \multirow{1}{*}{} & \multirow{1}{*}{} & \multirow{1}{*}{} & \multirow{1}{*}{} & \multirow{1}{*}{} & \multirow{1}{*}{} & \multirow{1}{*}{} & \multirow{1}{*}{} & \multirow{1}{*}{} &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Arduino} &  & {\footnotesize x} & {\footnotesize 5} &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Atari Coldfire} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Aurora OS Mixer} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize AVR BL} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize AVR BM} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize AX84 Firefly} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Balloon} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Beagle Board} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Ben NanoNote} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Biobricks} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize BitsFromBytes} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Brewtopia} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Canuckle LEDlights} &  & {\footnotesize x} & {\footnotesize 3} & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Cfree OS Optics} & {\footnotesize x} &  & {\footnotesize 3} &  & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Chumby} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Contraptor} &  & {\footnotesize x} & {\footnotesize 3} &  & {\footnotesize x} &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Craftster} & {\footnotesize x} &  & {\footnotesize 5} &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize Crypto Stick} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Cubespawn} & {\footnotesize x} &  & {\footnotesize 3} &  &  &  &  & {\footnotesize x} &  &  &  & {\footnotesize x} &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Daisy MP3} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize diy\_efi} & {\footnotesize x} &  & {\footnotesize 2} &  &  &  & {\footnotesize x} &  &  &  &  &  &  & {\footnotesize x} &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Elphel} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Ethernut} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Etherrape} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Fab Camera} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Fab@Home} &  & {\footnotesize x} & {\footnotesize 2} &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize Flash-Plaice} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Fnordlicht} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Formica} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}{\footnotesize \par}
+
+{\footnotesize \caption{project details (1/2) of OIP entries treated by OSHWL (1/3)}
+}{\footnotesize \par}
+
+\end{table}
+{\footnotesize{} }{\footnotesize \par}
+
+{\footnotesize }
+\begin{table}[H]
+{\footnotesize }%
+\begin{tabular}{|c|cccccccc|c|c|c|cccc|}
+\hline 
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{8}{c|}{{\footnotesize licence and TM}} & \multirow{2}{*}{\begin{sideways}
 {\footnotesize country}
 \end{sideways}} & \multirow{2}{*}{\begin{sideways}
 {\footnotesize start year}
 \end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize intended audience}
-\end{sideways}}\tabularnewline
- &  &  &  &  & \begin{sideways}
+{\footnotesize contact}
+\end{sideways}} & \multicolumn{4}{c|}{{\footnotesize intended audience}}\tabularnewline
+ & \begin{sideways}
 {\footnotesize GPL, LGPL or similar copyleft license}
 \end{sideways} & \begin{sideways}
 {\footnotesize BSD, MIT or similar permissive license}
@@ -479,36 +600,39 @@ project can be used.}%
 {\footnotesize No license}
 \end{sideways} & \begin{sideways}
 {\footnotesize Registered trademark}
-\end{sideways} &  &  & \tabularnewline
+\end{sideways} &  &  &  & \begin{sideways}
+{\footnotesize end user}
+\end{sideways} & \begin{sideways}
+{\footnotesize advanced end user}
+\end{sideways} & \begin{sideways}
+{\footnotesize developer}
+\end{sideways} & \begin{sideways}
+{\footnotesize other}
+\end{sideways}\tabularnewline
 \hline 
 \hline 
-{\footnotesize 3G Stoves} & {\footnotesize C} & {\footnotesize 3} & {\footnotesize >5000} & {\footnotesize 1} &  &  &  &  &  & {\footnotesize x} &  & {\footnotesize x} & {\footnotesize India} & {\footnotesize 2008} & {\footnotesize Developer}\tabularnewline
+\multirow{2}{*}{{\footnotesize 3G Stoves}} & \multirow{2}{*}{} & \multirow{2}{*}{} & \multirow{2}{*}{} & \multirow{2}{*}{} & \multirow{2}{*}{} & \multirow{2}{*}{{\footnotesize x}} & \multirow{2}{*}{} & \multirow{2}{*}{{\footnotesize x}} & \multirow{2}{*}{{\footnotesize IN}} & \multirow{2}{*}{{\footnotesize 2008}} & {\footnotesize Dr. N. Sai} & \multirow{2}{*}{} & \multirow{2}{*}{} & \multirow{2}{*}{{\footnotesize x}} & \multirow{2}{*}{}\tabularnewline
+ &  &  &  &  &  &  &  &  &  &  & {\footnotesize Bhaskar Reddy} &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Absorber Roof} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Absorber Roof} &  &  &  &  &  &  & {\footnotesize x} &  & {\footnotesize AUS} & {\footnotesize 2007} & {\footnotesize Ben Speirs } &  & {\footnotesize x} &  & \tabularnewline
 \hline 
-{\footnotesize Abundant Water} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Abundant Water} &  &  &  &  &  &  & {\footnotesize x} &  & {\footnotesize AUS} & {\footnotesize 2009} & {\footnotesize Sunny Forsyth} &  &  & {\footnotesize x} & \tabularnewline
 \hline 
-{\footnotesize Agua Clara} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Agua Clara} &  &  &  & {\footnotesize x} &  &  &  &  & {\footnotesize US} & {\footnotesize 2005} & {\footnotesize Monroe Weber-Shirk} & {\footnotesize x} &  &  & \tabularnewline
 \hline 
-{\footnotesize Akvo} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Akvo} & {\footnotesize x} &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize NL} & {\footnotesize 2006} & {\footnotesize Mark Charmer } &  &  &  & {\footnotesize x}\tabularnewline
 \hline 
-{\footnotesize Always Innovating} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize AITB} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Touch Book} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Arduino} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Arduino} & {\footnotesize x} &  & {\footnotesize x} &  &  &  &  & {\footnotesize x} & {\footnotesize IT} & {\footnotesize 2005} &  &  & {\footnotesize x} &  & \tabularnewline
 \hline 
 {\footnotesize Atari Coldfire} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize Aurora OS Mixer} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize AVR Butterfly} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize AVR BL} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Logger} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize AVR Butterfly} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize MP3} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize AVR BM} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize AX84 Firefly} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
@@ -524,23 +648,23 @@ project can be used.}%
 \hline 
 {\footnotesize Brewtopia} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Canuckle} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Canuckle LEDlights} &  &  &  &  &  &  &  &  & {\footnotesize CA} & {\footnotesize 2008} & {\footnotesize Wayne} &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Cfree OS Optics} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Cfree OS Optics} &  &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize AUS} & {\footnotesize 2007} & {\footnotesize Ivan} &  & {\footnotesize x} &  & \tabularnewline
 \hline 
 {\footnotesize Chumby} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Contraptor} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Contraptor} & {\footnotesize x} &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize US} & {\footnotesize 2007} & {\footnotesize albanetc.sr } &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Craftster} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Craftster} &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} &  & \tabularnewline
 \hline 
 {\footnotesize Crypto Stick} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Cubespawn} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Cubespawn} &  &  &  &  & {\footnotesize x} &  &  &  & {\footnotesize US} & {\footnotesize 2009} & {\footnotesize James Jones } & {\footnotesize x} &  &  & \tabularnewline
 \hline 
 {\footnotesize Daisy MP3} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize diy\_efi} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize diy\_efi} & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize US} & {\footnotesize 1994} &  &  & {\footnotesize x} &  & \tabularnewline
 \hline 
 {\footnotesize Elphel} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
@@ -550,106 +674,13 @@ project can be used.}%
 \hline 
 {\footnotesize Fab Camera} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Fab@Home} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Fab@Home} &  & {\footnotesize x} &  &  &  &  &  &  & {\footnotesize US} & {\footnotesize 2006} &  &  & {\footnotesize x} &  & \tabularnewline
 \hline 
 {\footnotesize Flash-Plaice} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize Fnordlicht} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize Formica} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-\end{tabular}{\footnotesize \par}
-
-{\footnotesize \caption{project details (1/2) of OIP entries treated by OSHWL (1/3)}
-}{\footnotesize \par}
-
-\end{table}
-{\footnotesize \par}
-
-{\footnotesize }
-\begin{table}[H]
-{\footnotesize }%
-\begin{tabular}{|c|c|c|}
-\hline 
-\multirow{2}{*}{{\footnotesize title}} & \multirow{2}{*}{{\footnotesize contact}} & \multirow{2}{*}{{\footnotesize keywords}}\tabularnewline
- &  & \tabularnewline
-\hline 
-\hline 
-{\footnotesize 3G Stoves} & {\footnotesize Dr. N. Sai Bhaskar Reddy } & {\footnotesize stove, 3g, woodgas, tlud, biomass}\tabularnewline
-\hline 
-{\footnotesize Absorber Roof} &  & \tabularnewline
-\hline 
-{\footnotesize Abundant Water} &  & \tabularnewline
-\hline 
-{\footnotesize Agua Clara} &  & \tabularnewline
-\hline 
-{\footnotesize Akvo} &  & \tabularnewline
-\hline 
-{\footnotesize Always Innovating} &  & \tabularnewline
-\hline 
-{\footnotesize Touch Book} &  & \tabularnewline
-\hline 
-{\footnotesize Arduino} &  & \tabularnewline
-\hline 
-{\footnotesize Atari Coldfire} &  & \tabularnewline
-\hline 
-{\footnotesize Aurora OS Mixer} &  & \tabularnewline
-\hline 
-{\footnotesize AVR Butterfly} &  & \tabularnewline
-\hline 
-{\footnotesize Logger} &  & \tabularnewline
-\hline 
-{\footnotesize AVR Butterfly} &  & \tabularnewline
-\hline 
-{\footnotesize MP3} &  & \tabularnewline
-\hline 
-{\footnotesize AX84 Firefly} &  & \tabularnewline
-\hline 
-{\footnotesize Balloon} &  & \tabularnewline
-\hline 
-{\footnotesize Beagle Board} &  & \tabularnewline
-\hline 
-{\footnotesize Ben NanoNote} &  & \tabularnewline
-\hline 
-{\footnotesize Biobricks} &  & \tabularnewline
-\hline 
-{\footnotesize BitsFromBytes} &  & \tabularnewline
-\hline 
-{\footnotesize Brewtopia} &  & \tabularnewline
-\hline 
-{\footnotesize Canuckle} &  & \tabularnewline
-\hline 
-{\footnotesize Cfree OS Optics} &  & \tabularnewline
-\hline 
-{\footnotesize Chumby} &  & \tabularnewline
-\hline 
-{\footnotesize Contraptor} &  & \tabularnewline
-\hline 
-{\footnotesize Craftster} &  & \tabularnewline
-\hline 
-{\footnotesize Crypto Stick} &  & \tabularnewline
-\hline 
-{\footnotesize Cubespawn} &  & \tabularnewline
-\hline 
-{\footnotesize Daisy MP3} &  & \tabularnewline
-\hline 
-{\footnotesize diy\_efi} &  & \tabularnewline
-\hline 
-{\footnotesize Elphel} &  & \tabularnewline
-\hline 
-{\footnotesize Ethernut} &  & \tabularnewline
-\hline 
-{\footnotesize Etherrape} &  & \tabularnewline
-\hline 
-{\footnotesize Fab Camera} &  & \tabularnewline
-\hline 
-{\footnotesize Fab@Home} &  & \tabularnewline
-\hline 
-{\footnotesize Flash-Plaice} &  & \tabularnewline
-\hline 
-{\footnotesize Fnordlicht} &  & \tabularnewline
-\hline 
-{\footnotesize Formica} &  & \tabularnewline
 \hline 
 \end{tabular}{\footnotesize \par}
 
@@ -661,1316 +692,49 @@ project can be used.}%
 {\footnotesize }
 \begin{table}[H]
 {\footnotesize }%
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-\hline 
-\multirow{2}{*}{{\footnotesize title}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize entry type}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize development status}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize community size}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize developers}
-\end{sideways}} & \multicolumn{8}{c|}{{\footnotesize licence and TM}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize country}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize start year}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize intended audience}
-\end{sideways}}\tabularnewline
- &  &  &  &  & \begin{sideways}
-{\footnotesize GPL, LGPL or similar copyleft license}
-\end{sideways} & \begin{sideways}
-{\footnotesize BSD, MIT or similar permissive license}
-\end{sideways} & \begin{sideways}
-{\footnotesize Creative Commons license}
-\end{sideways} & \begin{sideways}
-{\footnotesize Creative Commons license}
-\end{sideways} & \begin{sideways}
-{\footnotesize Other open license}
-\end{sideways} & \begin{sideways}
-{\footnotesize Commercial license}
-\end{sideways} & \begin{sideways}
-{\footnotesize No license}
-\end{sideways} & \begin{sideways}
-{\footnotesize Registered trademark}
-\end{sideways} &  &  & \tabularnewline
-\hline 
-\hline 
-{\footnotesize Free Art Bureau} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Free Beer} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Freeduino} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Gumstix} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize HD Video Capture} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Hexayurt} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Im-FFeeder} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize IP04 4-Port} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize IP-PBX} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize IP08 8-Port} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize IP-PBX} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize iRobot} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize K People} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize LED Stripe} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Linux omap} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Local Motors} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize MakerBot} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Mikrokopter} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Milkymist} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize MISA} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize MyOpenRouter} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Neuros Link} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Neuros OSD} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Niftymitter} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize oBiCo} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OMFootCtrl} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OLPC} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize O. Architecture} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Network} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize O. Garments} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize O. Moto X} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize O. Pandora} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize O. Prosthetics} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Project} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OS Cookbook} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OS Ecology} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OS Washing} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Machine} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-\end{tabular}{\footnotesize \par}
-
-{\footnotesize \caption{project details (1/2) of OIP entries treated by OSHWL (2/3)}
-}
-\end{table}
-{\footnotesize \par}
-
-{\footnotesize }
-\begin{table}[H]
-{\footnotesize }%
-\begin{tabular}{|c|c|c|}
-\hline 
-\multirow{2}{*}{{\footnotesize title}} & \multirow{2}{*}{{\footnotesize contact}} & \multirow{2}{*}{{\footnotesize keywords}}\tabularnewline
- &  & \tabularnewline
-\hline 
-\hline 
-{\footnotesize Free Art Bureau} &  & \tabularnewline
-\hline 
-{\footnotesize Free Beer} &  & \tabularnewline
-\hline 
-{\footnotesize Freeduino} &  & \tabularnewline
-\hline 
-{\footnotesize Gumstix} &  & \tabularnewline
-\hline 
-{\footnotesize HD Video Capture} &  & \tabularnewline
-\hline 
-{\footnotesize Hexayurt} &  & \tabularnewline
-\hline 
-{\footnotesize Im-FFeeder} &  & \tabularnewline
-\hline 
-{\footnotesize IP04 4-Port} &  & \tabularnewline
-\hline 
-{\footnotesize IP-PBX} &  & \tabularnewline
-\hline 
-{\footnotesize IP08 8-Port} &  & \tabularnewline
-\hline 
-{\footnotesize IP-PBX} &  & \tabularnewline
-\hline 
-{\footnotesize iRobot} &  & \tabularnewline
-\hline 
-{\footnotesize K People} &  & \tabularnewline
-\hline 
-{\footnotesize LED Stripe} &  & \tabularnewline
-\hline 
-{\footnotesize Linux omap} &  & \tabularnewline
-\hline 
-{\footnotesize Local Motors} &  & \tabularnewline
-\hline 
-{\footnotesize MakerBot} &  & \tabularnewline
-\hline 
-{\footnotesize Mikrokopter} &  & \tabularnewline
-\hline 
-{\footnotesize Milkymist} &  & \tabularnewline
-\hline 
-{\footnotesize MISA} &  & \tabularnewline
-\hline 
-{\footnotesize MyOpenRouter} &  & \tabularnewline
-\hline 
-{\footnotesize Neuros Link} &  & \tabularnewline
-\hline 
-{\footnotesize Neuros OSD} &  & \tabularnewline
-\hline 
-{\footnotesize Niftymitter} &  & \tabularnewline
-\hline 
-{\footnotesize oBiCo} &  & \tabularnewline
-\hline 
-{\footnotesize OMFootCtrl} &  & \tabularnewline
-\hline 
-{\footnotesize OLPC} &  & \tabularnewline
-\hline 
-{\footnotesize O. Architecture} &  & \tabularnewline
-\hline 
-{\footnotesize Network} &  & \tabularnewline
-\hline 
-{\footnotesize O. Garments} &  & \tabularnewline
-\hline 
-{\footnotesize O. Moto X} &  & \tabularnewline
-\hline 
-{\footnotesize O. Pandora} &  & \tabularnewline
-\hline 
-{\footnotesize O. Prosthetics} &  & \tabularnewline
-\hline 
-{\footnotesize Project} &  & \tabularnewline
-\hline 
-{\footnotesize OS Cookbook} &  & \tabularnewline
-\hline 
-{\footnotesize OS Ecology} &  & \tabularnewline
-\hline 
-{\footnotesize OS Washing} &  & \tabularnewline
-\hline 
-{\footnotesize Machine} &  & \tabularnewline
-\hline 
-\end{tabular}{\footnotesize \par}
-
-{\footnotesize \caption{project details (2/2) of OIP entries treated by OSHWL (2/3)}
-}
-\end{table}
-{\footnotesize \par}
-
-{\footnotesize }
-\begin{table}[H]
-{\footnotesize }%
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-\hline 
-\multirow{2}{*}{{\footnotesize title}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize entry type}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize development status}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize community size}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize developers}
-\end{sideways}} & \multicolumn{8}{c|}{{\footnotesize licence and TM}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize country}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize start year}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize intended audience}
-\end{sideways}}\tabularnewline
- &  &  &  &  & \begin{sideways}
-{\footnotesize GPL, LGPL or similar copyleft license}
-\end{sideways} & \begin{sideways}
-{\footnotesize BSD, MIT or similar permissive license}
-\end{sideways} & \begin{sideways}
-{\footnotesize Creative Commons license}
-\end{sideways} & \begin{sideways}
-{\footnotesize Creative Commons license}
-\end{sideways} & \begin{sideways}
-{\footnotesize Other open license}
-\end{sideways} & \begin{sideways}
-{\footnotesize Commercial license}
-\end{sideways} & \begin{sideways}
-{\footnotesize No license}
-\end{sideways} & \begin{sideways}
-{\footnotesize Registered trademark}
-\end{sideways} &  &  & \tabularnewline
-\hline 
-\hline 
-{\footnotesize O. Waterbike} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Project} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OS BHKW} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OpenBeacon} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OpenCola} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OpenEEG} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize openenergymonitor} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize openEyes} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OpenMini} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize 650 Sailboat} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OpenMoko} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OpenPCD} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OpenRemote} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OpenServo} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OpenSpace} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OpenSPARC} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OpenWrt} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize OScar project} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize PC Engines} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Rallylog} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Ravelry} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize RepRap} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize RFID door opener} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize RiverSimple} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize RONJA} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Sanguino} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Semitone Dimmers} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Solar Cooking} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Archive} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize solar tracking} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Spiffchorder} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize SquidBee} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Stribe} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize StrobIt Triggr} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Thingiverse} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Traxmod} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize zeroclock} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Zoybar} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-\end{tabular}{\footnotesize \par}
-
-{\footnotesize \caption{project details (1/2) of OIP entries treated by OSHWL (3/3)}
-}
-\end{table}
-{\footnotesize \par}
-
-{\footnotesize }
-\begin{table}[H]
-{\footnotesize }%
-\begin{tabular}{|c|c|c|}
-\hline 
-\multirow{2}{*}{{\footnotesize title}} & \multirow{2}{*}{{\footnotesize contact}} & \multirow{2}{*}{{\footnotesize keywords}}\tabularnewline
- &  & \tabularnewline
-\hline 
-\hline 
-{\footnotesize O. Waterbike} &  & \tabularnewline
-\hline 
-{\footnotesize Project} &  & \tabularnewline
-\hline 
-{\footnotesize OS BHKW} &  & \tabularnewline
-\hline 
-{\footnotesize OpenBeacon} &  & \tabularnewline
-\hline 
-{\footnotesize OpenCola} &  & \tabularnewline
-\hline 
-{\footnotesize OpenEEG} &  & \tabularnewline
-\hline 
-{\footnotesize openenergymonitor} &  & \tabularnewline
-\hline 
-{\footnotesize openEyes} &  & \tabularnewline
-\hline 
-{\footnotesize OpenMini} &  & \tabularnewline
-\hline 
-{\footnotesize 650 Sailboat} &  & \tabularnewline
-\hline 
-{\footnotesize OpenMoko} &  & \tabularnewline
-\hline 
-{\footnotesize OpenPCD} &  & \tabularnewline
-\hline 
-{\footnotesize OpenRemote} &  & \tabularnewline
-\hline 
-{\footnotesize OpenServo} &  & \tabularnewline
-\hline 
-{\footnotesize OpenSpace} &  & \tabularnewline
-\hline 
-{\footnotesize OpenSPARC} &  & \tabularnewline
-\hline 
-{\footnotesize OpenWrt} &  & \tabularnewline
-\hline 
-{\footnotesize OScar project} &  & \tabularnewline
-\hline 
-{\footnotesize PC Engines} &  & \tabularnewline
-\hline 
-{\footnotesize Rallylog} &  & \tabularnewline
-\hline 
-{\footnotesize Ravelry} &  & \tabularnewline
-\hline 
-{\footnotesize RepRap} &  & \tabularnewline
-\hline 
-{\footnotesize RFID door opener} &  & \tabularnewline
-\hline 
-{\footnotesize RiverSimple} &  & \tabularnewline
-\hline 
-{\footnotesize RONJA} &  & \tabularnewline
-\hline 
-{\footnotesize Sanguino} &  & \tabularnewline
-\hline 
-{\footnotesize Semitone Dimmers} &  & \tabularnewline
-\hline 
-{\footnotesize Solar Cooking} &  & \tabularnewline
-\hline 
-{\footnotesize Archive} &  & \tabularnewline
-\hline 
-{\footnotesize solar tracking} &  & \tabularnewline
-\hline 
-{\footnotesize Spiffchorder} &  & \tabularnewline
-\hline 
-{\footnotesize SquidBee} &  & \tabularnewline
-\hline 
-{\footnotesize Stribe} &  & \tabularnewline
-\hline 
-{\footnotesize StrobIt Triggr} &  & \tabularnewline
-\hline 
-{\footnotesize Thingiverse} &  & \tabularnewline
-\hline 
-{\footnotesize Traxmod} &  & \tabularnewline
-\hline 
-{\footnotesize zeroclock} &  & \tabularnewline
-\hline 
-{\footnotesize Zoybar} &  & \tabularnewline
-\hline 
-\end{tabular}{\footnotesize \par}
-
-{\footnotesize \caption{project details (2/2) of OIP entries treated by OSHWL (3/3)}
-}
-\end{table}
-{\footnotesize \par}
-
-{\footnotesize }
-\begin{table}[H]
-{\footnotesize }%
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-\hline 
-\multirow{2}{*}{{\footnotesize title}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize entry type}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize development status}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize community size}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize developers}
-\end{sideways}} & \multicolumn{8}{c|}{{\footnotesize licence and TM}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize country}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize start year}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\footnotesize intended audience}
-\end{sideways}}\tabularnewline
- &  &  &  &  & \begin{sideways}
-{\footnotesize GPL, LGPL or similar copyleft license}
-\end{sideways} & \begin{sideways}
-{\footnotesize BSD, MIT or similar permissive license}
-\end{sideways} & \begin{sideways}
-{\footnotesize Creative Commons license}
-\end{sideways} & \begin{sideways}
-{\footnotesize Creative Commons license}
-\end{sideways} & \begin{sideways}
-{\footnotesize Other open license}
-\end{sideways} & \begin{sideways}
-{\footnotesize Commercial license}
-\end{sideways} & \begin{sideways}
-{\footnotesize No license}
-\end{sideways} & \begin{sideways}
-{\footnotesize Registered trademark}
-\end{sideways} &  &  & \tabularnewline
-\hline 
-\hline 
- &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-\end{tabular}{\footnotesize \par}
-
-{\footnotesize \caption{project details (1/2) of OSHWL projects not listed by OIP}
-}
-\end{table}
-{\footnotesize \par}
-
-{\footnotesize }
-\begin{table}[H]
-{\footnotesize }%
-\begin{tabular}{|c|c|c|}
-\hline 
-\multirow{2}{*}{{\footnotesize title}} & \multirow{2}{*}{{\footnotesize contact}} & \multirow{2}{*}{{\footnotesize keywords}}\tabularnewline
- &  & \tabularnewline
-\hline 
-\hline 
- &  & \tabularnewline
-\hline 
-\end{tabular}{\footnotesize \par}
-
-{\footnotesize \caption{project details (2/2) of OSHWL projects not listed by OIP}
-}
-\end{table}
-{\footnotesize \par}
-
-\pagebreak{}
-
-
-\section*{Product details}
-
-\framebox{\begin{minipage}[t]{1\columnwidth}%
-
-\subsection*{{\small Legend}}
-
-
-\paragraph*{{\small Product innovativeness}}
-
-{\small Degree of innovativeness according to the following criteria: }{\small \par}
-\begin{lyxlist}{00.00.0000}
-\item [{{\small 5}}] {\small Radical innovation - a new technology that
-results in a new market infrastructure, e.g. an innovation which does
-not address a recognized demand but instead creates a demand previously
-unrecognized by the consumer }{\small \par}
-\item [{{\small 4}}] {\small Really new innovation - a really new product
-results in a market discontinuity or a technological discontinuity
-but will not incorporate both, e.g., new product lines, product line
-extensions with new technology, or new markets with existing technology }{\small \par}
-\item [{{\small 3}}] {\small Discontinous innovations - new technologies
-that don't lead to discontinuity in existing markets }{\small \par}
-\item [{{\small 2}}] {\small Incremental innovations - products that provide
-new features, benefits, or improvements to the existing technology
-in the existing market }{\small \par}
-\item [{{\small 1}}] {\small Imitative innovations - imitative products
-are frequently new to the firm, but not new to the market }{\small \par}
-\end{lyxlist}
-
-\paragraph*{{\small Product complexity}}
-
-{\small Degree of complexity for the developed product ranging from
-low complexity, e.g. a simple wooden chair, to high complexity, e.g.
-an aircraft or a nuclear power plant. }{\small \par}
-
-
-\paragraph*{{\small Industry}}
-
-{\small Suitable industry from the list. }%
-\end{minipage}}
-
-\vfill{}
-
-
-\pagebreak{}
-
-
-\subsection*{Tables}
-
-\begin{table}[H]
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-\hline 
-\multirow{2}{*}{title} & \multirow{2}{*}{\begin{sideways}
-innovativeness
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-complexity
-\end{sideways}} & \multicolumn{7}{c|}{industry}\tabularnewline
- &  &  & \begin{sideways}
-Energy and Utilities
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways}\tabularnewline
-\hline 
-\hline 
-3G Stoves & 5 & 2 & x &  &  &  &  &  & \tabularnewline
-\hline 
-Absorber Roof &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Abundant Water &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Agua Clara &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Akvo &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Always Innovating &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Touch Book &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Arduino &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Atari Coldfire &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Aurora OS Mixer &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-AVR Butterfly &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Logger &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-AVR Butterfly &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-MP3 &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-AX84 Firefly &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Balloon &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Beagle Board &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Ben NanoNote &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Biobricks &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-BitsFromBytes &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Brewtopia &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Canuckle &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Cfree OS Optics &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Chumby &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Contraptor &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Craftster &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Crypto Stick &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Cubespawn &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Daisy MP3 &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-diy\_efi &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Elphel &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Ethernut &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Etherrape &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Fab Camera &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Fab@Home &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Flash-Plaice &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Fnordlicht &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Formica &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-\end{tabular}
-
-\caption{product details of OIP entries treated by OSHWL (1/3)}
-\end{table}
-\begin{table}[H]
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-\hline 
-\multirow{2}{*}{title} & \multirow{2}{*}{\begin{sideways}
-innovativeness
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-complexity
-\end{sideways}} & \multicolumn{7}{c|}{industry}\tabularnewline
- &  &  & \begin{sideways}
-Energy and Utilities
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways}\tabularnewline
-\hline 
-\hline 
-Free Art Bureau &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Free Beer &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Freeduino &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Gumstix &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-HD Video Capture &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Hexayurt &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Im-FFeeder &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-IP04 4-Port &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-IP-PBX &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-IP08 8-Port &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-IP-PBX &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-iRobot &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-K People &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-LED Stripe &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Linux omap &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Local Motors &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-MakerBot &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Mikrokopter &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Milkymist &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-MISA &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-MyOpenRouter &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Neuros Link &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Neuros OSD &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Niftymitter &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-oBiCo &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OMFootCtrl &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OLPC &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-O. Architecture &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Network &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-O. Garments &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-O. Moto X &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-O. Pandora &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-O. Prosthetics &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Project &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OS Cookbook &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OS Ecology &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OS Washing &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Machine &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-\end{tabular}
-
-\caption{product details of OIP entries treated by OSHWL (2/3)}
-\end{table}
-\begin{table}[H]
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-\hline 
-\multirow{2}{*}{title} & \multirow{2}{*}{\begin{sideways}
-innovativeness
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-complexity
-\end{sideways}} & \multicolumn{7}{c|}{industry}\tabularnewline
- &  &  & \begin{sideways}
-Energy and Utilities
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways}\tabularnewline
-\hline 
-\hline 
-O. Waterbike &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Project &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OS BHKW &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OpenBeacon &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OpenCola &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OpenEEG &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-openenergymonitor &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-openEyes &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OpenMini &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-650 Sailboat &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OpenMoko &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OpenPCD &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OpenRemote &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OpenServo &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OpenSpace &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OpenSPARC &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OpenWrt &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-OScar project &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-PC Engines &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Rallylog &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Ravelry &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-RepRap &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-RFID door opener &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-RiverSimple &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-RONJA &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Sanguino &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Semitone Dimmers &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Solar Cooking &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Archive &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-solar tracking &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Spiffchorder &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-SquidBee &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Stribe &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-StrobIt Triggr &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Thingiverse &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Traxmod &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-zeroclock &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-Zoybar &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-\end{tabular}
-
-\caption{product details of OIP entries treated by OSHWL (3/3)}
-\end{table}
-
-
-\begin{table}[H]
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
-\hline 
-\multirow{2}{*}{title} & \multirow{2}{*}{\begin{sideways}
-innovativeness
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-complexity
-\end{sideways}} & \multicolumn{7}{c|}{industry}\tabularnewline
- &  &  & \begin{sideways}
-Energy and Utilities
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways} & \begin{sideways}
-...
-\end{sideways}\tabularnewline
-\hline 
-\hline 
- &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-\end{tabular}
-
-\caption{product details of OSHWL projects not listed by OIP}
-\end{table}
-
-
-\pagebreak{}
-
-
-\section*{Institutional design and production}
-
-\framebox{\begin{minipage}[t]{1\columnwidth}%
-
-\subsection*{{\small Legend}}
-
-
-\paragraph*{{\small User Contribution}}
-
-{\small Whether private persons or users are actively involved in
-the development. }{\small \par}
-
-
-\paragraph*{{\small Commercial Contribution}}
-
-{\small Whether commercial companies are actively involved in the
-development. }{\small \par}
-
-
-\paragraph*{{\small Research contribution}}
-
-{\small Whether research institutions are actively involved in the
-development. }{\small \par}
-
-
-\paragraph*{{\small Type of collaboration}}
-
-{\small Type of development according to: }{\small \par}
-\begin{itemize}
-\item {\small Collective development of...}{\small \par}
-
-\begin{itemize}
-\item {\small one common product}\\
-{\small if a community is commonly developing one product. }{\small \par}
-\item {\small several common products}\\
-{\small if a community is commonly developing several different products. }{\small \par}
-\end{itemize}
-\item {\small Published knowledge...}{\small \par}
-
-\begin{itemize}
-\item {\small with some collective developement}\\
-{\small if instructions or ideas are published and others make comments
-and suggestions. }{\small \par}
-\item {\small without collective developement}\\
-{\small if information is purely revealed. }{\small \par}
-\end{itemize}
-\end{itemize}
-
-\paragraph*{{\small Activity}}
-
-{\small Activity level in the community or developer group...}{\small \par}
-\begin{itemize}
-\item {\small from low (up to one interaction per month on average) }{\small \par}
-\item {\small to high (daily interaction)}{\small \par}
-\end{itemize}
-
-\paragraph*{{\small Community communication}}
-
-{\small Major communication channels used within the project community}{\small \par}
-\begin{lyxlist}{00.00.0000}
-\item [{{\small Face-to-face}}] {\small People tend to interact in person. }{\small \par}
-\item [{{\small Mailinglists}}] {\small At least one mailinglist is used
-frequently. }{\small \par}
-\item [{{\small Chat}}] {\small The community has at least one active chat. }{\small \par}
-\item [{{\small Board}}] {\small A board/discussion forum is used. }{\small \par}
-\item [{{\small Other}}] {\small Other communication channels as wikis,
-blogs, etc. have been established. }{\small \par}
-\end{lyxlist}
-
-\paragraph*{{\small Degree of openness}}
-
-{\small Parts of the product which are freely available: }{\small \par}
-\begin{lyxlist}{00.00.0000}
-\item [{{\small SW}}] {\small All software and other non-physical, content
-parts are open source. }{\small \par}
-\item [{{\small HWI}}] {\small Hardware specifications and interfaces are
-layed open. }{\small \par}
-\item [{{\small Case}}] {\small If applicable the case design is available,
-e.g. as CAD for download. }{\small \par}
-\item [{{\small Mechanics}}] {\small Mechanical parts, circuits, designs,
-etc. are freely available. }{\small \par}
-\item [{{\small Entirety}}] {\small The project is revealing all available
-information. }{\small \par}
-\end{lyxlist}
-
-\paragraph*{{\small Development driver}}
-
-{\small Main drivers of the development, i.e. the group(s) of people
-pushing forward the project. Related company or association refers
-to a company closely related to the project, for example the investing
-company. }{\small \par}
-
-
-\paragraph*{{\small Production}}
-
-{\small Entity responsible for production. Related company or assoc.
-refers to an entity closely related to the project or with a production
-mandate. \textquotedbl{}Outsourced\textquotedbl{} is whenever an external
-party is paid for supplying components. }{\small \par}
-
-
-\paragraph*{{\small Member's position}}
-
-{\small OIP's source personal relationship to the project.}%
-\end{minipage}}
-
-
-\subsection*{Tables}
-
-{\small }
-\begin{table}[H]
-{\small }%
-\begin{tabular}{|l|l|l|l|c|c|c|c|l|c|c|c|c|c|c|c|c|c|c|}
-\hline 
-\multirow{2}{*}{{\small title}} & \multirow{2}{*}{\begin{sideways}
-{\small user/private contribution}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\small commercial contribution}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\small research contribution}
-\end{sideways}} & \multicolumn{4}{c|}{{\small type of collab.}} & \multirow{2}{*}{\begin{sideways}
-{\small activity}
-\end{sideways}} & \multicolumn{5}{c|}{{\small community communication}} & \multicolumn{5}{c|}{{\small degree of openness}}\tabularnewline
- &  &  &  & \begin{sideways}
-c. d. 1 c. p.
-\end{sideways} & \begin{sideways}
-c. d. s. c. p.
-\end{sideways} & \begin{sideways}
-{\small p. k. w/ c. d.}
-\end{sideways} & \begin{sideways}
-{\small p. k. w/o c. d.}
-\end{sideways} &  & \begin{sideways}
-Face-to-face
-\end{sideways} & \begin{sideways}
-Mailinglists
-\end{sideways} & \begin{sideways}
-Chat
-\end{sideways} & \begin{sideways}
-Board
-\end{sideways} & \begin{sideways}
-Other
-\end{sideways} & \begin{sideways}
-Software
-\end{sideways} & \begin{sideways}
-Hardware interfaces
-\end{sideways} & \begin{sideways}
-Case Design
-\end{sideways} & \begin{sideways}
-Mechanics/Schematics
-\end{sideways} & \begin{sideways}
-Entirely open
-\end{sideways}\tabularnewline
-\hline 
-\hline 
-{\small 3G Stoves} & {\small Yes} & {\small No} & {\small Yes} &  &  & x &  & {\small 3} & {\small x} & x &  & x &  &  & x &  & x & \tabularnewline
-\hline 
-{\small Absorber Roof} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Abundant Water} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Agua Clara} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Akvo} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Always Innovating} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Touch Book} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Arduino} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Atari Coldfire} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Aurora OS Mixer} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small AVR Butterfly} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Logger} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small AVR Butterfly} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small MP3} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small AX84 Firefly} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Balloon} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Beagle Board} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Ben NanoNote} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Biobricks} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small BitsFromBytes} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Brewtopia} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Canuckle} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Cfree OS Optics} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Chumby} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Contraptor} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Craftster} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Crypto Stick} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Cubespawn} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Daisy MP3} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small diy\_efi} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Elphel} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Ethernut} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Etherrape} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Fab Camera} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Fab@Home} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Flash-Plaice} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Fnordlicht} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Formica} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-\end{tabular}{\small \par}
-
-{\small \caption{institutional design and production details (1/2) of OIP entries treated
-by OSHWL (1/3)}
-}
-\end{table}
-{\small \par}
-
-{\small }
-\begin{table}[H]
-{\small }%
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-\hline 
-\multirow{2}{*}{{\small title}} & \multicolumn{5}{c|}{{\small degree of openness}} & \multicolumn{6}{c|}{{\small development drivers}} & \multicolumn{8}{c|}{{\small product produced by}}\tabularnewline
+\begin{tabular}{|c|cc|c|cccccccc|ccccccc|}
+\hline 
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{2}{c|}{{\footnotesize entry type}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize dev. status}
+\end{sideways}} & \multicolumn{8}{c|}{{\footnotesize community size}} & \multicolumn{7}{c|}{{\footnotesize developers}}\tabularnewline
  & \begin{sideways}
-Software
+{\footnotesize Coll. of proj.}
 \end{sideways} & \begin{sideways}
-Hardware interfaces
-\end{sideways} & \begin{sideways}
-Case Design
-\end{sideways} & \begin{sideways}
-Mechanics/Schematics
-\end{sideways} & \begin{sideways}
-Entirely open
-\end{sideways} & \begin{sideways}
-{\small Project leader}
-\end{sideways} & \begin{sideways}
-{\small Core Team}
-\end{sideways} & \begin{sideways}
-{\small Developer community}
-\end{sideways} & \begin{sideways}
-{\small User community}
-\end{sideways} & \begin{sideways}
-{\small Related Company or Association}
-\end{sideways} & \begin{sideways}
-{\small Other}
-\end{sideways} & \begin{sideways}
-{\small Project leader}
-\end{sideways} & \begin{sideways}
-{\small Core Team}
-\end{sideways} & \begin{sideways}
-{\small Developer community}
-\end{sideways} & \begin{sideways}
-{\small User community}
-\end{sideways} & \begin{sideways}
-{\small Related Company or Association}
-\end{sideways} & \begin{sideways}
-{\small Outsourced}
-\end{sideways} & \begin{sideways}
-{\small Other}
-\end{sideways} & \begin{sideways}
-{\small Not yet clear}
-\end{sideways}\tabularnewline
-\hline 
-\hline 
-{\small 3G Stoves} &  & x &  & x &  & {\small x} &  &  & x &  &  & x &  &  & x &  &  &  & \tabularnewline
-\hline 
-{\small Absorber Roof} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Abundant Water} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Agua Clara} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Akvo} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Always Innovating} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Touch Book} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Arduino} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Atari Coldfire} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Aurora OS Mixer} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small AVR Butterfly} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Logger} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small AVR Butterfly} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small MP3} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small AX84 Firefly} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Balloon} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Beagle Board} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Ben NanoNote} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Biobricks} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small BitsFromBytes} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Brewtopia} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Canuckle} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Cfree OS Optics} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Chumby} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Contraptor} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Craftster} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Crypto Stick} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Cubespawn} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Daisy MP3} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small diy\_efi} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Elphel} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Ethernut} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Etherrape} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Fab Camera} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Fab@Home} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Flash-Plaice} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Fnordlicht} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\small Formica} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-\end{tabular}{\small \par}
-
-{\small \caption{institutional design and production details (2/2) of OIP entries treated
-by OSHWL (1/3)}
-}
-\end{table}
-{\small \par}
-
-{\small }
-\begin{table}[H]
-{\small }%
-\begin{tabular}{|l|l|l|l|c|c|c|c|l|c|c|c|c|c|c|c|c|c|c|}
-\hline 
-\multirow{2}{*}{{\small title}} & \multirow{2}{*}{\begin{sideways}
-{\small user/private contribution}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\small commercial contribution}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\small research contribution}
-\end{sideways}} & \multicolumn{4}{c|}{{\small type of collab.}} & \multirow{2}{*}{\begin{sideways}
-{\small activity}
-\end{sideways}} & \multicolumn{5}{c|}{{\small community communication}} & \multicolumn{5}{c|}{{\small degree of openness}}\tabularnewline
- &  &  &  & \begin{sideways}
-c. d. 1 c. p.
-\end{sideways} & \begin{sideways}
-c. d. s. c. p.
-\end{sideways} & \begin{sideways}
-{\small p. k. w/ c. d.}
-\end{sideways} & \begin{sideways}
-{\small p. k. w/o c. d.}
+{\footnotesize Single proj.}
 \end{sideways} &  & \begin{sideways}
-Face-to-face
+{\footnotesize 1}
 \end{sideways} & \begin{sideways}
-Mailinglists
+{\footnotesize 2-5}
 \end{sideways} & \begin{sideways}
-Chat
+{\footnotesize 6-10}
 \end{sideways} & \begin{sideways}
-Board
+{\footnotesize 11-100}
 \end{sideways} & \begin{sideways}
-Other
+{\footnotesize 101-500}
 \end{sideways} & \begin{sideways}
-Software
+{\footnotesize 501-1000}
 \end{sideways} & \begin{sideways}
-Hardware interfaces
+{\footnotesize 1001-5000}
 \end{sideways} & \begin{sideways}
-Case Design
+{\footnotesize >5000}
 \end{sideways} & \begin{sideways}
-Mechanics/Schematics
+{\footnotesize 1}
 \end{sideways} & \begin{sideways}
-Entirely open
+{\footnotesize 2-5}
+\end{sideways} & \begin{sideways}
+{\footnotesize 6-10}
+\end{sideways} & \begin{sideways}
+{\footnotesize 11-100}
+\end{sideways} & \begin{sideways}
+{\footnotesize 101-500}
+\end{sideways} & \begin{sideways}
+{\footnotesize 501-1000}
+\end{sideways} & \begin{sideways}
+{\footnotesize >1000}
 \end{sideways}\tabularnewline
 \hline 
 \hline 
-{\footnotesize Free Art Bureau} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Free Art Bureau} & {\footnotesize x} &  & {\footnotesize 4} &  &  &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize Free Beer} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
@@ -1982,25 +746,21 @@ Entirely open
 \hline 
 {\footnotesize Hexayurt} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Im-FFeeder} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Im-FFeeder} &  & {\footnotesize x} & {\footnotesize 3} &  & {\footnotesize x} &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize IP04 4-Port} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize IP04} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize IP-PBX} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize IP08 8-Port} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize IP-PBX} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize IP08} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize iRobot} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize K People} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize K People} &  & {\footnotesize x} & {\footnotesize 2} &  &  & {\footnotesize x} &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize LED Stripe} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize Linux omap} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Local Motors} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Local Motors} &  & {\footnotesize x} & {\footnotesize 2} &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize MakerBot} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
@@ -2018,90 +778,1418 @@ Entirely open
 \hline 
 {\footnotesize Niftymitter} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize oBiCo} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize oBiCo} &  & {\footnotesize x} & {\footnotesize 2} &  & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize OMFootCtrl} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize OLPC} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize O. Architecture} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OAN} & {\footnotesize x} &  & {\footnotesize 4} &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  & {\footnotesize x}\tabularnewline
 \hline 
-{\footnotesize Network} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize O. Garments} & {\footnotesize x} &  & {\footnotesize 1} &  &  &  &  &  &  &  &  &  &  &  & {\footnotesize x} &  &  & \tabularnewline
 \hline 
-{\footnotesize O. Garments} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize O. Moto X} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize O. Moto X} &  & {\footnotesize x} & {\footnotesize 1} & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize O. Pandora} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize O. Prosthetics} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OPP} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Project} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OS Cookbook} &  & {\footnotesize x} & {\footnotesize 3} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OS Cookbook} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OS Ecology} & {\footnotesize x} &  & {\footnotesize 3} &  &  &  &  &  &  &  & {\footnotesize x} &  &  & {\footnotesize x} &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OS Ecology} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OSWM} &  & {\footnotesize x} & {\footnotesize 2} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OS Washing} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Machine} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-\end{tabular}{\small \par}
+\end{tabular}{\footnotesize \par}
 
-{\small \caption{institutional design and production details (1/2) of OIP entries treated
-by OSHWL (2/3)}
+{\footnotesize \caption{project details (1/2) of OIP entries treated by OSHWL (2/3)}
 }
 \end{table}
-{\small \par}
+{\footnotesize \par}
 
-{\small }
+{\footnotesize }
 \begin{table}[H]
-{\small }%
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+{\footnotesize }%
+\begin{tabular}{|c|cccccccc|c|c|c|cccc|}
 \hline 
-\multirow{2}{*}{{\small title}} & \multicolumn{5}{c|}{{\small degree of openness}} & \multicolumn{6}{c|}{{\small development drivers}} & \multicolumn{8}{c|}{{\small product produced by}}\tabularnewline
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{8}{c|}{{\footnotesize licence and TM}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize country}
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize start year}
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize contact}
+\end{sideways}} & \multicolumn{4}{c|}{{\footnotesize intended audience}}\tabularnewline
  & \begin{sideways}
-Software
+{\footnotesize GPL, LGPL or similar copyleft license}
 \end{sideways} & \begin{sideways}
-Hardware interfaces
+{\footnotesize BSD, MIT or similar permissive license}
 \end{sideways} & \begin{sideways}
-Case Design
+{\footnotesize Creative Commons license}
 \end{sideways} & \begin{sideways}
-Mechanics/Schematics
+{\footnotesize Creative Commons license}
 \end{sideways} & \begin{sideways}
-Entirely open
+{\footnotesize Other open license}
 \end{sideways} & \begin{sideways}
-{\small Project leader}
+{\footnotesize Commercial license}
 \end{sideways} & \begin{sideways}
-{\small Core Team}
+{\footnotesize No license}
 \end{sideways} & \begin{sideways}
-{\small Developer community}
+{\footnotesize Registered trademark}
+\end{sideways} &  &  &  & \begin{sideways}
+{\footnotesize end user}
 \end{sideways} & \begin{sideways}
-{\small User community}
+{\footnotesize advanced end user}
 \end{sideways} & \begin{sideways}
-{\small Related Company or Association}
+{\footnotesize developer}
 \end{sideways} & \begin{sideways}
-{\small Other}
-\end{sideways} & \begin{sideways}
-{\small Project leader}
-\end{sideways} & \begin{sideways}
-{\small Core Team}
-\end{sideways} & \begin{sideways}
-{\small Developer community}
-\end{sideways} & \begin{sideways}
-{\small User community}
-\end{sideways} & \begin{sideways}
-{\small Related Company or Association}
-\end{sideways} & \begin{sideways}
-{\small Outsourced}
-\end{sideways} & \begin{sideways}
-{\small Other}
-\end{sideways} & \begin{sideways}
-{\small Not yet clear}
+{\footnotesize other}
 \end{sideways}\tabularnewline
 \hline 
 \hline 
-{\footnotesize Free Art Bureau} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Free Art Bureau} & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize F} & {\footnotesize 2011} & {\footnotesize Mark Webster} &  &  &  & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize Free Beer} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Freeduino} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Gumstix} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize HD Video Capture} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Hexayurt} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Im-FFeeder} & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize MX} & {\footnotesize 2011} & {\footnotesize Juan Grez} &  & {\footnotesize x} &  & \tabularnewline
+\hline 
+{\footnotesize IP04} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize IP08} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize iRobot} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize K People} &  &  &  &  & {\footnotesize x} &  &  & {\footnotesize x} & {\footnotesize IT} & {\footnotesize 2009} & {\footnotesize Alessia Frittitta} & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize LED Stripe} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Linux omap} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Local Motors} &  &  &  &  &  &  &  &  & {\footnotesize US} & {\footnotesize 2007} &  & {\footnotesize x} & {\footnotesize x} &  & \tabularnewline
+\hline 
+{\footnotesize MakerBot} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Mikrokopter} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Milkymist} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize MISA} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize MyOpenRouter} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Neuros Link} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Neuros OSD} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Niftymitter} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize oBiCo} &  &  &  &  &  &  & {\footnotesize x} &  & {\footnotesize D} & {\footnotesize 2007} &  &  &  & {\footnotesize x} & \tabularnewline
+\hline 
+{\footnotesize OMFootCtrl} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OLPC} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OAN} &  &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize US} & {\footnotesize 2006} &  &  &  & {\footnotesize x} & \tabularnewline
+\hline 
+{\footnotesize O. Garments} &  &  &  &  &  &  & {\footnotesize x} &  & {\footnotesize D} & {\footnotesize 2008} &  & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize O. Moto X} &  &  &  &  & {\footnotesize x} &  &  &  & {\footnotesize E} & {\footnotesize 2010} &  &  &  &  & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize O. Pandora} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OPP} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OS Cookbook} & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize US} & {\footnotesize 2002} &  & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize OS Ecology} &  &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize US} & {\footnotesize 2004} & {\footnotesize Marcin Jakubowski} &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OSWM} &  &  &  &  &  &  & {\footnotesize x} &  &  & {\footnotesize 2008} &  & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+\end{tabular}{\footnotesize \par}
+
+{\footnotesize \caption{project details (2/2) of OIP entries treated by OSHWL (2/3)}
+}
+\end{table}
+{\footnotesize \par}
+
+{\footnotesize }
+\begin{table}[H]
+{\footnotesize }%
+\begin{tabular}{|c|cc|c|cccccccc|ccccccc|}
+\hline 
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{2}{c|}{{\footnotesize entry type}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize dev. status}
+\end{sideways}} & \multicolumn{8}{c|}{{\footnotesize community size}} & \multicolumn{7}{c|}{{\footnotesize developers}}\tabularnewline
+ & \begin{sideways}
+{\footnotesize Coll. of proj.}
+\end{sideways} & \begin{sideways}
+{\footnotesize Single proj.}
+\end{sideways} &  & \begin{sideways}
+{\footnotesize 1}
+\end{sideways} & \begin{sideways}
+{\footnotesize 2-5}
+\end{sideways} & \begin{sideways}
+{\footnotesize 6-10}
+\end{sideways} & \begin{sideways}
+{\footnotesize 11-100}
+\end{sideways} & \begin{sideways}
+{\footnotesize 101-500}
+\end{sideways} & \begin{sideways}
+{\footnotesize 501-1000}
+\end{sideways} & \begin{sideways}
+{\footnotesize 1001-5000}
+\end{sideways} & \begin{sideways}
+{\footnotesize >5000}
+\end{sideways} & \begin{sideways}
+{\footnotesize 1}
+\end{sideways} & \begin{sideways}
+{\footnotesize 2-5}
+\end{sideways} & \begin{sideways}
+{\footnotesize 6-10}
+\end{sideways} & \begin{sideways}
+{\footnotesize 11-100}
+\end{sideways} & \begin{sideways}
+{\footnotesize 101-500}
+\end{sideways} & \begin{sideways}
+{\footnotesize 501-1000}
+\end{sideways} & \begin{sideways}
+{\footnotesize >1000}
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+{\footnotesize OWbP} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OS BHKW} &  &  & {\footnotesize 2} &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenBeacon} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenCola} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenEEG} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize openenergymonitor} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize openEyes} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OM650} &  & {\footnotesize x} & {\footnotesize 1} &  &  &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenMoko} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenPCD} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenRemote} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenServo} &  & {\footnotesize x} & {\footnotesize 3} &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenSpace} &  & {\footnotesize x} & {\footnotesize 3} &  & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenSPARC} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenWrt} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OScar project} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize PC Engines} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Rallylog} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Ravelry} & {\footnotesize x} &  & {\footnotesize 4} &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize RepRap} &  & {\footnotesize x} & {\footnotesize 2} &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize RFID door opener} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize RiverSimple} &  & {\footnotesize x} & {\footnotesize 2} &  & {\footnotesize 2} &  &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  & \tabularnewline
+\hline 
+{\footnotesize RONJA} &  &  & {\footnotesize 4} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Sanguino} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Semitone Dimmers} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize SCA} &  & {\footnotesize x} & {\footnotesize 4} &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize solar tracking} &  & {\footnotesize x} & {\footnotesize 3} & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Spiffchorder} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize SquidBee} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Stribe} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize StrobIt Triggr} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Thingiverse} & {\footnotesize x} &  & {\footnotesize 4} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Traxmod} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize zeroclock} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Zoybar} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}{\footnotesize \par}
+
+{\footnotesize \caption{project details (1/2) of OIP entries treated by OSHWL (3/3)}
+}
+\end{table}
+{\footnotesize \par}
+
+{\footnotesize }
+\begin{table}[H]
+{\footnotesize }%
+\begin{tabular}{|c|cccccccc|c|c|c|cccc|}
+\hline 
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{8}{c|}{{\footnotesize licence and TM}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize country}
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize start year}
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize contact}
+\end{sideways}} & \multicolumn{4}{c|}{{\footnotesize intended audience}}\tabularnewline
+ & \begin{sideways}
+{\footnotesize GPL, LGPL or similar copyleft license}
+\end{sideways} & \begin{sideways}
+{\footnotesize BSD, MIT or similar permissive license}
+\end{sideways} & \begin{sideways}
+{\footnotesize Creative Commons license}
+\end{sideways} & \begin{sideways}
+{\footnotesize Creative Commons license}
+\end{sideways} & \begin{sideways}
+{\footnotesize Other open license}
+\end{sideways} & \begin{sideways}
+{\footnotesize Commercial license}
+\end{sideways} & \begin{sideways}
+{\footnotesize No license}
+\end{sideways} & \begin{sideways}
+{\footnotesize Registered trademark}
+\end{sideways} &  &  &  & \begin{sideways}
+{\footnotesize end user}
+\end{sideways} & \begin{sideways}
+{\footnotesize advanced end user}
+\end{sideways} & \begin{sideways}
+{\footnotesize developer}
+\end{sideways} & \begin{sideways}
+{\footnotesize other}
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+{\footnotesize OWbP} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OS BHKW} &  &  &  &  &  &  & {\footnotesize x} &  & {\footnotesize D} & {\footnotesize 2006} &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenBeacon} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenCola} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenEEG} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize openenergymonitor} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize openEyes} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OM650} &  &  &  &  &  &  & {\footnotesize x} &  & {\footnotesize D} & {\footnotesize 2000} & {\footnotesize Hans Zwakenberg} &  &  & {\footnotesize x} & \tabularnewline
+\hline 
+{\footnotesize OpenMoko} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenPCD} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenRemote} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenServo} &  & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  &  & {\footnotesize x} & \tabularnewline
+\hline 
+{\footnotesize OpenSpace} & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize US} & {\footnotesize 2009} & {\footnotesize Labrune} &  & {\footnotesize x} &  & \tabularnewline
+\hline 
+{\footnotesize OpenSPARC} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenWrt} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OScar project} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize PC Engines} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Rallylog} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Ravelry} &  &  &  &  &  &  & {\footnotesize x} &  & {\footnotesize US} &  &  & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize RepRap} & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize UK} & {\footnotesize 2004} &  &  & {\footnotesize x} &  & \tabularnewline
+\hline 
+{\footnotesize RFID door opener} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize RiverSimple} &  &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize UK} & {\footnotesize 2008} & {\footnotesize Patrick} &  &  & {\footnotesize x} & \tabularnewline
+\hline 
+{\footnotesize RONJA} & {\footnotesize x} &  &  &  &  &  &  &  & {\footnotesize CZ} &  &  & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize Sanguino} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Semitone Dimmers} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize SCA} &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize solar tracking} &  &  &  &  &  &  & {\footnotesize x} &  & {\footnotesize CA} & {\footnotesize 2008} & {\footnotesize Canuckle} &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Spiffchorder} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize SquidBee} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Stribe} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize StrobIt Triggr} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Thingiverse} &  &  & {\footnotesize x} &  &  &  &  &  &  & {\footnotesize 2008} &  &  &  & {\footnotesize x} & \tabularnewline
+\hline 
+{\footnotesize Traxmod} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize zeroclock} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Zoybar} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}{\footnotesize \par}
+
+{\footnotesize \caption{project details (2/2) of OIP entries treated by OSHWL (3/3)}
+}
+\end{table}
+{\footnotesize \par}
+
+{\footnotesize \pagebreak{}}{\footnotesize \par}
+
+{\footnotesize }
+\begin{table}[H]
+{\footnotesize }%
+\begin{tabular}{|c|cc|c|cccccccc|ccccccc|}
+\hline 
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{2}{c|}{{\footnotesize entry type}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize dev. status}
+\end{sideways}} & \multicolumn{8}{c|}{{\footnotesize community size}} & \multicolumn{7}{c|}{{\footnotesize developers}}\tabularnewline
+ & \begin{sideways}
+{\footnotesize Coll. of proj.}
+\end{sideways} & \begin{sideways}
+{\footnotesize Single proj.}
+\end{sideways} &  & \begin{sideways}
+{\footnotesize 1}
+\end{sideways} & \begin{sideways}
+{\footnotesize 2-5}
+\end{sideways} & \begin{sideways}
+{\footnotesize 6-10}
+\end{sideways} & \begin{sideways}
+{\footnotesize 11-100}
+\end{sideways} & \begin{sideways}
+{\footnotesize 101-500}
+\end{sideways} & \begin{sideways}
+{\footnotesize 501-1000}
+\end{sideways} & \begin{sideways}
+{\footnotesize 1001-5000}
+\end{sideways} & \begin{sideways}
+{\footnotesize >5000}
+\end{sideways} & \begin{sideways}
+{\footnotesize 1}
+\end{sideways} & \begin{sideways}
+{\footnotesize 2-5}
+\end{sideways} & \begin{sideways}
+{\footnotesize 6-10}
+\end{sideways} & \begin{sideways}
+{\footnotesize 11-100}
+\end{sideways} & \begin{sideways}
+{\footnotesize 101-500}
+\end{sideways} & \begin{sideways}
+{\footnotesize 501-1000}
+\end{sideways} & \begin{sideways}
+{\footnotesize >1000}
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}{\footnotesize \par}
+
+{\footnotesize \caption{project details (1/2) of OSHWL projects not listed by OIP}
+}
+\end{table}
+{\footnotesize \par}
+
+{\footnotesize }
+\begin{table}[H]
+{\footnotesize }%
+\begin{tabular}{|c|cccccccc|c|c|c|cccc|}
+\hline 
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{8}{c|}{{\footnotesize licence and TM}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize country}
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize start year}
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize contact}
+\end{sideways}} & \multicolumn{4}{c|}{{\footnotesize intended audience}}\tabularnewline
+ & \begin{sideways}
+{\footnotesize GPL, LGPL or similar copyleft license}
+\end{sideways} & \begin{sideways}
+{\footnotesize BSD, MIT or similar permissive license}
+\end{sideways} & \begin{sideways}
+{\footnotesize Creative Commons license}
+\end{sideways} & \begin{sideways}
+{\footnotesize Creative Commons license}
+\end{sideways} & \begin{sideways}
+{\footnotesize Other open license}
+\end{sideways} & \begin{sideways}
+{\footnotesize Commercial license}
+\end{sideways} & \begin{sideways}
+{\footnotesize No license}
+\end{sideways} & \begin{sideways}
+{\footnotesize Registered trademark}
+\end{sideways} &  &  &  & \begin{sideways}
+{\footnotesize end user}
+\end{sideways} & \begin{sideways}
+{\footnotesize advanced end user}
+\end{sideways} & \begin{sideways}
+{\footnotesize developer}
+\end{sideways} & \begin{sideways}
+{\footnotesize other}
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}{\footnotesize \par}
+
+{\footnotesize \caption{project details (2/2) of OSHWL projects not listed by OIP}
+}
+\end{table}
+{\footnotesize \par}
+
+\pagebreak{}
+
+
+\section{Product details}
+
+First, a description of the categories in the table directly following.
+
+
+\paragraph*{Product innovativeness}
+
+Degree of innovativeness according to the following criteria: 
+\begin{lyxlist}{00.00.0000}
+\item [{5}] Radical innovation - a new technology that results in a new
+market infrastructure, e.g. an innovation which does not address a
+recognized demand but instead creates a demand previously unrecognized
+by the consumer 
+\item [{4}] Really new innovation - a really new product results in a market
+discontinuity or a technological discontinuity but will not incorporate
+both, e.g., new product lines, product line extensions with new technology,
+or new markets with existing technology 
+\item [{3}] Discontinous innovations - new technologies that don't lead
+to discontinuity in existing markets 
+\item [{2}] Incremental innovations - products that provide new features,
+benefits, or improvements to the existing technology in the existing
+market 
+\item [{1}] Imitative innovations - imitative products are frequently new
+to the firm, but not new to the market 
+\end{lyxlist}
+
+\paragraph*{Product complexity}
+
+Degree of complexity for the developed product ranging from low complexity,
+e.g. a simple wooden chair, to high complexity, e.g. an aircraft or
+a nuclear power plant. 
+
+
+\paragraph*{Industry}
+
+Suitable industry from a list. \vfill{}
+
+
+\pagebreak{}
+
+
+\subsection*{Tables}
+
+{\footnotesize }
+\begin{table}[H]
+{\footnotesize }%
+\begin{tabular}{|c|c|c|cccccccccccccc|}
+\hline 
+\multirow{2}{*}{{\footnotesize title}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize innovativeness}
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize complexity}
+\end{sideways}} & \multicolumn{14}{c|}{{\footnotesize industry}}\tabularnewline
+ &  &  & \begin{sideways}
+{\footnotesize Energy and Utilities}
+\end{sideways} & \begin{sideways}
+{\footnotesize Pharma and Healthcare}
+\end{sideways} & \begin{sideways}
+{\footnotesize IT Hardware}
+\end{sideways} & \begin{sideways}
+{\footnotesize Education and Research}
+\end{sideways} & \begin{sideways}
+{\footnotesize Consumer Goods}
+\end{sideways} & \begin{sideways}
+{\footnotesize Machinery}
+\end{sideways} & \begin{sideways}
+{\footnotesize Automotive}
+\end{sideways} & \begin{sideways}
+{\footnotesize Consumer Electronics}
+\end{sideways} & \begin{sideways}
+{\footnotesize Construction}
+\end{sideways} & \begin{sideways}
+{\footnotesize Media and Culture}
+\end{sideways} & \begin{sideways}
+{\footnotesize Entertainment}
+\end{sideways} & \begin{sideways}
+{\footnotesize Telecommunications}
+\end{sideways} & \begin{sideways}
+{\footnotesize Food and Beverages}
+\end{sideways} & \begin{sideways}
+{\footnotesize Other}
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+{\footnotesize 3G Stoves} & {\footnotesize 5} & {\footnotesize 2} & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Absorber Roof} & {\footnotesize 3} & {\footnotesize 3} & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Abundant Water} & {\footnotesize 4} & {\footnotesize 2} &  & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Agua Clara} & {\footnotesize 2} & {\footnotesize 4} & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Akvo} & {\footnotesize 4} & {\footnotesize 3} & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize AITB} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Arduino} & {\footnotesize 2} & {\footnotesize 3} &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Atari Coldfire} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Aurora OS Mixer} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize AVR BL} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize AVR M} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize AX84 Firefly} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Balloon} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Beagle Board} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Ben NanoNote} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Biobricks} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize BitsFromBytes} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Brewtopia} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Canuckle LEDlights} & {\footnotesize 5} & {\footnotesize 1} & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Cfree OS Optics} & {\footnotesize 5} & {\footnotesize 3} &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Chumby} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Contraptor} & {\footnotesize 3} & {\footnotesize 2} &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Craftster} & {\footnotesize 4} & {\footnotesize 2} &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Crypto Stick} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Cubespawn} & {\footnotesize 2} & {\footnotesize 4} &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Daisy MP3} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize diy\_efi} & {\footnotesize 2} & {\footnotesize 2} &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Elphel} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Ethernut} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Etherrape} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Fab Camera} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Fab@Home} & {\footnotesize 4} & {\footnotesize 4} &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Flash-Plaice} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Fnordlicht} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Formica} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}{\footnotesize \par}
+
+{\footnotesize \caption{product details of OIP entries treated by OSHWL (1/3)}
+}
+\end{table}
+{\footnotesize }
+\begin{table}[H]
+{\footnotesize }%
+\begin{tabular}{|c|c|c|cccccccccccccc|}
+\hline 
+\multirow{2}{*}{{\footnotesize title}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize innovativeness}
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize complexity}
+\end{sideways}} & \multicolumn{14}{c|}{{\footnotesize industry}}\tabularnewline
+ &  &  & \begin{sideways}
+{\footnotesize Energy and Utilities}
+\end{sideways} & \begin{sideways}
+{\footnotesize Pharma and Healthcare}
+\end{sideways} & \begin{sideways}
+{\footnotesize IT Hardware}
+\end{sideways} & \begin{sideways}
+{\footnotesize Education and Research}
+\end{sideways} & \begin{sideways}
+{\footnotesize Consumer Goods}
+\end{sideways} & \begin{sideways}
+{\footnotesize Machinery}
+\end{sideways} & \begin{sideways}
+{\footnotesize Automotive}
+\end{sideways} & \begin{sideways}
+{\footnotesize Consumer Electronics}
+\end{sideways} & \begin{sideways}
+{\footnotesize Construction}
+\end{sideways} & \begin{sideways}
+{\footnotesize Media and Culture}
+\end{sideways} & \begin{sideways}
+{\footnotesize Entertainment}
+\end{sideways} & \begin{sideways}
+{\footnotesize Telecommunications}
+\end{sideways} & \begin{sideways}
+{\footnotesize Food and Beverages}
+\end{sideways} & \begin{sideways}
+{\footnotesize Other}
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+{\footnotesize Free Art Bureau} & {\footnotesize 4} & {\footnotesize 3} &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Free Beer} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Freeduino} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Gumstix} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize HD Video Capture} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Hexayurt} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Im-FFeeder} & {\footnotesize 2} & {\footnotesize 2} &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize IP04} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize IP08} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize iRobot} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize K People} & {\footnotesize 2} & {\footnotesize 2} &  &  &  &  &  &  &  &  &  &  &  &  &  & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize LED Stripe} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Linux omap} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Local Motors} & {\footnotesize 4} & {\footnotesize 4} &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize MakerBot} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Mikrokopter} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Milkymist} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize MISA} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize MyOpenRouter} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Neuros Link} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Neuros OSD} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Niftymitter} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize oBiCo} & {\footnotesize 3} & {\footnotesize 3} &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OMFootCtrl} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OLPC} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OAN} & {\footnotesize 5} & {\footnotesize 3} &  &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize O. Garments} & {\footnotesize 2} & {\footnotesize 1} &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize O. Moto X} & {\footnotesize 1} & {\footnotesize 3} &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize O. Pandora} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OPP} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OS Cookbook} & {\footnotesize 2} & {\footnotesize 1} &  &  &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OS Ecology} & {\footnotesize 5} & {\footnotesize 5} &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OSWM} & {\footnotesize 4} & {\footnotesize 2} &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}{\footnotesize \par}
+
+{\footnotesize \caption{product details of OIP entries treated by OSHWL (2/3)}
+}
+\end{table}
+{\footnotesize }
+\begin{table}[H]
+{\footnotesize }%
+\begin{tabular}{|c|c|c|cccccccccccccc|}
+\hline 
+\multirow{2}{*}{{\footnotesize title}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize innovativeness}
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize complexity}
+\end{sideways}} & \multicolumn{14}{c|}{{\footnotesize industry}}\tabularnewline
+ &  &  & \begin{sideways}
+{\footnotesize Energy and Utilities}
+\end{sideways} & \begin{sideways}
+{\footnotesize Pharma and Healthcare}
+\end{sideways} & \begin{sideways}
+{\footnotesize IT Hardware}
+\end{sideways} & \begin{sideways}
+{\footnotesize Education and Research}
+\end{sideways} & \begin{sideways}
+{\footnotesize Consumer Goods}
+\end{sideways} & \begin{sideways}
+{\footnotesize Machinery}
+\end{sideways} & \begin{sideways}
+{\footnotesize Automotive}
+\end{sideways} & \begin{sideways}
+{\footnotesize Consumer Electronics}
+\end{sideways} & \begin{sideways}
+{\footnotesize Construction}
+\end{sideways} & \begin{sideways}
+{\footnotesize Media and Culture}
+\end{sideways} & \begin{sideways}
+{\footnotesize Entertainment}
+\end{sideways} & \begin{sideways}
+{\footnotesize Telecommunications}
+\end{sideways} & \begin{sideways}
+{\footnotesize Food and Beverages}
+\end{sideways} & \begin{sideways}
+{\footnotesize Other}
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+{\footnotesize OWbP} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OS BHKW} & {\footnotesize 2} & {\footnotesize 4} & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenBeacon} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenCola} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenEEG} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize openenergymonitor} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize openEyes} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OM650} & {\footnotesize 2} & {\footnotesize 4} &  &  &  &  &  &  &  &  &  &  & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenMoko} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenPCD} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenRemote} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenServo} & {\footnotesize 4} & {\footnotesize 4} &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenSpace} & {\footnotesize 2} & {\footnotesize 2} &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenSPARC} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OpenWrt} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OScar project} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize PC Engines} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Rallylog} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Ravelry} & {\footnotesize 3} & {\footnotesize 1} &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize RepRap} & {\footnotesize 5} & {\footnotesize 4} &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize RFID door opener} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize RiverSimple} & {\footnotesize 3} & {\footnotesize 5} &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize RONJA} &  &  &  &  &  &  &  &  &  &  &  &  &  & {\footnotesize x} &  & \tabularnewline
+\hline 
+{\footnotesize Sanguino} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Semitone Dimmers} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize SCA} &  &  &  &  &  &  &  &  &  &  &  &  &  &  & {\footnotesize x} & \tabularnewline
+\hline 
+{\footnotesize solar tracking} & {\footnotesize 5} & {\footnotesize 1} & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Spiffchorder} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize SquidBee} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Stribe} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize StrobIt Triggr} &  &  &  &  &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Thingiverse} & {\footnotesize 5} & {\footnotesize 3} &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Traxmod} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize zeroclock} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Zoybar} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}{\footnotesize \par}
+
+{\footnotesize \caption{product details of OIP entries treated by OSHWL (3/3)}
+}
+\end{table}
+{\footnotesize \par}
+
+{\footnotesize }
+\begin{table}[H]
+{\footnotesize }%
+\begin{tabular}{|c|c|c|cccccccccccccc|}
+\hline 
+\multirow{2}{*}{{\footnotesize title}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize innovativeness}
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize complexity}
+\end{sideways}} & \multicolumn{14}{c|}{{\footnotesize industry}}\tabularnewline
+ &  &  & \begin{sideways}
+{\footnotesize Energy and Utilities}
+\end{sideways} & \begin{sideways}
+{\footnotesize Pharma and Healthcare}
+\end{sideways} & \begin{sideways}
+{\footnotesize IT Hardware}
+\end{sideways} & \begin{sideways}
+{\footnotesize Education and Research}
+\end{sideways} & \begin{sideways}
+{\footnotesize Consumer Goods}
+\end{sideways} & \begin{sideways}
+{\footnotesize Machinery}
+\end{sideways} & \begin{sideways}
+{\footnotesize Automotive}
+\end{sideways} & \begin{sideways}
+{\footnotesize Consumer Electronics}
+\end{sideways} & \begin{sideways}
+{\footnotesize Construction}
+\end{sideways} & \begin{sideways}
+{\footnotesize Media and Culture}
+\end{sideways} & \begin{sideways}
+{\footnotesize Entertainment}
+\end{sideways} & \begin{sideways}
+{\footnotesize Telecommunications}
+\end{sideways} & \begin{sideways}
+{\footnotesize Food and Beverages}
+\end{sideways} & \begin{sideways}
+{\footnotesize Other}
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}{\footnotesize \par}
+
+{\footnotesize \caption{product details of OSHWL projects not listed by OIP}
+}
+\end{table}
+{\footnotesize \par}
+
+\pagebreak{}
+
+
+\section{Institutional design and production}
+
+First, a description of the categories in the table directly following.
+
+
+\paragraph*{contribution}
+\begin{lyxlist}{00.00.0000}
+\item [{user}] whether private persons or users are actively involved in
+the development. 
+\item [{commercial}] whether commercial companies are actively involved
+in the development. 
+\item [{research}] whether research institutions are actively involved
+in the development. 
+\end{lyxlist}
+
+\paragraph*{type of collaboration}
+\begin{lyxlist}{00.00.0000}
+\item [{\emph{collective\ development\ of...}}]~
+
+\begin{lyxlist}{00.00.0000}
+\item [{\emph{one}{\small \ }\emph{common}{\small \ }\emph{product}}] if
+a community is commonly developing one product. 
+\item [{\emph{several}{\small \ }\emph{common}{\small \ }\emph{products}}] if
+a community is commonly developing several different products. 
+\end{lyxlist}
+\item [{\emph{published\ knowledge...}}]~
+
+\begin{lyxlist}{00.00.0000}
+\item [{\emph{with}{\small \ }\emph{some}{\small \ }\emph{coll}{\small .\ }\emph{dev.}}] if
+instructions or ideas are published and others make comments and suggestions. 
+\item [{\emph{without}{\small \ }\emph{collective}{\small \ }\emph{dev.}}] if
+information is purely revealed. 
+\end{lyxlist}
+\end{lyxlist}
+
+\paragraph*{activity}
+
+activity level in the community or developer group...
+\begin{lyxlist}{00.00.0000}
+\item [{1}] low (up to one interaction per month on average) 
+\item [{2}] medium
+\item [{3}] high (daily interaction)
+\end{lyxlist}
+
+\paragraph*{community communication}
+
+major communication channels used within the project community
+\begin{lyxlist}{00.00.0000}
+\item [{face-to-face}] people tend to interact in person. 
+\item [{mailing{\small \ }lists}] at least one mailinglist is used frequently. 
+\item [{chat}] the community has at least one active chat. 
+\item [{board}] a board/discussion forum is used. 
+\item [{other}] other communication channels as wikis, blogs, etc. have
+been established. 
+\end{lyxlist}
+
+\paragraph*{degree of openness}
+
+Parts of the product which are freely available: 
+\begin{lyxlist}{00.00.0000}
+\item [{software{\small \hspace{6.2em}}}] all software and other non-physical,
+content parts are open source. 
+\item [{hardware{\small \ }interfaces{\small \hspace{1.5em}}}] hardware
+specifications and interfaces are layed openergy 
+\item [{case{\small \ design\hspace{5.2em}}}] if applicable the case
+design is available, e.g. as CAD for download. 
+\item [{mechanics/schematics}] mechanical parts, circuits, designs, etc.
+are freely available. 
+\item [{entirely{\small \ }open{\small \hspace{4.2em}}}] the project
+is revealing all available information. 
+\end{lyxlist}
+
+\paragraph*{development driver}
+
+main drivers of the development, i.e. the group(s) of people pushing
+forward the project. Related company or association refers to a company
+closely related to the project, for example the investing company. 
+
+
+\paragraph*{production}
+
+entity responsible for production. Related company or assoc. refers
+to an entity closely related to the project or with a production mandate.
+\textquotedbl{}Outsourced\textquotedbl{} is whenever an external party
+is paid for supplying components. 
+
+
+\subsection*{Tables}
+
+{\footnotesize }
+\begin{table}[H]
+{\footnotesize }%
+\begin{tabular}{|l|lll|cccc|l|ccccc|}
+\hline 
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{3}{l|}{{\footnotesize contribution}} & \multicolumn{4}{c|}{{\footnotesize type of collab.}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize activity}
+\end{sideways}} & \multicolumn{5}{c|}{{\footnotesize community communication}}\tabularnewline
+ & \begin{sideways}
+{\footnotesize user/private}
+\end{sideways} & \begin{sideways}
+{\footnotesize commercial}
+\end{sideways} & \begin{sideways}
+{\footnotesize research}
+\end{sideways} & \begin{sideways}
+{\footnotesize c. d. one c. p.}
+\end{sideways} & \begin{sideways}
+{\footnotesize c. d. several c. p.}
+\end{sideways} & \begin{sideways}
+{\footnotesize p. k. w/ c. d.}
+\end{sideways} & \begin{sideways}
+{\footnotesize p. k. w/o c. d.}
+\end{sideways} &  & \begin{sideways}
+{\footnotesize Face-to-face}
+\end{sideways} & \begin{sideways}
+{\footnotesize Mailinglists}
+\end{sideways} & \begin{sideways}
+{\footnotesize Chat}
+\end{sideways} & \begin{sideways}
+{\footnotesize Board}
+\end{sideways} & \begin{sideways}
+{\footnotesize Other}
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+{\footnotesize 3G Stoves} & {\footnotesize x} &  & {\footnotesize x} &  &  & {\footnotesize x} &  & {\footnotesize 3} & {\footnotesize x} & {\footnotesize x} &  & {\footnotesize x} & \tabularnewline
+\hline 
+{\footnotesize Absorber Roof} & {\footnotesize x} &  &  &  &  & {\footnotesize x} &  & {\footnotesize 3} &  & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize Abundant Water} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  & {\footnotesize x} &  &  & {\footnotesize 3} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & \tabularnewline
+\hline 
+{\footnotesize Agua Clara} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  & {\footnotesize x} &  & {\footnotesize 3} & {\footnotesize x} & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize Akvo} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  & {\footnotesize x} &  &  & {\footnotesize 3} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  & \tabularnewline
+\hline 
+{\footnotesize AITB} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Arduino} & {\footnotesize x} &  &  &  & {\footnotesize x} &  &  & {\footnotesize 3} &  &  &  & {\footnotesize x} & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize Atari Coldfire} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Aurora OS Mixer} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize AVR BL} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize AVR BM} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize AX84 Firefly} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Balloon} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Beagle Board} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Ben NanoNote} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Biobricks} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize BitsFromBytes} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Brewtopia} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Canuckle LEDlights} & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} & {\footnotesize 3} &  &  &  &  & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize Cfree OS Optics} & {\footnotesize x} & {\footnotesize x} &  &  & {\footnotesize x} &  &  & {\footnotesize 3} & {\footnotesize x} & {\footnotesize x} &  & {\footnotesize x} & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize Chumby} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Contraptor} & {\footnotesize x} &  &  &  &  & {\footnotesize x} &  & {\footnotesize 2} &  &  & {\footnotesize x} & {\footnotesize x} & \tabularnewline
+\hline 
+{\footnotesize Craftster} & {\footnotesize x} & {\footnotesize x} &  &  & {\footnotesize x} &  &  & {\footnotesize 3} &  &  &  & {\footnotesize x} & \tabularnewline
+\hline 
+{\footnotesize Crypto Stick} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Cubespawn} & {\footnotesize x} &  &  & {\footnotesize x} &  &  &  & {\footnotesize 2} &  &  &  &  & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize Daisy MP3} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize diy\_efi} & {\footnotesize x} &  &  &  & {\footnotesize x} &  &  & {\footnotesize 1} &  & {\footnotesize x} &  &  & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize Elphel} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Ethernut} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Etherrape} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Fab Camera} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Fab@Home} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  &  & {\footnotesize 2} &  & {\footnotesize x} &  &  & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize Flash-Plaice} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Fnordlicht} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Formica} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}{\footnotesize \par}
+
+{\footnotesize \caption{institutional design and production details (1/2) of OIP entries treated
+by OSHWL (1/3)}
+}
+\end{table}
+{\footnotesize \par}
+
+{\footnotesize }
+\begin{table}[H]
+{\footnotesize }%
+\begin{tabular}{|l|ccccc|cccccc|cccccccc|}
+\hline 
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{5}{c|}{{\footnotesize degree of openness}} & \multicolumn{6}{c|}{{\footnotesize development drivers}} & \multicolumn{8}{c|}{{\footnotesize product produced by}}\tabularnewline
+ & \begin{sideways}
+{\footnotesize Software}
+\end{sideways} & \begin{sideways}
+{\footnotesize Hardware interfaces}
+\end{sideways} & \begin{sideways}
+{\footnotesize Case Design}
+\end{sideways} & \begin{sideways}
+{\footnotesize Mechanics/Schematics}
+\end{sideways} & \begin{sideways}
+{\footnotesize Entirely open}
+\end{sideways} & \begin{sideways}
+{\footnotesize Project leader}
+\end{sideways} & \begin{sideways}
+{\footnotesize Core Team}
+\end{sideways} & \begin{sideways}
+{\footnotesize Developer community}
+\end{sideways} & \begin{sideways}
+{\footnotesize User community}
+\end{sideways} & \begin{sideways}
+{\footnotesize Related Company or Association}
+\end{sideways} & \begin{sideways}
+{\footnotesize Other}
+\end{sideways} & \begin{sideways}
+{\footnotesize Project leader}
+\end{sideways} & \begin{sideways}
+{\footnotesize Core Team}
+\end{sideways} & \begin{sideways}
+{\footnotesize Developer community}
+\end{sideways} & \begin{sideways}
+{\footnotesize User community}
+\end{sideways} & \begin{sideways}
+{\footnotesize Related Company or Association}
+\end{sideways} & \begin{sideways}
+{\footnotesize Outsourced}
+\end{sideways} & \begin{sideways}
+{\footnotesize Other}
+\end{sideways} & \begin{sideways}
+{\footnotesize Not yet clear}
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+{\footnotesize 3G Stoves} &  & {\footnotesize x} &  & {\footnotesize x} &  & {\footnotesize x} &  &  & {\footnotesize x} &  &  & {\footnotesize x} &  &  & {\footnotesize x} &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Absorber Roof} &  &  &  & {\footnotesize x} &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Abundant Water} &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  & {\footnotesize x} &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Agua Clara} &  &  &  &  & {\footnotesize x} & {\footnotesize x} &  &  &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize Akvo} & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize AITB} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Arduino} & {\footnotesize x} & {\footnotesize x} &  & {\footnotesize x} &  &  & {\footnotesize x} & {\footnotesize x} &  &  &  &  & {\footnotesize x} & {\footnotesize x} &  & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize Atari Coldfire} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Aurora OS Mixer} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize AVR BL} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize AVR BM} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize AX84 Firefly} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Balloon} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Beagle Board} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Ben NanoNote} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Biobricks} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize BitsFromBytes} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Brewtopia} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Canuckle LEDlights} &  & {\footnotesize x} &  & {\footnotesize x} & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  &  &  &  & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize Cfree OS Optics} &  &  & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  & {\footnotesize x} &  &  & {\footnotesize x} &  &  & {\footnotesize x} &  &  & {\footnotesize x} & {\footnotesize x} &  & \tabularnewline
+\hline 
+{\footnotesize Chumby} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Contraptor} & {\footnotesize x} & {\footnotesize x} &  & {\footnotesize x} & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Craftster} &  &  &  &  & {\footnotesize x} &  &  & {\footnotesize x} & {\footnotesize x} &  &  &  &  & {\footnotesize x} & {\footnotesize x} &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Crypto Stick} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Cubespawn} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Daisy MP3} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize diy\_efi} & {\footnotesize x} & {\footnotesize x} &  & {\footnotesize x} & {\footnotesize x} &  &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Elphel} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Ethernut} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Etherrape} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Fab Camera} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Fab@Home} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+{\footnotesize Flash-Plaice} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Fnordlicht} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Formica} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}{\footnotesize \par}
+
+{\footnotesize \caption{institutional design and production details (2/2) of OIP entries treated
+by OSHWL (1/3)}
+}
+\end{table}
+{\footnotesize \par}
+
+{\footnotesize }
+\begin{table}[H]
+{\footnotesize }%
+\begin{tabular}{|l|lll|cccc|l|ccccc|}
+\hline 
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{3}{l|}{{\footnotesize contribution}} & \multicolumn{4}{c|}{{\footnotesize type of collab.}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize activity}
+\end{sideways}} & \multicolumn{5}{c|}{{\footnotesize community communication}}\tabularnewline
+ & \begin{sideways}
+{\footnotesize user/private}
+\end{sideways} & \begin{sideways}
+{\footnotesize commercial}
+\end{sideways} & \begin{sideways}
+{\footnotesize research}
+\end{sideways} & \begin{sideways}
+{\footnotesize c. d. one c. p.}
+\end{sideways} & \begin{sideways}
+{\footnotesize c. d. several c. p.}
+\end{sideways} & \begin{sideways}
+{\footnotesize p. k. w/ c. d.}
+\end{sideways} & \begin{sideways}
+{\footnotesize p. k. w/o c. d.}
+\end{sideways} &  & \begin{sideways}
+{\footnotesize Face-to-face}
+\end{sideways} & \begin{sideways}
+{\footnotesize Mailinglists}
+\end{sideways} & \begin{sideways}
+{\footnotesize Chat}
+\end{sideways} & \begin{sideways}
+{\footnotesize Board}
+\end{sideways} & \begin{sideways}
+{\footnotesize Other}
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+{\footnotesize Free Art Bureau} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  &  & {\footnotesize 2} &  & {\footnotesize x} &  &  & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize Free Beer} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Freeduino} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Gumstix} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize HD Video Capture} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Hexayurt} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Im-FFeeder} &  &  &  &  &  &  &  &  &  &  &  &  & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize IP04} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize IP08} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize iRobot} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize K People} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  &  & {\footnotesize 3} & {\footnotesize x} &  & {\footnotesize x} & {\footnotesize x} & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize LED Stripe} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Linux omap} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Local Motors} & {\footnotesize x} & {\footnotesize x} &  & {\footnotesize x} &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize MakerBot} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Mikrokopter} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Milkymist} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize MISA} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize MyOpenRouter} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Neuros Link} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Neuros OSD} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize Niftymitter} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize oBiCo} & {\footnotesize x} &  &  & {\footnotesize x} &  &  &  & {\footnotesize 2} & {\footnotesize x} &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OMFootCtrl} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OLPC} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OAN} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  & {\footnotesize x} &  &  & {\footnotesize 3} &  &  &  &  & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize O. Garments} & {\footnotesize x} & {\footnotesize x} &  &  & {\footnotesize x} &  &  & {\footnotesize 1} &  &  &  &  & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize O. Moto X} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  &  & {\footnotesize 1} &  &  &  &  & {\footnotesize x}\tabularnewline
+\hline 
+{\footnotesize O. Pandora} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OPP} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OS Cookbook} & {\footnotesize x} &  &  & {\footnotesize x} &  &  &  & {\footnotesize 1} &  &  &  & {\footnotesize x} & \tabularnewline
+\hline 
+{\footnotesize OS Ecology} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  & {\footnotesize x} &  &  & {\footnotesize 3} & {\footnotesize x} &  &  &  & \tabularnewline
+\hline 
+{\footnotesize OSWM} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  &  & {\footnotesize 2} & {\footnotesize x} & {\footnotesize x} &  &  & \tabularnewline
+\hline 
+\end{tabular}{\footnotesize \par}
+
+{\footnotesize \caption{institutional design and production details (1/2) of OIP entries treated
+by OSHWL (2/3)}
+}
+\end{table}
+{\footnotesize \par}
+
+{\footnotesize }
+\begin{table}[H]
+{\footnotesize }%
+\begin{tabular}{|l|ccccc|cccccc|cccccccc|}
+\hline 
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{5}{c|}{{\footnotesize degree of openness}} & \multicolumn{6}{c|}{{\footnotesize development drivers}} & \multicolumn{8}{c|}{{\footnotesize product produced by}}\tabularnewline
+ & \begin{sideways}
+{\footnotesize Software}
+\end{sideways} & \begin{sideways}
+{\footnotesize Hardware interfaces}
+\end{sideways} & \begin{sideways}
+{\footnotesize Case Design}
+\end{sideways} & \begin{sideways}
+{\footnotesize Mechanics/Schematics}
+\end{sideways} & \begin{sideways}
+{\footnotesize Entirely open}
+\end{sideways} & \begin{sideways}
+{\footnotesize Project leader}
+\end{sideways} & \begin{sideways}
+{\footnotesize Core Team}
+\end{sideways} & \begin{sideways}
+{\footnotesize Developer community}
+\end{sideways} & \begin{sideways}
+{\footnotesize User community}
+\end{sideways} & \begin{sideways}
+{\footnotesize Related Company or Association}
+\end{sideways} & \begin{sideways}
+{\footnotesize Other}
+\end{sideways} & \begin{sideways}
+{\footnotesize Project leader}
+\end{sideways} & \begin{sideways}
+{\footnotesize Core Team}
+\end{sideways} & \begin{sideways}
+{\footnotesize Developer community}
+\end{sideways} & \begin{sideways}
+{\footnotesize User community}
+\end{sideways} & \begin{sideways}
+{\footnotesize Related Company or Association}
+\end{sideways} & \begin{sideways}
+{\footnotesize Outsourced}
+\end{sideways} & \begin{sideways}
+{\footnotesize Other}
+\end{sideways} & \begin{sideways}
+{\footnotesize Not yet clear}
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+{\footnotesize Free Art Bureau} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  & \tabularnewline
 \hline 
 {\footnotesize Free Beer} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
@@ -2113,25 +2201,21 @@ Entirely open
 \hline 
 {\footnotesize Hexayurt} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Im-FFeeder} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Im-FFeeder} & {\footnotesize x} & {\footnotesize x} &  &  &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} &  &  & {\footnotesize x} &  &  &  & \tabularnewline
 \hline 
-{\footnotesize IP04 4-Port} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize IP04} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize IP-PBX} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize IP08 8-Port} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize IP-PBX} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize IP08} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize iRobot} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize K People} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize K People} & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  &  &  &  &  & {\footnotesize x} &  &  & \tabularnewline
 \hline 
 {\footnotesize LED Stripe} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize Linux omap} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Local Motors} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Local Motors} &  &  & {\footnotesize x} &  &  &  & {\footnotesize x} &  &  & {\footnotesize x} &  &  & {\footnotesize x} &  &  & {\footnotesize x} &  &  & \tabularnewline
 \hline 
 {\footnotesize MakerBot} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
@@ -2149,407 +2233,371 @@ Entirely open
 \hline 
 {\footnotesize Niftymitter} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize oBiCo} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize oBiCo} & {\footnotesize x} & {\footnotesize x} &  &  &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize OMFootCtrl} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
 {\footnotesize OLPC} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize O. Architecture} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OAN} &  &  &  &  & {\footnotesize x} &  & {\footnotesize x} & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  & {\footnotesize x}\tabularnewline
 \hline 
-{\footnotesize Network} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize O. Garments} &  &  &  &  & {\footnotesize x} & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize O. Garments} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize O. Moto X} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize O. Moto X} &  &  &  &  & {\footnotesize x} &  &  &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} &  &  &  & \tabularnewline
 \hline 
 {\footnotesize O. Pandora} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize O. Prosthetics} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OPP} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Project} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OS Cookbook} &  &  &  &  & {\footnotesize x} & {\footnotesize x} &  &  &  &  &  &  &  &  & {\footnotesize x} &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OS Cookbook} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OS Ecology} &  &  &  &  & {\footnotesize x} & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  & \tabularnewline
 \hline 
-{\footnotesize OS Ecology} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OSWM} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  &  & {\footnotesize x}\tabularnewline
 \hline 
-{\footnotesize OS Washing} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Machine} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-\end{tabular}{\small \par}
+\end{tabular}{\footnotesize \par}
 
-{\small \caption{institutional design and production details (2/2) of OIP entries treated
+{\footnotesize \caption{institutional design and production details (2/2) of OIP entries treated
 by OSHWL (2/3)}
 }
 \end{table}
-{\small \par}
+{\footnotesize \par}
 
-{\small }
+{\footnotesize }
 \begin{table}[H]
-{\small }%
-\begin{tabular}{|l|l|l|l|c|c|c|c|l|c|c|c|c|c|c|c|c|c|c|}
+{\footnotesize }%
+\begin{tabular}{|l|lll|cccc|l|ccccc|}
 \hline 
-\multirow{2}{*}{{\small title}} & \multirow{2}{*}{\begin{sideways}
-{\small user/private contribution}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\small commercial contribution}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\small research contribution}
-\end{sideways}} & \multicolumn{4}{c|}{{\small type of collab.}} & \multirow{2}{*}{\begin{sideways}
-{\small activity}
-\end{sideways}} & \multicolumn{5}{c|}{{\small community communication}} & \multicolumn{5}{c|}{{\small degree of openness}}\tabularnewline
- &  &  &  & \begin{sideways}
-c. d. 1 c. p.
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{3}{l|}{{\footnotesize contribution}} & \multicolumn{4}{c|}{{\footnotesize type of collab.}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize activity}
+\end{sideways}} & \multicolumn{5}{c|}{{\footnotesize community communication}}\tabularnewline
+ & \begin{sideways}
+{\footnotesize user/private}
 \end{sideways} & \begin{sideways}
-c. d. s. c. p.
+{\footnotesize commercial}
 \end{sideways} & \begin{sideways}
-{\small p. k. w/ c. d.}
+{\footnotesize research}
 \end{sideways} & \begin{sideways}
-{\small p. k. w/o c. d.}
+{\footnotesize c. d. one c. p.}
+\end{sideways} & \begin{sideways}
+{\footnotesize c. d. several c. p.}
+\end{sideways} & \begin{sideways}
+{\footnotesize p. k. w/ c. d.}
+\end{sideways} & \begin{sideways}
+{\footnotesize p. k. w/o c. d.}
 \end{sideways} &  & \begin{sideways}
-Face-to-face
+{\footnotesize Face-to-face}
 \end{sideways} & \begin{sideways}
-Mailinglists
+{\footnotesize Mailinglists}
 \end{sideways} & \begin{sideways}
-Chat
+{\footnotesize Chat}
 \end{sideways} & \begin{sideways}
-Board
+{\footnotesize Board}
 \end{sideways} & \begin{sideways}
-Other
-\end{sideways} & \begin{sideways}
-Software
-\end{sideways} & \begin{sideways}
-Hardware interfaces
-\end{sideways} & \begin{sideways}
-Case Design
-\end{sideways} & \begin{sideways}
-Mechanics/Schematics
-\end{sideways} & \begin{sideways}
-Entirely open
+{\footnotesize Other}
 \end{sideways}\tabularnewline
 \hline 
 \hline 
-{\footnotesize O. Waterbike} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OWbP} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Project} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OS BHKW} &  &  &  &  &  &  &  & {\footnotesize 2} &  &  &  &  & {\footnotesize x}\tabularnewline
 \hline 
-{\footnotesize OS BHKW} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenBeacon} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenBeacon} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenCola} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenCola} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenEEG} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenEEG} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize openenergymonitor} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize openenergymonitor} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize openEyes} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize openEyes} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OM650} & {\footnotesize x} & {\footnotesize x} &  &  &  &  & {\footnotesize x} & {\footnotesize 1} &  &  &  &  & {\footnotesize x}\tabularnewline
 \hline 
-{\footnotesize OpenMini} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenMoko} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize 650 Sailboat} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenPCD} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenMoko} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenRemote} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenPCD} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenServo} & {\footnotesize x} & {\footnotesize x} &  &  & {\footnotesize x} &  &  & {\footnotesize 3} &  &  &  & {\footnotesize x} & \tabularnewline
 \hline 
-{\footnotesize OpenRemote} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenSpace} & {\footnotesize x} &  & {\footnotesize x} & {\footnotesize x} &  &  &  & {\footnotesize 2} &  & {\footnotesize x} &  &  & {\footnotesize x}\tabularnewline
 \hline 
-{\footnotesize OpenServo} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenSPARC} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenSpace} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenWrt} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenSPARC} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OScar project} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenWrt} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize PC Engines} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OScar project} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Rallylog} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize PC Engines} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Ravelry} & {\footnotesize x} & {\footnotesize x} &  &  &  & {\footnotesize x} &  & {\footnotesize 3} &  &  & {\footnotesize x} &  & {\footnotesize x}\tabularnewline
 \hline 
-{\footnotesize Rallylog} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize RepRap} & {\footnotesize x} &  & {\footnotesize x} & {\footnotesize x} &  &  &  & {\footnotesize 2} &  & {\footnotesize x} & {\footnotesize x} &  & {\footnotesize x}\tabularnewline
 \hline 
-{\footnotesize Ravelry} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize RFID door opener} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize RepRap} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize RiverSimple} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  &  & {\footnotesize 2} & {\footnotesize x} & {\footnotesize x} &  &  & \tabularnewline
 \hline 
-{\footnotesize RFID door opener} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize RONJA} &  &  &  &  &  &  & {\footnotesize x} & {\footnotesize 3} &  & {\footnotesize x} &  &  & \tabularnewline
 \hline 
-{\footnotesize RiverSimple} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Sanguino} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize RONJA} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Semitone Dimmers} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Sanguino} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize SCA} & {\footnotesize x} &  &  &  & {\footnotesize x} &  &  & {\footnotesize 3} & {\footnotesize x} &  & {\footnotesize x} & {\footnotesize x} & {\footnotesize x}\tabularnewline
 \hline 
-{\footnotesize Semitone Dimmers} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize solar tracking} & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} & {\footnotesize 2} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x}\tabularnewline
 \hline 
-{\footnotesize Solar Cooking} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Spiffchorder} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Archive} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize SquidBee} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize solar tracking} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Stribe} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Spiffchorder} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize StrobIt Triggr} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize SquidBee} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Thingiverse} & {\footnotesize x} &  &  &  &  & {\footnotesize x} &  & {\footnotesize 3} &  &  &  & {\footnotesize x} & {\footnotesize x}\tabularnewline
 \hline 
-{\footnotesize Stribe} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Traxmod} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize StrobIt Triggr} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize zeroclock} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Thingiverse} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Zoybar} &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Traxmod} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize zeroclock} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Zoybar} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-\end{tabular}{\small \par}
+\end{tabular}{\footnotesize \par}
 
-{\small \caption{institutional design and production details (1/2) of OIP entries treated
+{\footnotesize \caption{institutional design and production details (1/2) of OIP entries treated
 by OSHWL (3/3)}
 }
 \end{table}
-{\small \par}
+{\footnotesize \par}
 
-{\small }
+{\footnotesize }
 \begin{table}[H]
-{\small }%
-\begin{tabular}{|l|l|l|l|c|c|c|c|l|c|c|c|c|c|c|c|c|c|c|}
+{\footnotesize }%
+\begin{tabular}{|l|ccccc|cccccc|cccccccc|}
 \hline 
-\multirow{2}{*}{{\small title}} & \multirow{2}{*}{\begin{sideways}
-{\small user/private contribution}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\small commercial contribution}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\small research contribution}
-\end{sideways}} & \multicolumn{4}{c|}{{\small type of collab.}} & \multirow{2}{*}{\begin{sideways}
-{\small activity}
-\end{sideways}} & \multicolumn{5}{c|}{{\small community communication}} & \multicolumn{5}{c|}{{\small degree of openness}}\tabularnewline
- &  &  &  & \begin{sideways}
-c. d. 1 c. p.
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{5}{c|}{{\footnotesize degree of openness}} & \multicolumn{6}{c|}{{\footnotesize development drivers}} & \multicolumn{8}{c|}{{\footnotesize product produced by}}\tabularnewline
+ & \begin{sideways}
+{\footnotesize Software}
 \end{sideways} & \begin{sideways}
-c. d. s. c. p.
+{\footnotesize Hardware interfaces}
 \end{sideways} & \begin{sideways}
-{\small p. k. w/ c. d.}
+{\footnotesize Case Design}
 \end{sideways} & \begin{sideways}
-{\small p. k. w/o c. d.}
-\end{sideways} &  & \begin{sideways}
-Face-to-face
+{\footnotesize Mechanics/Schematics}
 \end{sideways} & \begin{sideways}
-Mailinglists
+{\footnotesize Entirely open}
 \end{sideways} & \begin{sideways}
-Chat
+{\footnotesize Project leader}
 \end{sideways} & \begin{sideways}
-Board
+{\footnotesize Core Team}
 \end{sideways} & \begin{sideways}
-Other
+{\footnotesize Developer community}
 \end{sideways} & \begin{sideways}
-Software
+{\footnotesize User community}
 \end{sideways} & \begin{sideways}
-Hardware interfaces
+{\footnotesize Related Company or Association}
 \end{sideways} & \begin{sideways}
-Case Design
+{\footnotesize Other}
 \end{sideways} & \begin{sideways}
-Mechanics/Schematics
+{\footnotesize Project leader}
 \end{sideways} & \begin{sideways}
-Entirely open
+{\footnotesize Core Team}
+\end{sideways} & \begin{sideways}
+{\footnotesize Developer community}
+\end{sideways} & \begin{sideways}
+{\footnotesize User community}
+\end{sideways} & \begin{sideways}
+{\footnotesize Related Company or Association}
+\end{sideways} & \begin{sideways}
+{\footnotesize Outsourced}
+\end{sideways} & \begin{sideways}
+{\footnotesize Other}
+\end{sideways} & \begin{sideways}
+{\footnotesize Not yet clear}
 \end{sideways}\tabularnewline
 \hline 
 \hline 
-{\footnotesize O. Waterbike} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OWbP} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Project} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OS BHKW} &  &  &  &  & {\footnotesize x} &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OS BHKW} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenBeacon} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenBeacon} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenCola} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenCola} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenEEG} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenEEG} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize openenergymonitor} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize openenergymonitor} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize openEyes} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize openEyes} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OM650} &  &  & {\footnotesize x} &  &  & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  &  & {\footnotesize x} & {\footnotesize x}\tabularnewline
 \hline 
-{\footnotesize OpenMini} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenMoko} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize 650 Sailboat} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenPCD} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenMoko} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenRemote} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenPCD} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenServo} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  &  &  &  &  &  &  & {\footnotesize x} &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenRemote} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenSpace} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  & {\footnotesize x} &  &  & {\footnotesize x} &  &  & {\footnotesize x} &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenServo} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenSPARC} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenSpace} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OpenWrt} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenSPARC} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize OScar project} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OpenWrt} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize PC Engines} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize OScar project} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Rallylog} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize PC Engines} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Ravelry} &  &  &  &  & {\footnotesize x} &  &  & {\footnotesize x} & {\footnotesize x} &  &  & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Rallylog} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize RepRap} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  &  &  & {\footnotesize x} & {\footnotesize x} & {\footnotesize x} &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Ravelry} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize RFID door opener} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize RepRap} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize RiverSimple} &  &  &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} &  &  & \tabularnewline
 \hline 
-{\footnotesize RFID door opener} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize RONJA} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize RiverSimple} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Sanguino} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize RONJA} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Semitone Dimmers} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Sanguino} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize SCA} &  &  &  &  & {\footnotesize x} &  &  & {\footnotesize x} &  &  &  &  &  & {\footnotesize x} & {\footnotesize x} &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Semitone Dimmers} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize solar tracking} &  & {\footnotesize x} &  & {\footnotesize x} & {\footnotesize x} &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Solar Cooking} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Spiffchorder} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Archive} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize SquidBee} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize solar tracking} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Stribe} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Spiffchorder} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize StrobIt Triggr} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize SquidBee} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Thingiverse} &  &  & {\footnotesize x} &  & {\footnotesize x} &  &  & {\footnotesize x} & {\footnotesize x} &  &  &  &  & {\footnotesize x} & {\footnotesize x} &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Stribe} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Traxmod} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize StrobIt Triggr} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize zeroclock} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Thingiverse} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+{\footnotesize Zoybar} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-{\footnotesize Traxmod} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize zeroclock} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-{\footnotesize Zoybar} &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
-\hline 
-\end{tabular}{\small \par}
+\end{tabular}{\footnotesize \par}
 
-{\small \caption{institutional design and production details (2/2) of OIP entries treated
+{\footnotesize \caption{institutional design and production details (2/2) of OIP entries treated
 by OSHWL (3/3)}
 }
 \end{table}
-{\small \par}
+{\footnotesize \par}
 
-{\small }
+{\footnotesize }
 \begin{table}[H]
-{\small }%
-\begin{tabular}{|l|l|l|l|c|c|c|c|l|c|c|c|c|c|c|c|c|c|c|}
+{\footnotesize }%
+\begin{tabular}{|l|lll|cccc|l|ccccc|}
 \hline 
-\multirow{2}{*}{{\small title}} & \multirow{2}{*}{\begin{sideways}
-{\small user/private contribution}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\small commercial contribution}
-\end{sideways}} & \multirow{2}{*}{\begin{sideways}
-{\small research contribution}
-\end{sideways}} & \multicolumn{4}{c|}{{\small type of collab.}} & \multirow{2}{*}{\begin{sideways}
-{\small activity}
-\end{sideways}} & \multicolumn{5}{c|}{{\small community communication}} & \multicolumn{5}{c|}{{\small degree of openness}}\tabularnewline
- &  &  &  & \begin{sideways}
-c. d. 1 c. p.
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{3}{l|}{{\footnotesize contribution}} & \multicolumn{4}{c|}{{\footnotesize type of collab.}} & \multirow{2}{*}{\begin{sideways}
+{\footnotesize activity}
+\end{sideways}} & \multicolumn{5}{c|}{{\footnotesize community communication}}\tabularnewline
+ & \begin{sideways}
+{\footnotesize user/private}
 \end{sideways} & \begin{sideways}
-c. d. s. c. p.
+{\footnotesize commercial}
 \end{sideways} & \begin{sideways}
-{\small p. k. w/ c. d.}
+{\footnotesize research}
 \end{sideways} & \begin{sideways}
-{\small p. k. w/o c. d.}
+{\footnotesize c. d. one c. p.}
+\end{sideways} & \begin{sideways}
+{\footnotesize c. d. several c. p.}
+\end{sideways} & \begin{sideways}
+{\footnotesize p. k. w/ c. d.}
+\end{sideways} & \begin{sideways}
+{\footnotesize p. k. w/o c. d.}
 \end{sideways} &  & \begin{sideways}
-Face-to-face
+{\footnotesize Face-to-face}
 \end{sideways} & \begin{sideways}
-Mailinglists
+{\footnotesize Mailinglists}
 \end{sideways} & \begin{sideways}
-Chat
+{\footnotesize Chat}
 \end{sideways} & \begin{sideways}
-Board
+{\footnotesize Board}
 \end{sideways} & \begin{sideways}
-Other
-\end{sideways} & \begin{sideways}
-Software
-\end{sideways} & \begin{sideways}
-Hardware interfaces
-\end{sideways} & \begin{sideways}
-Case Design
-\end{sideways} & \begin{sideways}
-Mechanics/Schematics
-\end{sideways} & \begin{sideways}
-Entirely open
+{\footnotesize Other}
 \end{sideways}\tabularnewline
 \hline 
 \hline 
- &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+ &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-\end{tabular}{\small \par}
+\end{tabular}{\footnotesize \par}
 
-{\small \caption{institutional design and production details (1/2) of OSHWL projects
+{\footnotesize \caption{institutional design and production details (1/2) of OSHWL projects
 not listed by OIP}
 }
 \end{table}
-{\small \par}
+{\footnotesize \par}
 
-{\small }
+{\footnotesize }
 \begin{table}[H]
-{\small }%
-\begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+{\footnotesize }%
+\begin{tabular}{|l|ccccc|cccccc|cccccccc|}
 \hline 
-\multirow{2}{*}{{\small title}} & \multicolumn{5}{c|}{{\small degree of openness}} & \multicolumn{6}{c|}{{\small development drivers}} & \multicolumn{8}{c|}{{\small product produced by}}\tabularnewline
+\multirow{2}{*}{{\footnotesize title}} & \multicolumn{5}{c|}{{\footnotesize degree of openness}} & \multicolumn{6}{c|}{{\footnotesize development drivers}} & \multicolumn{8}{c|}{{\footnotesize product produced by}}\tabularnewline
  & \begin{sideways}
-Software
+{\footnotesize Software}
 \end{sideways} & \begin{sideways}
-Hardware interfaces
+{\footnotesize Hardware interfaces}
 \end{sideways} & \begin{sideways}
-Case Design
+{\footnotesize Case Design}
 \end{sideways} & \begin{sideways}
-Mechanics/Schematics
+{\footnotesize Mechanics/Schematics}
 \end{sideways} & \begin{sideways}
-Entirely open
+{\footnotesize Entirely open}
 \end{sideways} & \begin{sideways}
-{\small Project leader}
+{\footnotesize Project leader}
 \end{sideways} & \begin{sideways}
-{\small Core Team}
+{\footnotesize Core Team}
 \end{sideways} & \begin{sideways}
-{\small Developer community}
+{\footnotesize Developer community}
 \end{sideways} & \begin{sideways}
-{\small User community}
+{\footnotesize User community}
 \end{sideways} & \begin{sideways}
-{\small Related Company or Association}
+{\footnotesize Related Company or Association}
 \end{sideways} & \begin{sideways}
-{\small Other}
+{\footnotesize Other}
 \end{sideways} & \begin{sideways}
-{\small Project leader}
+{\footnotesize Project leader}
 \end{sideways} & \begin{sideways}
-{\small Core Team}
+{\footnotesize Core Team}
 \end{sideways} & \begin{sideways}
-{\small Developer community}
+{\footnotesize Developer community}
 \end{sideways} & \begin{sideways}
-{\small User community}
+{\footnotesize User community}
 \end{sideways} & \begin{sideways}
-{\small Related Company or Association}
+{\footnotesize Related Company or Association}
 \end{sideways} & \begin{sideways}
-{\small Outsourced}
+{\footnotesize Outsourced}
 \end{sideways} & \begin{sideways}
-{\small Other}
+{\footnotesize Other}
 \end{sideways} & \begin{sideways}
-{\small Not yet clear}
+{\footnotesize Not yet clear}
 \end{sideways}\tabularnewline
 \hline 
 \hline 
  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-\end{tabular}{\small \par}
+\end{tabular}{\footnotesize \par}
 
-{\small \caption{institutional design and production details (2/2) of OSHWL projects
+{\footnotesize \caption{institutional design and production details (2/2) of OSHWL projects
 not listed by OIP}
 }
 \end{table}

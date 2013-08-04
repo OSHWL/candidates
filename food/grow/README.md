@@ -7,12 +7,9 @@ http://www.anstiftung-ertomis.de/urbane-gaerten/gemeinschaftsgaerten/praxistipps
 
 
 
-
-
-
-
-
-
 irrigation: see water/irrigation and maybe energy/hydraulics
 
 some thermal concepts related to agriculture are developped under energy/thermal/bio
+
+
+Im-FFeeder
