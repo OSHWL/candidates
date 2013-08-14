@@ -1,0 +1,1694 @@
+%% LyX 2.0.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[twoside,english]{paper}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage[a4paper]{geometry}
+\geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm}
+\pagestyle{plain}
+\setcounter{tocdepth}{2}
+\setlength{\parskip}{\smallskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{array}
+\usepackage{rotating}
+\usepackage{refstyle}
+\usepackage{float}
+\usepackage{multirow}
+\usepackage{subscript}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+
+\AtBeginDocument{\providecommand\tabref[1]{\ref{tab:#1}}}
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+\RS@ifundefined{subref}
+  {\def\RSsubtxt{section~}\newref{sub}{name = \RSsubtxt}}
+  {}
+\RS@ifundefined{thmref}
+  {\def\RSthmtxt{theorem~}\newref{thm}{name = \RSthmtxt}}
+  {}
+\RS@ifundefined{lemref}
+  {\def\RSlemtxt{lemma~}\newref{lem}{name = \RSlemtxt}}
+  {}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\newenvironment{lyxlist}[1]
+{\begin{list}{}
+{\settowidth{\labelwidth}{#1}
+ \setlength{\leftmargin}{\labelwidth}
+ \addtolength{\leftmargin}{\labelsep}
+ \renewcommand{\makelabel}[1]{##1\hfil}}}
+{\end{list}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{footnote}
+\makesavenoteenv{tabular}
+
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+
+\title{\emph{Open Innovation Projects}}
+
+
+\subtitle{Website's content (partial) in one document and extrapolation of
+OIP's categorization to projects not listed by OIP}
+
+
+\author{Léonard Favre}
+
+\maketitle
+Aug. 2013
+
+\tableofcontents{}
+
+\listoftables
+
+
+\pagebreak{}
+
+
+\section{Introduction}
+
+open-innovation-projects.org (\emph{OIP} in the text following) lists
+mostly OSHW projects and systematically categorizes them. Out of the
+\textsubscript{\textasciitilde{}}150 listed entries, the following
+109 retained our attention in the context of OSHWL (those that previously
+weren't mentioned in OSHWL were subsequently added to it):
+
+\begin{table}[H]
+\noindent \begin{raggedright}
+\begin{tabular}{|c|c|c|}
+\hline 
+title & OSHWL path & keywords from OIP\tabularnewline
+\hline 
+\hline 
+3G Stoves & energy/thermal/stoves & stove, 3g, woodgas, tlud, biomass\tabularnewline
+\hline 
+Absorber Roof & energy/solar/thermal & solar, thermal, collector, roof, intergrated\tabularnewline
+\hline 
+Abundant & \multirow{2}{*}{water treatment} & Clean Drinking Water, clay pot water filter, \tabularnewline
+Water (AW) &  & water, appropriate technology\tabularnewline
+\hline 
+Agua Clara & water treatment & water treatment, water, development, water purification\tabularnewline
+\hline 
+Akvo & water & water sanitation development\tabularnewline
+\hline 
+Always Innovating & \multirow{2}{*}{electro-it-monit} & \multirow{2}{*}{}\tabularnewline
+Touch Book (AITB) &  & \tabularnewline
+\hline 
+Arduino & electro-it-monit & -\tabularnewline
+\hline 
+Atari Coldfire & electro-it-monit & \tabularnewline
+\hline 
+Aurora OS & \multirow{2}{*}{audio-visual} & \multirow{2}{*}{}\tabularnewline
+Mixer (AOSM) &  & \tabularnewline
+\hline 
+AVR Butterfly & \multirow{2}{*}{electro-it-monit} & \multirow{2}{*}{datalogger, logging, logger}\tabularnewline
+Logger (AVR BL) &  & \tabularnewline
+\hline 
+AVR Butterfly & \multirow{2}{*}{audio-visual} & \multirow{2}{*}{}\tabularnewline
+MP3 (AVR BM) &  & \tabularnewline
+\hline 
+AX84 Firefly & audio-visual & \tabularnewline
+\hline 
+Balloon & electro-it-monit & -\tabularnewline
+\hline 
+Beagle Board & electro-it-monit & omap3, linux, open hardware\tabularnewline
+\hline 
+Ben NanoNote & electro-it-monit & copyleft hardware, open source, openwrt\tabularnewline
+\hline 
+Biobricks & health & \tabularnewline
+\hline 
+BitsFromBytes (BFB) & robo-manuf & \tabularnewline
+\hline 
+Brewtopia & food/prepare & \tabularnewline
+\hline 
+Canuckle  & \multirow{2}{*}{energy/light} & solar, energy, green, DIY, alternative, sun, heating,\tabularnewline
+LEDlights (CLED) &  & electricity, solar cooking, solar concentration, heliostat\tabularnewline
+\hline 
+Cfree OS & \multirow{2}{*}{audio-visual/optics} & Optics, Telescope, Renewable Thermoplastic Resin,\tabularnewline
+Optics (COSO) &  & Membrane Mirror, Renewable Thin Film Mirror, Cosmos\tabularnewline
+\hline 
+Chumby & electro-it-monit & \tabularnewline
+\hline 
+\multirow{2}{*}{Contraptor} & \multirow{2}{*}{structures/assemblies} & cnc, cartesian robot, construction set,\tabularnewline
+ &  & arduino, 3d printer, g-code\tabularnewline
+\hline 
+Craftster & oshw-mgmt & -\tabularnewline
+\hline 
+Crypto Stick & electro-it-monit & \tabularnewline
+\hline 
+\multirow{2}{*}{Cubespawn} & \multirow{2}{*}{robo-manuf} & open source, flexible manufacturing system,\tabularnewline
+ &  & FMS, factory, robot\tabularnewline
+\hline 
+Daisy MP3 & audio-visual & \tabularnewline
+\hline 
+diy\_efi & transport/propulsion & -\tabularnewline
+\hline 
+Elphel & audio-visual & \tabularnewline
+\hline 
+Ethernut & electro-it-monit & -\tabularnewline
+\hline 
+Etherrape & electro-it-monit & -\tabularnewline
+\hline 
+Fab Camera & audio-visual & \tabularnewline
+\hline 
+Fab@Home & robo-manuf & -\tabularnewline
+\hline 
+Flash-Plaice & electro-it-monit & -\tabularnewline
+\hline 
+Fnordlicht & audio-visual & \tabularnewline
+\hline 
+Formica & robo-manuf & \tabularnewline
+\hline 
+\end{tabular} 
+\par\end{raggedright}
+
+\caption{OIP entries treated by OSHWL (1/3)}
+\end{table}
+\begin{table}[H]
+\begin{tabular}{|c|c|c|}
+\hline 
+title & OSHWL path & keywords from OIP\tabularnewline
+\hline 
+\hline 
+Free Art Bureau & oshw-mgmt & -\tabularnewline
+\hline 
+Free Beer & food/prepare & \tabularnewline
+\hline 
+Freeduino & electro-it-monit & -\tabularnewline
+\hline 
+Gumstix & electro-it-monit & -\tabularnewline
+\hline 
+HD Video Capture & audio-visual & \tabularnewline
+\hline 
+Hexayurt & structures/construction & \tabularnewline
+\hline 
+Im-FFeeder & food/grow & automatic, feeder, fish, pet, pond, aquarium\tabularnewline
+\hline 
+IP04 & \multirow{2}{*}{electro-it-monit} & \multirow{2}{*}{}\tabularnewline
+(4-Port IP-PBX) &  & \tabularnewline
+\hline 
+IP08 & \multirow{2}{*}{electro-it-monit} & \multirow{2}{*}{}\tabularnewline
+(8-Port IP-PBX) &  & \tabularnewline
+\hline 
+iRobot & robo-manuf & \tabularnewline
+\hline 
+K People & oshw-mgmt & knowledge worker\tabularnewline
+\hline 
+LED Stripe & audio-visual & \tabularnewline
+\hline 
+Linux omap & electro-it-monit & \tabularnewline
+\hline 
+Local Motors & transport/road/cars & -\tabularnewline
+\hline 
+MakerBot & \multirow{1}{*}{robo-manuf} & \tabularnewline
+\hline 
+Mikrokopter & transport/aeronautics & \tabularnewline
+\hline 
+Milkymist & audio-visual & \tabularnewline
+\hline 
+MISA & audio-visual & \tabularnewline
+\hline 
+MyOpenRouter & electro-it-monit & \tabularnewline
+\hline 
+Neuros Link & audio-visual & \tabularnewline
+\hline 
+Neuros OSD & audio-visual & \tabularnewline
+\hline 
+Niftymitter & electro-it-monit & \tabularnewline
+\hline 
+oBiCo & transport/road/bicycle & -\tabularnewline
+\hline 
+OMFootCtrl & electro-it-monit & \tabularnewline
+\hline 
+OLPC & electro-it-monit & \tabularnewline
+\hline 
+O. Architecture & \multirow{2}{*}{structures/construction} & \multirow{2}{*}{-}\tabularnewline
+Network (OAN) &  & \tabularnewline
+\hline 
+O. Garments & robo-manuf/manuf/textile & -\tabularnewline
+\hline 
+O. Moto X & transport/road & Race, motorcycle, ttxgp, electric\tabularnewline
+\hline 
+O. Pandora & audio-visual & \tabularnewline
+\hline 
+O. Prosthetics & \multirow{2}{*}{health} & \multirow{2}{*}{}\tabularnewline
+Project (OPP) &  & \tabularnewline
+\hline 
+OS Cookbook & \multirow{1}{*}{food/prepare} & -\tabularnewline
+\hline 
+OS Ecology & oshw-mgmt & open source economy, efficient economy\tabularnewline
+\hline 
+OS Washing & \multirow{2}{*}{cleaning/laundry} & \multirow{2}{*}{-}\tabularnewline
+Machine (OSWM) &  & \tabularnewline
+\hline 
+\end{tabular} 
+
+\caption{OIP entries treated by OSHWL (2/3)}
+\end{table}
+\begin{table}[H]
+\begin{tabular}{|c|c|c|}
+\hline 
+title & OSHWL path & keywords from OIP\tabularnewline
+\hline 
+\hline 
+O. Waterbike & \multirow{2}{*}{transport/water} & \multirow{2}{*}{}\tabularnewline
+Project (OWbP) &  & \tabularnewline
+\hline 
+OS BHKW & energy/thermal/cogen & -\tabularnewline
+\hline 
+OpenBeacon & electro-it-monit & \tabularnewline
+\hline 
+OpenCola & food/prepare & \tabularnewline
+\hline 
+OpenEEG & health & \tabularnewline
+\hline 
+openenergymonitor & electro-it-monit & energy monitor, power meter, renewable energy\tabularnewline
+\hline 
+openEyes & electro-it-monit & \tabularnewline
+\hline 
+OpenMini 650 & \multirow{2}{*}{transport/water} & \multirow{2}{*}{-}\tabularnewline
+Sailboat (OM650) &  & \tabularnewline
+\hline 
+OpenMoko & electro-it-monit & \tabularnewline
+\hline 
+OpenPCD & electro-it-monit & \tabularnewline
+\hline 
+OpenRemote & electro-it-monit & -\tabularnewline
+\hline 
+OpenServo & robo-manuf & -\tabularnewline
+\hline 
+OpenSpace & oshw-mgmt & creativity brainstorming documentation\tabularnewline
+\hline 
+OpenSPARC & electro-it-monit & \tabularnewline
+\hline 
+OpenWrt & electro-it-monit & -\tabularnewline
+\hline 
+OScar project & transport/road/cars & \tabularnewline
+\hline 
+PC Engines & electro-it-monit & \tabularnewline
+\hline 
+Rallylog & electro-it-monit & \tabularnewline
+\hline 
+Ravelry & robo-manuf/manuf/textile & -\tabularnewline
+\hline 
+RepRap & robo-manuf & printer, 3d printer\tabularnewline
+\hline 
+RFID door opener & structures/assemblies/locks & \tabularnewline
+\hline 
+RiverSimple & transport/road & hydrogen, electric vehicle\tabularnewline
+\hline 
+RONJA & audio-visual/optics & -\tabularnewline
+\hline 
+Sanguino & electro-it-monit & microcontroller, board\tabularnewline
+\hline 
+Semitone Dimmers & audio-visual & \tabularnewline
+\hline 
+Solar Cooking & \multirow{2}{*}{energy/solar/thermal} & \multirow{2}{*}{-}\tabularnewline
+Archive (SCA) &  & \tabularnewline
+\hline 
+solar tracking & energy/solar/tracking & -\tabularnewline
+\hline 
+Spiffchorder & audio-visual & \tabularnewline
+\hline 
+SquidBee & electro-it-monit & -\tabularnewline
+\hline 
+Stribe & audio-visual & \tabularnewline
+\hline 
+StrobIt Triggr & audio-visual & \tabularnewline
+\hline 
+Thingiverse & robo-manuf & Designs\tabularnewline
+\hline 
+Traxmod & audio-visual & \tabularnewline
+\hline 
+zeroclock & electro-it-monit & \tabularnewline
+\hline 
+Zoybar & audio-visual & \tabularnewline
+\hline 
+\end{tabular}
+
+\caption{OIP entries treated by OSHWL (3/3)}
+\end{table}
+
+
+\noindent \begin{flushleft}
+\pagebreak{}
+\par\end{flushleft}
+
+We will also apply the same ``standardized'' categorization effort
+to the following OSHWL projects, not listed by OIP (\tabref{OSHWL-projects-categorized}):
+
+\begin{table}[H]
+\begin{tabular}{|c|c|c|}
+\hline 
+title & OSHWL path & keywords\tabularnewline
+\hline 
+\hline 
+ADABio-Autoconstruction &  & \tabularnewline
+\hline 
+Global Anchor &  & \tabularnewline
+\hline 
+Postfossil Mobil &  & \tabularnewline
+\hline 
+SolarFire &  & \tabularnewline
+\hline 
+SolarFlower &  & \tabularnewline
+\hline 
+\end{tabular}
+
+\caption{other OSHWL projects categorized according to OIP's method\label{tab:OSHWL-projects-categorized}}
+\end{table}
+\pagebreak{}
+
+The following is the categorization itself (in tables making overview
+and comparison easy, as opposed to individual project sheets as is
+the case on open-innovation-projects.org), copied from OIP for the
+projects they list and complemented with the projects from \tabref{OSHWL-projects-categorized}.
+
+There are three groups of criteria:
+\begin{itemize}
+\item project details
+\item product details
+\item institutional design and production
+\end{itemize}
+
+\section{Project details}
+
+First, a description of the categories in the tables directly following.
+
+
+\paragraph{project type}
+\begin{lyxlist}{00.00.0000}
+\item [{single\ project\hspace{3.3em}}] \noindent one or more specific
+product(s) is/are shown and/or developed 
+\item [{collection\ of\ projects}] overview over several different projects
+or product, e.g. OIP itself
+\end{lyxlist}
+
+\paragraph{development Status}
+
+current stage of development according to the following:
+\begin{lyxlist}{00.00.0000}
+\item [{1}] planning/virtual development - ideas and digital dev. evolving 
+\item [{2}] prototyping started - first physical proto. assembled, testing
+phase 
+\item [{3}] first working proto. - working proto. available, release to
+community, further dev. needed 
+\item [{4}] production stable - fully functional product permanently available
+on market, further dev. possible 
+\item [{5}] mature - final dev. stage reached, no further dev. necessary 
+\item [{Inactive}] dev. stopped, no final product available
+\end{lyxlist}
+in case several products are being developed, the stage of the most
+advanced product is indicated. 
+
+
+\paragraph{license and trademark}
+\begin{itemize}
+\item whether the project is using an open license and of which type
+\item whether they have a registered trademark
+\end{itemize}
+
+\paragraph{country}
+
+main location, i.e. home country of the project leader, the core team
+or the office location. 
+
+
+\paragraph{start year}
+
+year in which the project was initiated.
+
+\vfill{}
+
+
+
+\subsection*{Tables}
+
+\begin{table}[H]
+\begin{tabular}{|c|cc|c|ccccccc|c|c|}
+\hline 
+\multirow{2}{*}{title} & \multicolumn{2}{c|}{entry type} & \multirow{2}{*}{\begin{sideways}
+dev. status
+\end{sideways}} & \multicolumn{7}{c|}{licence and TM} & \multirow{2}{*}{\begin{sideways}
+country
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+start year
+\end{sideways}}\tabularnewline
+ & \begin{sideways}
+collection of projects
+\end{sideways} & \begin{sideways}
+single project
+\end{sideways} &  & \begin{sideways}
+GPL, LGPL or similar copyleft license
+\end{sideways} & \begin{sideways}
+BSD, MIT or similar permissive license
+\end{sideways} & \begin{sideways}
+Creative Commons license
+\end{sideways} & \begin{sideways}
+other open license
+\end{sideways} & \begin{sideways}
+commercial license
+\end{sideways} & \begin{sideways}
+no license
+\end{sideways} & \begin{sideways}
+registered trademark
+\end{sideways} &  & \tabularnewline
+\hline 
+\hline 
+3G Stoves & x &  & 3 &  &  &  &  & x &  & x & IN & 2008\tabularnewline
+\hline 
+Absorber Roof &  & x & 3 &  &  &  &  &  & x &  & AUS & 2007\tabularnewline
+\hline 
+AW &  & x & 3 &  &  &  &  &  & x &  & AUS & 2009\tabularnewline
+\hline 
+Agua Clara &  & x & 5 &  &  & x &  &  &  &  & US & 2005\tabularnewline
+\hline 
+Akvo & x &  & 4 & x &  & x &  &  &  &  & NL & 2006\tabularnewline
+\hline 
+AITB & \multirow{1}{*}{} &  & \multirow{1}{*}{} &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Arduino &  & x & 5 & x &  & x &  &  &  & x & IT & 2005\tabularnewline
+\hline 
+Atari Coldfire &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+AOSM &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+AVR BL &  & x & 3 &  & x &  &  &  &  &  & UK & 2003\tabularnewline
+\hline 
+AVR BM &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+AX84 Firefly &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Balloon &  & x & 3 &  &  &  & x &  &  &  & - & 1999\tabularnewline
+\hline 
+Beagle Board &  & x & 4 & x &  & x &  &  & x (?) &  & US & 2007\tabularnewline
+\hline 
+Ben NanoNote & x &  & 4 & x &  & x &  &  &  & x & HK & 2009\tabularnewline
+\hline 
+Biobricks &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+BFB &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Brewtopia &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+CLED &  & x & 3 &  &  &  &  &  &  &  & CA & 2008\tabularnewline
+\hline 
+COSO & x &  & 3 &  &  & x &  &  &  &  & AUS & 2007\tabularnewline
+\hline 
+Chumby &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Contraptor &  & x & 3 & x &  & x &  &  &  &  & US & 2007\tabularnewline
+\hline 
+Craftster & x &  & 5 &  &  &  &  &  & x &  &  & \tabularnewline
+\hline 
+Crypto Stick &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Cubespawn & x &  & 3 &  &  &  & x &  &  &  & US & 2009\tabularnewline
+\hline 
+Daisy MP3 &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+diy\_efi & x &  & 2 & x &  &  &  &  &  &  & US & 1994\tabularnewline
+\hline 
+Elphel &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Ethernut & x &  & 4 &  & x &  &  &  &  &  & D & 2001\tabularnewline
+\hline 
+Etherrape &  & x & 3 & - & - & - & - & - & - & - & - & 2006\tabularnewline
+\hline 
+Fab Camera &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Fab@Home &  & x & 2 &  & x &  &  &  &  &  & US & 2006\tabularnewline
+\hline 
+Flash-Plaice &  & x & 1 & x &  &  &  &  &  &  & - & 2007\tabularnewline
+\hline 
+Fnordlicht &  & x & 1 & x &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Formica &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}
+
+\caption{project details of OIP entries treated by OSHWL (1/3)}
+
+
+\end{table}
+ 
+
+\begin{table}[H]
+\begin{tabular}{|c|cc|c|ccccccc|c|c|}
+\hline 
+\multirow{2}{*}{title} & \multicolumn{2}{c|}{entry type} & \multirow{2}{*}{\begin{sideways}
+dev. status
+\end{sideways}} & \multicolumn{7}{c|}{licence and TM} & \multirow{2}{*}{\begin{sideways}
+country
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+start year
+\end{sideways}}\tabularnewline
+ & \begin{sideways}
+collection of projects
+\end{sideways} & \begin{sideways}
+single project
+\end{sideways} &  & \begin{sideways}
+GPL, LGPL or similar copyleft license
+\end{sideways} & \begin{sideways}
+BSD, MIT or similar permissive license
+\end{sideways} & \begin{sideways}
+Creative Commons license
+\end{sideways} & \begin{sideways}
+other open license
+\end{sideways} & \begin{sideways}
+commercial license
+\end{sideways} & \begin{sideways}
+no license
+\end{sideways} & \begin{sideways}
+registered trademark
+\end{sideways} &  & \tabularnewline
+\hline 
+\hline 
+Free Art Bureau & x &  & 4 & x &  &  &  &  &  &  & F & 2011\tabularnewline
+\hline 
+Free Beer &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Freeduino &  & x & 3 &  &  & x &  &  &  &  & - & -\tabularnewline
+\hline 
+Gumstix &  & x & 4 &  &  & x &  &  &  & x & US & 2003\tabularnewline
+\hline 
+HD Video Capture &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Hexayurt &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Im-FFeeder &  & x & 3 & x &  &  &  &  &  &  & MX & 2011\tabularnewline
+\hline 
+IP04 &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+IP08 &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+iRobot &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+K People &  & x & 2 &  &  &  & x &  &  & x & IT & 2009\tabularnewline
+\hline 
+LED Stripe &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Linux omap &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Local Motors &  & x & 2 &  &  &  &  &  &  &  & US & 2007\tabularnewline
+\hline 
+MakerBot &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Mikrokopter &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Milkymist &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+MISA &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+MyOpenRouter &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Neuros Link &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Neuros OSD &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Niftymitter &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+oBiCo &  & x & 2 &  &  &  &  &  & x &  & D & 2007\tabularnewline
+\hline 
+OMFootCtrl &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OLPC &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OAN & x &  & 4 &  &  & x &  &  &  &  & US & 2006\tabularnewline
+\hline 
+O. Garments & x &  & 1 &  &  &  &  &  & x &  & D & 2008\tabularnewline
+\hline 
+O. Moto X &  & x & 1 &  &  &  & x &  &  &  & E & 2010\tabularnewline
+\hline 
+O. Pandora &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OPP &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OS Cookbook &  & x & 3 & x &  &  &  &  &  &  & US & 2002\tabularnewline
+\hline 
+OS Ecology & x &  & 3 &  &  & x &  &  &  &  & US & 2004\tabularnewline
+\hline 
+OSWM &  & x & 2 &  &  &  &  &  & x &  &  & 2008\tabularnewline
+\hline 
+\end{tabular}
+
+\caption{project details of OIP entries treated by OSHWL (2/3)}
+\end{table}
+
+
+\begin{table}[H]
+\begin{tabular}{|c|cc|c|ccccccc|c|c|}
+\hline 
+\multirow{2}{*}{title} & \multicolumn{2}{c|}{entry type} & \multirow{2}{*}{\begin{sideways}
+dev. status
+\end{sideways}} & \multicolumn{7}{c|}{licence and TM} & \multirow{2}{*}{\begin{sideways}
+country
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+start year
+\end{sideways}}\tabularnewline
+ & \begin{sideways}
+collection of projects
+\end{sideways} & \begin{sideways}
+single project
+\end{sideways} &  & \begin{sideways}
+GPL, LGPL or similar copyleft license
+\end{sideways} & \begin{sideways}
+BSD, MIT or similar permissive license
+\end{sideways} & \begin{sideways}
+Creative Commons license
+\end{sideways} & \begin{sideways}
+other open license
+\end{sideways} & \begin{sideways}
+commercial license
+\end{sideways} & \begin{sideways}
+no license
+\end{sideways} & \begin{sideways}
+registered trademark
+\end{sideways} &  & \tabularnewline
+\hline 
+\hline 
+OWbP &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OS BHKW &  &  & 2 &  &  &  &  &  & x &  & D & 2006\tabularnewline
+\hline 
+OpenBeacon &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenCola &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenEEG &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+openenergymonitor &  & x & 3 & x &  &  &  &  &  &  & UK & 2009\tabularnewline
+\hline 
+openEyes &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OM650 &  & x & 1 &  &  &  &  &  & x &  & D & 2000\tabularnewline
+\hline 
+OpenMoko &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenPCD &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenRemote &  & x & 3 &  &  & x &  &  &  & x & - & 2008\tabularnewline
+\hline 
+OpenServo &  & x & 3 &  & x &  &  &  &  &  & - & -\tabularnewline
+\hline 
+OpenSpace &  & x & 3 & x &  &  &  &  &  &  & US & 2009\tabularnewline
+\hline 
+OpenSPARC &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenWrt &  & x & 4 & x &  &  &  &  &  &  & - & -\tabularnewline
+\hline 
+OScar project &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+PC Engines &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Rallylog &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Ravelry & x &  & 4 &  &  &  &  &  & x &  & US & \tabularnewline
+\hline 
+RepRap &  & x & 2 & x &  &  &  &  &  &  & UK & 2004\tabularnewline
+\hline 
+RFID door opener &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+RiverSimple &  & x & 2 &  &  & x &  &  &  &  & UK & 2008\tabularnewline
+\hline 
+RONJA &  &  & 4 & x &  &  &  &  &  &  & CZ & \tabularnewline
+\hline 
+Sanguino &  & x & 3 &  &  & x &  &  &  &  & US & 2008\tabularnewline
+\hline 
+Semitone Dimmers &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+SCA &  & x & 4 &  &  & x &  &  &  &  &  & \tabularnewline
+\hline 
+solar tracking &  & x & 3 &  &  &  &  &  & x &  & CA & 2008\tabularnewline
+\hline 
+Spiffchorder &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+SquidBee &  & x & 4 &  &  & x &  &  &  & x & E & -\tabularnewline
+\hline 
+Stribe &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+StrobIt Triggr &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Thingiverse & x &  & 4 &  &  & x &  &  &  &  &  & 2008\tabularnewline
+\hline 
+Traxmod &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+zeroclock &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Zoybar &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}
+
+\caption{project details of OIP entries treated by OSHWL (3/3)}
+\end{table}
+
+
+\begin{table}[H]
+\begin{tabular}{|c|cc|c|ccccccc|c|c|}
+\hline 
+\multirow{2}{*}{title} & \multicolumn{2}{c|}{entry type} & \multirow{2}{*}{\begin{sideways}
+dev. status
+\end{sideways}} & \multicolumn{7}{c|}{licence and TM} & \multirow{2}{*}{\begin{sideways}
+country
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+start year
+\end{sideways}}\tabularnewline
+ & \begin{sideways}
+collection of projects
+\end{sideways} & \begin{sideways}
+single project
+\end{sideways} &  & \begin{sideways}
+GPL, LGPL or similar copyleft license
+\end{sideways} & \begin{sideways}
+BSD, MIT or similar permissive license
+\end{sideways} & \begin{sideways}
+Creative Commons license
+\end{sideways} & \begin{sideways}
+other open license
+\end{sideways} & \begin{sideways}
+commercial license
+\end{sideways} & \begin{sideways}
+no license
+\end{sideways} & \begin{sideways}
+registered trademark
+\end{sideways} &  & \tabularnewline
+\hline 
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}
+
+\caption{project details of OSHWL projects not listed by OIP}
+\end{table}
+
+
+\pagebreak{}
+
+
+\section{Product details}
+
+First, a description of the categories in the tables directly following.
+
+
+\paragraph*{product innovativeness}
+
+degree of innovativeness according to the following criteria: 
+\begin{lyxlist}{00.00.0000}
+\item [{5}] radical innovation - a new technology that results in a new
+market infrastructure, e.g. an innovation which does not address a
+recognized demand but instead creates a demand previously unrecognized
+by the consumer 
+\item [{4}] really new innovation - a really new product results in a market
+discontinuity or a technological discontinuity but will not incorporate
+both, e.g., new product lines, product line extensions with new technology,
+or new markets with existing technology 
+\item [{3}] discontinous innovations - new technologies that don't lead
+to discontinuity in existing markets 
+\item [{2}] incremental innovations - products that provide new features,
+benefits, or improvements to the existing technology in the existing
+market 
+\item [{1}] imitative innovations - imitative products are frequently new
+to the firm, but not new to the market 
+\end{lyxlist}
+
+\paragraph*{product complexity}
+
+degree of complexity for the developed product ranging between the
+following:
+\begin{lyxlist}{00.00.0000}
+\item [{1}] low complexity, e.g. a simple wooden chair
+\item [{...}]~
+\item [{5}] high complexity, e.g. an aircraft or a nuclear power plant
+\end{lyxlist}
+
+\paragraph*{industry}
+
+suitable industry from a list given by OIP. \vfill{}
+
+
+\pagebreak{}
+
+
+\subsection*{Tables}
+
+\begin{table}[H]
+\begin{tabular}{|c|c|c|cccccccccccccc|}
+\hline 
+\multirow{2}{*}{title} & \multirow{2}{*}{\begin{sideways}
+innovativeness
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+complexity
+\end{sideways}} & \multicolumn{14}{c|}{industry}\tabularnewline
+ &  &  & \begin{sideways}
+Energy and Utilities
+\end{sideways} & \begin{sideways}
+Pharma and Healthcare
+\end{sideways} & \begin{sideways}
+IT Hardware
+\end{sideways} & \begin{sideways}
+Education and Research
+\end{sideways} & \begin{sideways}
+Consumer Goods
+\end{sideways} & \begin{sideways}
+Machinery
+\end{sideways} & \begin{sideways}
+Automotive
+\end{sideways} & \begin{sideways}
+Consumer Electronics
+\end{sideways} & \begin{sideways}
+Construction
+\end{sideways} & \begin{sideways}
+Media and Culture
+\end{sideways} & \begin{sideways}
+Entertainment
+\end{sideways} & \begin{sideways}
+Telecommunications
+\end{sideways} & \begin{sideways}
+Food and Beverages
+\end{sideways} & \begin{sideways}
+Other
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+3G Stoves & 5 & 2 & x &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Absorber Roof & 3 & 3 & x &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+AW & 4 & 2 &  & x &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Agua Clara & 2 & 4 & x &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Akvo & 4 & 3 & x &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+AITB &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Arduino & 2 & 3 &  &  & x &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Atari Coldfire &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+AOSM &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+AVR BL & 3 & 2 &  &  &  & x &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+AVR M &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+AX84 Firefly &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Balloon & 2 & 2 &  &  & x &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Beagle Board & 4 & 3 &  &  &  &  &  &  &  & x &  &  &  &  &  & \tabularnewline
+\hline 
+Ben NanoNote & 2 & 4 &  &  &  &  &  &  &  & x &  &  &  &  &  & \tabularnewline
+\hline 
+Biobricks &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+BFB &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Brewtopia &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+CLED & 5 & 1 & x &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+COSO & 5 & 3 &  &  &  & x &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Chumby &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Contraptor & 3 & 2 &  &  &  & x &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Craftster & 4 & 2 &  &  &  &  & x &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Crypto Stick &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Cubespawn & 2 & 4 &  &  &  &  &  & x &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Daisy MP3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+diy\_efi & 2 & 2 &  &  &  &  &  &  & x &  &  &  &  &  &  & \tabularnewline
+\hline 
+Elphel &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Ethernut & 2 & 3 &  &  & x &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Etherrape & - & - &  &  & x &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Fab Camera &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Fab@Home & 4 & 4 &  &  & x &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Flash-Plaice & 3 & 2 &  &  & x &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Fnordlicht &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Formica &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}
+
+\caption{product details of OIP entries treated by OSHWL (1/3)}
+\end{table}
+\begin{table}[H]
+\begin{tabular}{|c|c|c|cccccccccccccc|}
+\hline 
+\multirow{2}{*}{title} & \multirow{2}{*}{\begin{sideways}
+innovativeness
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+complexity
+\end{sideways}} & \multicolumn{14}{c|}{industry}\tabularnewline
+ &  &  & \begin{sideways}
+Energy and Utilities
+\end{sideways} & \begin{sideways}
+Pharma and Healthcare
+\end{sideways} & \begin{sideways}
+IT Hardware
+\end{sideways} & \begin{sideways}
+Education and Research
+\end{sideways} & \begin{sideways}
+Consumer Goods
+\end{sideways} & \begin{sideways}
+Machinery
+\end{sideways} & \begin{sideways}
+Automotive
+\end{sideways} & \begin{sideways}
+Consumer Electronics
+\end{sideways} & \begin{sideways}
+Construction
+\end{sideways} & \begin{sideways}
+Media and Culture
+\end{sideways} & \begin{sideways}
+Entertainment
+\end{sideways} & \begin{sideways}
+Telecommunications
+\end{sideways} & \begin{sideways}
+Food and Beverages
+\end{sideways} & \begin{sideways}
+Other
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+Free Art Bureau & 4 & 3 &  &  &  & x &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Free Beer &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Freeduino & 2 & 3 &  &  & x &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Gumstix & 4 & 3 &  &  & x &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+HD Video Capture &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Hexayurt &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Im-FFeeder & 2 & 2 &  &  &  &  & x &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+IP04 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+IP08 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+iRobot &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+K People & 2 & 2 &  &  &  &  &  &  &  &  &  &  &  &  &  & x\tabularnewline
+\hline 
+LED Stripe &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Linux omap &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Local Motors & 4 & 4 &  &  &  &  &  &  & x &  &  &  &  &  &  & \tabularnewline
+\hline 
+MakerBot &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Mikrokopter &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Milkymist &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+MISA &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+MyOpenRouter &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Neuros Link &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Neuros OSD &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Niftymitter &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+oBiCo & 3 & 3 &  &  &  &  &  &  &  & x &  &  &  &  &  & \tabularnewline
+\hline 
+OMFootCtrl &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OLPC &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OAN & 5 & 3 &  &  &  &  &  &  &  &  & x &  &  &  &  & \tabularnewline
+\hline 
+O. Garments & 2 & 1 &  &  &  &  & x &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+O. Moto X & 1 & 3 &  &  &  &  &  &  & x &  &  &  &  &  &  & \tabularnewline
+\hline 
+O. Pandora &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OPP &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OS Cookbook & 2 & 1 &  &  &  &  &  &  &  &  &  & x &  &  &  & \tabularnewline
+\hline 
+OS Ecology & 5 & 5 &  &  &  &  &  & x &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OSWM & 4 & 2 &  &  &  &  &  & x &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}
+
+\caption{product details of OIP entries treated by OSHWL (2/3)}
+\end{table}
+\begin{table}[H]
+\begin{tabular}{|c|c|c|cccccccccccccc|}
+\hline 
+\multirow{2}{*}{title} & \multirow{2}{*}{\begin{sideways}
+innovativeness
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+complexity
+\end{sideways}} & \multicolumn{14}{c|}{industry}\tabularnewline
+ &  &  & \begin{sideways}
+Energy and Utilities
+\end{sideways} & \begin{sideways}
+Pharma and Healthcare
+\end{sideways} & \begin{sideways}
+IT Hardware
+\end{sideways} & \begin{sideways}
+Education and Research
+\end{sideways} & \begin{sideways}
+Consumer Goods
+\end{sideways} & \begin{sideways}
+Machinery
+\end{sideways} & \begin{sideways}
+Automotive
+\end{sideways} & \begin{sideways}
+Consumer Electronics
+\end{sideways} & \begin{sideways}
+Construction
+\end{sideways} & \begin{sideways}
+Media and Culture
+\end{sideways} & \begin{sideways}
+Entertainment
+\end{sideways} & \begin{sideways}
+Telecommunications
+\end{sideways} & \begin{sideways}
+Food and Beverages
+\end{sideways} & \begin{sideways}
+Other
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+OWbP &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OS BHKW & 2 & 4 & x &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenBeacon &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenCola &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenEEG &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+openenergymonitor & 3 & 2 & x &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+openEyes &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OM650 & 2 & 4 &  &  &  &  &  &  &  &  &  &  & x &  &  & \tabularnewline
+\hline 
+OpenMoko &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenPCD &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenRemote & 3 & 2 &  &  &  &  &  &  &  & x &  &  &  &  &  & \tabularnewline
+\hline 
+OpenServo & 4 & 4 &  &  &  &  &  & x &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenSpace & 2 & 2 &  &  &  & x &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenSPARC &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenWrt & 2 & 1 &  &  & x &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OScar project &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+PC Engines &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Rallylog &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Ravelry & 3 & 1 &  &  &  &  & x &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+RepRap & 5 & 4 &  &  & x &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+RFID door opener &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+RiverSimple & 3 & 5 &  &  &  &  &  &  & x &  &  &  &  &  &  & \tabularnewline
+\hline 
+RONJA &  &  &  &  &  &  &  &  &  &  &  &  &  & x &  & \tabularnewline
+\hline 
+Sanguino & 2 & 3 &  &  & x &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Semitone Dimmers &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+SCA &  &  &  &  &  &  &  &  &  &  &  &  &  &  & x & \tabularnewline
+\hline 
+solar tracking & 5 & 1 & x &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Spiffchorder &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+SquidBee & 5 & 3 &  &  & x &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Stribe &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+StrobIt Triggr &  &  &  &  &  &  &  &  &  &  &  & x &  &  &  & \tabularnewline
+\hline 
+Thingiverse & 5 & 3 &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Traxmod &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+zeroclock &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Zoybar &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}
+
+\caption{product details of OIP entries treated by OSHWL (3/3)}
+\end{table}
+
+
+\begin{table}[H]
+\begin{tabular}{|c|c|c|cccccccccccccc|}
+\hline 
+\multirow{2}{*}{title} & \multirow{2}{*}{\begin{sideways}
+innovativeness
+\end{sideways}} & \multirow{2}{*}{\begin{sideways}
+complexity
+\end{sideways}} & \multicolumn{14}{c|}{industry}\tabularnewline
+ &  &  & \begin{sideways}
+Energy and Utilities
+\end{sideways} & \begin{sideways}
+Pharma and Healthcare
+\end{sideways} & \begin{sideways}
+IT Hardware
+\end{sideways} & \begin{sideways}
+Education and Research
+\end{sideways} & \begin{sideways}
+Consumer Goods
+\end{sideways} & \begin{sideways}
+Machinery
+\end{sideways} & \begin{sideways}
+Automotive
+\end{sideways} & \begin{sideways}
+Consumer Electronics
+\end{sideways} & \begin{sideways}
+Construction
+\end{sideways} & \begin{sideways}
+Media and Culture
+\end{sideways} & \begin{sideways}
+Entertainment
+\end{sideways} & \begin{sideways}
+Telecommunications
+\end{sideways} & \begin{sideways}
+Food and Beverages
+\end{sideways} & \begin{sideways}
+Other
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}
+
+\caption{product details of OSHWL projects not listed by OIP}
+\end{table}
+
+
+\pagebreak{}
+
+
+\section{Institutional design and production}
+
+First, a description of the categories in the table directly following.
+
+
+\paragraph*{contribution}
+\begin{lyxlist}{00.00.0000}
+\item [{user}] whether private persons or users are actively involved in
+the development. 
+\item [{commercial}] whether commercial companies are actively involved
+in the development. 
+\item [{research}] whether research institutions are actively involved
+in the development. 
+\end{lyxlist}
+
+\paragraph*{type of collaboration}
+\begin{lyxlist}{00.00.0000}
+\item [{\emph{collective\ development\ of...}}]~
+
+\begin{lyxlist}{00.00.0000}
+\item [{\emph{one}{\small \ }\emph{common}{\small \ }\emph{product}}] if
+a community is commonly developing one product. 
+\item [{\emph{several}{\small \ }\emph{common}{\small \ }\emph{products}}] if
+a community is commonly developing several different products. 
+\end{lyxlist}
+\item [{\emph{published\ knowledge...}}]~
+
+\begin{lyxlist}{00.00.0000}
+\item [{\emph{with}{\small \ }\emph{some}{\small \ }\emph{coll}{\small .\ }\emph{dev.}}] if
+instructions or ideas are published and others make comments and suggestions. 
+\item [{\emph{without}{\small \ }\emph{collective}{\small \ }\emph{dev.}}] if
+information is purely revealed. 
+\end{lyxlist}
+\end{lyxlist}
+
+\paragraph*{degree of openness (radicalized from OIP's version) / entirety of
+openness}
+
+Whether or not the project is revealing all available information. 
+
+
+\paragraph*{production}
+
+entity responsible for production. ``related company or assoc.''
+refers to an entity closely related to the project or with a production
+mandate. \textquotedbl{}outsourced\textquotedbl{} is whenever an external
+party is paid for supplying components. 
+
+\vfill{}
+
+
+
+\subsection*{Tables}
+
+\begin{table}[H]
+\begin{tabular}{|l|lll|cccc|c|cccccccc|}
+\hline 
+\multirow{2}{*}{title} & \multicolumn{3}{l|}{contribution} & \multicolumn{4}{c|}{type of collab.} & \multirow{2}{*}{\begin{sideways}
+entirety of openness
+\end{sideways}} & \multicolumn{8}{c|}{product produced by}\tabularnewline
+ & \begin{sideways}
+user/private
+\end{sideways} & \begin{sideways}
+commercial
+\end{sideways} & \begin{sideways}
+research
+\end{sideways} & \begin{sideways}
+c. d. one c. p.
+\end{sideways} & \begin{sideways}
+c. d. several c. p.
+\end{sideways} & \begin{sideways}
+p. k. w/ c. d.
+\end{sideways} & \begin{sideways}
+p. k. w/o c. d.
+\end{sideways} &  & \begin{sideways}
+project leader
+\end{sideways} & \begin{sideways}
+core team
+\end{sideways} & \begin{sideways}
+developer community
+\end{sideways} & \begin{sideways}
+user community
+\end{sideways} & \begin{sideways}
+related company or association
+\end{sideways} & \begin{sideways}
+outsourced
+\end{sideways} & \begin{sideways}
+other
+\end{sideways} & \begin{sideways}
+not yet clear
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+3G Stoves & x &  & x &  &  & x &  &  & x &  &  & x &  &  &  & \tabularnewline
+\hline 
+Absorber Roof & x &  &  &  &  & x &  &  & x &  &  &  &  &  &  & \tabularnewline
+\hline 
+AW & x & x & x &  & x &  &  &  &  &  & x &  &  &  &  & \tabularnewline
+\hline 
+Agua Clara & x & x & x &  &  & x &  & x &  &  &  &  & x &  &  & \tabularnewline
+\hline 
+Akvo & x & x & x &  & x &  &  &  &  & x &  &  &  &  &  & \tabularnewline
+\hline 
+AITB &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Arduino & x &  &  &  & x &  &  &  &  & x & x &  & x &  &  & \tabularnewline
+\hline 
+Atari Coldfire &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+AOSM &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+AVR BL & x &  &  & x &  &  &  & x & x &  &  &  &  &  &  & x\tabularnewline
+\hline 
+AVR BM &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+AX84 Firefly &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Balloon & x & x & x & x &  &  &  &  &  &  &  &  & x &  &  & \tabularnewline
+\hline 
+Beagle Board & x & x &  &  & x &  &  & x &  &  &  &  & x &  &  & \tabularnewline
+\hline 
+Ben NanoNote & x & x & x &  & x &  &  &  &  & x &  &  & x &  &  & \tabularnewline
+\hline 
+Biobricks &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+BFB &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Brewtopia &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+CLED & x &  &  &  &  &  & x & x &  &  &  &  &  &  &  & x\tabularnewline
+\hline 
+COSO & x & x &  &  & x &  &  & x &  & x &  &  & x & x &  & \tabularnewline
+\hline 
+Chumby &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Contraptor & x &  &  &  &  & x &  & x &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Craftster & x & x &  &  & x &  &  & x &  &  & x & x &  &  &  & \tabularnewline
+\hline 
+Crypto Stick &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Cubespawn & x &  &  & x &  &  &  & x & x &  &  &  &  &  &  & \tabularnewline
+\hline 
+Daisy MP3 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+diy\_efi & x &  &  &  & x &  &  & x &  &  & x &  &  &  &  & \tabularnewline
+\hline 
+Elphel &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Ethernut & x & x & x &  & x &  &  &  &  &  &  &  & x &  &  & \tabularnewline
+\hline 
+Etherrape & - & - & - & - & - & - & - & - & - & - & - & - & - & - & - & -\tabularnewline
+\hline 
+Fab Camera &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Fab@Home & x & x & x & x &  &  &  & x &  & x & x & x & x &  &  & \tabularnewline
+\hline 
+Flash-Plaice & x & x &  & x &  &  &  &  &  & x &  &  &  &  &  & \tabularnewline
+\hline 
+Fnordlicht &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Formica &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}
+
+\caption{institutional design and production details of OIP entries treated
+by OSHWL (1/3)}
+\end{table}
+
+
+\begin{table}[H]
+\begin{tabular}{|l|lll|cccc|c|cccccccc|}
+\hline 
+\multirow{2}{*}{title} & \multicolumn{3}{l|}{contribution} & \multicolumn{4}{c|}{type of collab.} & \multirow{2}{*}{\begin{sideways}
+entirety of openness
+\end{sideways}} & \multicolumn{8}{c|}{product produced by}\tabularnewline
+ & \begin{sideways}
+user/private
+\end{sideways} & \begin{sideways}
+commercial
+\end{sideways} & \begin{sideways}
+research
+\end{sideways} & \begin{sideways}
+c. d. one c. p.
+\end{sideways} & \begin{sideways}
+c. d. several c. p.
+\end{sideways} & \begin{sideways}
+p. k. w/ c. d.
+\end{sideways} & \begin{sideways}
+p. k. w/o c. d.
+\end{sideways} &  & \begin{sideways}
+project leader
+\end{sideways} & \begin{sideways}
+core team
+\end{sideways} & \begin{sideways}
+developer community
+\end{sideways} & \begin{sideways}
+user community
+\end{sideways} & \begin{sideways}
+related company or association
+\end{sideways} & \begin{sideways}
+outsourced
+\end{sideways} & \begin{sideways}
+other
+\end{sideways} & not yet clear\tabularnewline
+\hline 
+\hline 
+Free Art Bureau & x & x & x & x &  &  &  & x &  & x & x & x & x &  &  & \tabularnewline
+\hline 
+Free Beer &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Freeduino & x &  &  &  & x &  &  & x &  &  &  &  & x &  &  & \tabularnewline
+\hline 
+Gumstix & x & x &  &  & x &  &  &  &  &  &  &  & x &  &  & \tabularnewline
+\hline 
+HD Video Capture &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Hexayurt &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Im-FFeeder &  &  &  &  &  &  &  &  & x &  &  & x &  &  &  & \tabularnewline
+\hline 
+IP04 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+IP08 &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+iRobot &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+K People & x & x & x & x &  &  &  &  &  &  &  &  & x &  &  & \tabularnewline
+\hline 
+LED Stripe &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Linux omap &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Local Motors & x & x &  & x &  &  &  &  &  & x &  &  & x &  &  & \tabularnewline
+\hline 
+MakerBot &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Mikrokopter &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Milkymist &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+MISA &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+MyOpenRouter &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Neuros Link &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Neuros OSD &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Niftymitter &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+oBiCo & x &  &  & x &  &  &  &  & x &  &  &  &  &  &  & \tabularnewline
+\hline 
+OMFootCtrl &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OLPC &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OAN & x & x & x &  & x &  &  & x &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+O. Garments & x & x &  &  & x &  &  & x & x &  &  &  &  &  &  & \tabularnewline
+\hline 
+O. Moto X & x & x & x & x &  &  &  & x &  &  &  & x &  &  &  & \tabularnewline
+\hline 
+O. Pandora &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OPP &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OS Cookbook & x &  &  & x &  &  &  & x &  &  &  & x &  &  &  & \tabularnewline
+\hline 
+OS Ecology & x & x & x &  & x &  &  & x & x & x & x & x & x & x &  & \tabularnewline
+\hline 
+OSWM & x & x & x & x &  &  &  & x &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}
+
+\caption{institutional design and production details of OIP entries treated
+by OSHWL (2/3)}
+\end{table}
+
+
+\begin{table}[H]
+\begin{tabular}{|l|lll|cccc|c|cccccccc|}
+\hline 
+\multirow{2}{*}{title} & \multicolumn{3}{l|}{contribution} & \multicolumn{4}{c|}{type of collab.} & \multirow{2}{*}{\begin{sideways}
+entirety of openness
+\end{sideways}} & \multicolumn{8}{c|}{product produced by}\tabularnewline
+ & \begin{sideways}
+user/private
+\end{sideways} & \begin{sideways}
+commercial
+\end{sideways} & \begin{sideways}
+research
+\end{sideways} & \begin{sideways}
+c. d. one c. p.
+\end{sideways} & \begin{sideways}
+c. d. several c. p.
+\end{sideways} & \begin{sideways}
+p. k. w/ c. d.
+\end{sideways} & \begin{sideways}
+p. k. w/o c. d.
+\end{sideways} &  & \begin{sideways}
+project leader
+\end{sideways} & \begin{sideways}
+core team
+\end{sideways} & \begin{sideways}
+developer community
+\end{sideways} & \begin{sideways}
+user community
+\end{sideways} & \begin{sideways}
+related company or association
+\end{sideways} & \begin{sideways}
+outsourced
+\end{sideways} & \begin{sideways}
+other
+\end{sideways} & \begin{sideways}
+not yet clear
+\end{sideways}\tabularnewline
+\hline 
+\hline 
+OWbP &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OS BHKW &  &  &  &  &  &  &  & x &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenBeacon &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenCola &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenEEG &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+openenergymonitor & x &  &  &  &  & x &  & x & x &  &  &  &  &  &  & \tabularnewline
+\hline 
+openEyes &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OM650 & x & x &  &  &  &  & x &  &  &  &  &  &  &  & x & \tabularnewline
+\hline 
+OpenMoko &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenPCD &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenRemote & x & x &  & x &  &  &  &  &  &  &  &  &  &  &  & x\tabularnewline
+\hline 
+OpenServo & x & x &  &  & x &  &  & x &  &  &  &  & x &  &  & \tabularnewline
+\hline 
+OpenSpace & x &  & x & x &  &  &  & x & x &  &  & x &  &  &  & \tabularnewline
+\hline 
+OpenSPARC &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+OpenWrt & x &  &  & x &  &  &  &  & - & - & - & - & - & - & - & -\tabularnewline
+\hline 
+OScar project &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+PC Engines &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Rallylog &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Ravelry & x & x &  &  &  & x &  & x & x & x & x & x &  &  &  & \tabularnewline
+\hline 
+RepRap & x &  & x & x &  &  &  & x & x & x & x &  &  &  &  & \tabularnewline
+\hline 
+RFID door opener &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+RiverSimple & x & x & x & x &  &  &  &  &  &  &  &  & x &  &  & \tabularnewline
+\hline 
+RONJA &  &  &  &  &  &  & x &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Sanguino & x &  &  &  &  & x &  & x & x &  &  &  & x &  &  & \tabularnewline
+\hline 
+Semitone Dimmers &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+SCA & x &  &  &  & x &  &  & x &  &  & x & x &  &  &  & \tabularnewline
+\hline 
+solar tracking & x &  &  &  &  &  & x & x &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Spiffchorder &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+SquidBee & x & x & x & x &  &  &  & x &  &  &  &  & x &  &  & \tabularnewline
+\hline 
+Stribe &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+StrobIt Triggr &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Thingiverse & x &  &  &  &  & x &  & x &  &  & x & x &  &  &  & \tabularnewline
+\hline 
+Traxmod &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+zeroclock &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+Zoybar &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}
+
+\caption{institutional design and production details of OIP entries treated
+by OSHWL (3/3)}
+\end{table}
+
+
+\begin{table}[H]
+\begin{tabular}{|l|lll|cccc|ccccccccc|}
+\hline 
+\multirow{2}{*}{title} & \multicolumn{3}{l|}{contribution} & \multicolumn{4}{c|}{type of collab.} & \multirow{2}{*}{\begin{sideways}
+entirety of openness
+\end{sideways}} & \multicolumn{8}{c|}{product produced by}\tabularnewline
+ & \begin{sideways}
+user/private
+\end{sideways} & \begin{sideways}
+commercial
+\end{sideways} & \begin{sideways}
+research
+\end{sideways} & \begin{sideways}
+c. d. one c. p.
+\end{sideways} & \begin{sideways}
+c. d. several c. p.
+\end{sideways} & \begin{sideways}
+p. k. w/ c. d.
+\end{sideways} & \begin{sideways}
+p. k. w/o c. d.
+\end{sideways} &  & \begin{sideways}
+project leader
+\end{sideways} & \begin{sideways}
+core team
+\end{sideways} & \begin{sideways}
+developer community
+\end{sideways} & \begin{sideways}
+user community
+\end{sideways} & \begin{sideways}
+related company or association
+\end{sideways} & \begin{sideways}
+outsourced
+\end{sideways} & \begin{sideways}
+other
+\end{sideways} & not yet clear\tabularnewline
+\hline 
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+ &  &  &  &  &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\hline 
+\end{tabular}
+
+\caption{institutional design and production details of OSHWL projects not
+listed by OIP}
+\end{table}
+
+\end{document}
