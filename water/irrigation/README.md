@@ -1,5 +1,9 @@
+the idea:
+
 http://en.wikipedia.org/wiki/Irrigation
 
+
+##potentially relevant:
 
 http://opensourceecology.org/wiki/Trencher
 

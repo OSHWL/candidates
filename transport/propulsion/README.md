@@ -1,4 +1,8 @@
+the idea:
+
 http://en.wikipedia.org/wiki/Propulsion
+
+among others:
 
 http://en.wikipedia.org/wiki/Human-powered_transport
 
@@ -18,12 +22,12 @@ energy/pneumatics
 
 *****************
 
+##list of potentially relevant projects/URLs:
 
 http://www.instructables.com/id/How-to-build-your-own-Jet-Engine/
 
 http://www.salvatoreaiello.com/main.shtml
 
 http://robokite.blogspot.fr/
-
 
 diy_efi

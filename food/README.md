@@ -1,3 +1,3 @@
-*grow* folder is about OSHW for agriculture (or who know how you get your food...).
+*grow* folder is about OSHW for agriculture (or other ways to get your food...).
 
-*prepare* folder is about OSHW for cooking (and other food preparation methods!).
+*prepare* folder is about OSHW for cooking (or other food preparation methods).

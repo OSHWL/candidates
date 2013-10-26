@@ -1,3 +1,5 @@
+###list of potentially relevant projects/URLs:
+
 http://wiki.opensourceecology.de/Induktionsofen
 
 http://webpages.charter.net/dawill/tmoranwms/Elec_IndHeat9.html

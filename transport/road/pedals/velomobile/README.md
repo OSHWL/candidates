@@ -1,3 +1,5 @@
+##list of potentially relevant projects/URLs:
+
 Atomic Duck
 
   - http://www.deferredprocrastination.co.uk/projects/atomicduck/

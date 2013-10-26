@@ -1,3 +1,5 @@
+the idea:
+
 http://opensourceecology.org/wiki/Triloboat
 
 http://opensourceecology.org/wiki/Dave_Zeiger

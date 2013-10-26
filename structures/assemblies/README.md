@@ -1,3 +1,34 @@
+to do: introduce this category!
+
+
+part of the idea:
+
+http://en.wikipedia.org/wiki/Fastener
+
+****************
+
+###for assemblies that move:
+
+http://en.wikipedia.org/wiki/Mechanism_%28engineering%29
+
+one important aspect:
+
+http://en.wikipedia.org/wiki/Lubrication
+
+http://en.wikipedia.org/wiki/Lubricant
+
+
+***************
+
+project that might be of interest:
+
+http://opensourceecology.org/wiki/Universal_Rotor
+
+
+***************
+
+###list of proposed "unified assembly systems":
+
 http://www.contraptor.org/
 
 http://wiki.opensourceecology.de/Universal_Prototyping_Kit
@@ -8,30 +39,7 @@ http://openstructures.net/pages/9
 
 http://openstructures.net/pages/14/structures
 
-********************************
-
-
-http://en.wikipedia.org/wiki/Mechanism_%28engineering%29
-
-
-
 ***************
-
-
-http://opensourceecology.org/wiki/Universal_Rotor
-
-****************
-
-http://en.wikipedia.org/wiki/Lubrication
-
-http://en.wikipedia.org/wiki/Lubricant
-
-***************
-
-http://en.wikipedia.org/wiki/Fastener
-
-***************
-
 
 http://www.gridbeam.com/
 

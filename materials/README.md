@@ -1,1 +1,2 @@
-introduction on what this OSHWL category/folder consists in...
+most other OSHWL categories/folders are purpose-oriented or "type of system"-oriented.
+here in the "materials" category/folder, the focus is on the raw or intermediate materials, whose acquisition/preparation/transformation/whatever can sometimes become the goal of a project or simply is the most convenient way to categorize OSHW projects.

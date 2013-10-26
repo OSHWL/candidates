@@ -1,3 +1,6 @@
+#starting a list of FabLabs (in Europe):
+
+
 Verbund Offener Werkstätten (Germany-wide constellation), "DIY centers"
 
 http://www.offene-werkstaetten.org/

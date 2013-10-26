@@ -1,12 +1,21 @@
+the idea:
+
 http://en.wikipedia.org/wiki/Food_preparation#What_is_food_preparation.3F
 
 http://en.wikipedia.org/wiki/Cooking
 
+
+************
+
+
+
 for ovens, see energy/thermal/stoves
 
 
+
+###list of potentially relevant projects (mostly from OIP, see oshw-mgmt/open-innovation-projects):
 .
-├── Brewtopia - Open Innovation Projects.xhtml
-├── Free Beer - Open Innovation Projects.xhtml
-├── OpenCola - Open Innovation Projects.xhtml
-└── Open Source Cookbook - Open Innovation Projects.xhtml
+├── Brewtopia
+├── Free Beer
+├── OpenCola
+└── Open Source Cookbook

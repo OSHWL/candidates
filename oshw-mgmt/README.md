@@ -4,7 +4,9 @@ to do: introduce...:
 - actors
 - appropedia and the like
 
+*****************
 
+"floss4oshw" denotes Free/Libre and Open Source Software for Open Source HardWare
 
 *****************
 

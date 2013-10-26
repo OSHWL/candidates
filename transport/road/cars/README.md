@@ -1,3 +1,5 @@
+##list of potentially relevant projects/URLs:
+
 http://wikispeed.org/
 
 

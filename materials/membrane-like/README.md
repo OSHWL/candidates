@@ -1,3 +1,9 @@
+can be leather, can by vinyl or other membrane-like products...
+
+a few potentially interesting links:
+
+********
+
 http://en.wikipedia.org/wiki/Leather_crafting
 
 http://en.wikipedia.org/wiki/Leather_carving
@@ -5,7 +11,6 @@ http://en.wikipedia.org/wiki/Leather_carving
 *****************
 
 http://fablabo.net/wiki/DecoupeVinyl/Restauration
-
 
 *****************
 
