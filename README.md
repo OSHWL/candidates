@@ -1,39 +1,25 @@
 #OSHWL *candidate* documents
 
-**... which have not yet been ["selected"](http://oshwl.github.io/SELECTION), please improve them or add new ones!**
+... which have not yet been ["selected"](http://oshwl.github.io/SELECTION), please improve them or add new ones!
 
-it would be nice to have the documents meet the following criteria:
-- if not exceeding 50 lines: Markdown format
-- otherwise LaTeX, in order to generate PDF & EPUB files
-- english language
-- relevance of content, technically and (with exceptions) economically
-- all the documents's source files in the same folder as the document itself
+[criteria](https://raw.github.com/OSHWL/candidates/master/criteria.md)
 
+those documents are categorized into folders (if you're reading this from github.com/OSHWL/candidates, those folders are the ones you see above this text). the big categories that constitute those folders are listed under oshwl.github.io/candidates/ and further detailed [here] (https://raw.github.com/OSHWL/candidates/master/contents.txt).
 
 ##for your information
 
+###wikipedia articles
 
-OSHW
+[OSHW](http://en.wikipedia.org/wiki/Open-source_hardware)
 
-http://en.wikipedia.org/wiki/Open-source_hardware
+[GitHub](https://en.wikipedia.org/wiki/GitHub)
 
+[Markdown](http://en.wikipedia.org/wiki/Markdown)
 
+[LaTeX](http://en.wikipedia.org/wiki/LaTeX)
 
-GitHub
+###others
 
-https://en.wikipedia.org/wiki/GitHub
+[GitHub](https://github.com/)
 
-https://github.com/
-
-
-
-Markdown
-
-http://en.wikipedia.org/wiki/Markdown
-
-http://daringfireball.net/projects/markdown/
-
-
-LaTeX
-
-http://en.wikipedia.org/wiki/LaTeX
+[Markdown](http://daringfireball.net/projects/markdown/)

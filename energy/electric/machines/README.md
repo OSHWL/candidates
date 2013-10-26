@@ -1,7 +1,9 @@
+the idea:
+
 http://en.wikipedia.org/wiki/Electrical_machine
 
 
-
+###list of potentially relevant projects/URLs:
 
 http://opensourceenergy.wordpress.com/
 

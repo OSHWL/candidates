@@ -1,8 +1,10 @@
+the idea:
+
 http://en.wikipedia.org/wiki/Hydropower
 
-http://gw.eduhi.at/thema/energie/wasser/wasserk.htm
 
 
+###list of potentially relevant projects/URLs:
 
 http://practicalaction.org/micro-hydro-power#further_info
 

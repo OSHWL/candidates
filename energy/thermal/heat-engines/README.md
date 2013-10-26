@@ -1,6 +1,11 @@
+the idea:
+
 http://en.wikipedia.org/wiki/Heat_engine
 
 **************
+**************
+
+###list of potentially relevant projects:
 
 http://moteurvapeur.monsite-orange.fr/
 
@@ -23,4 +28,5 @@ Mark J Norton  https://plus.google.com/113154862907020267069/about
 **************
 
 http://www.iedu.com/Solar/Engines/index.html
+
 http://www.iedu.com/Solar/Pumps/index.html

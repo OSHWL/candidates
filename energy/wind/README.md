@@ -1,6 +1,11 @@
+the idea:
+
 http://en.wikipedia.org/wiki/Wind_power
 
 ***************
+***************
+
+###list of potentially relevant projects/URLs:
 
 apparently all involving Alex Schure (http://wiki.opensourceecology.de/Alex_Shure):
 
@@ -11,7 +16,6 @@ http://wiki.opensourceecology.de/Wind_Turbine
 TiVA: Tiny Vertical Axis Wind Turbine: http://wiki.opensourceecology.de/TiVA
 
 ***************
-
 
 http://fablabo.net/wiki/Eolien
 
@@ -33,4 +37,3 @@ http://www.applied-sciences.net/library/zoetrope.php
 
 http://www.applied-sciences.net/library/data/zoetrope-wind-turbine.pdf
 
-*****************

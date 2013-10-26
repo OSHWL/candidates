@@ -1,3 +1,5 @@
+the idea:
+
 http://en.wikipedia.org/wiki/Low_head_hydro_power#Types_of_low_head_turbines
 
 but also

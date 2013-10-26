@@ -6,7 +6,6 @@
 \usepackage[latin9]{inputenc}
 \usepackage[a4paper]{geometry}
 \geometry{verbose,tmargin=2cm,bmargin=2cm,lmargin=2cm,rmargin=2cm}
-\pagestyle{plain}
 \setcounter{tocdepth}{2}
 \setlength{\parskip}{\smallskipamount}
 \setlength{\parindent}{0pt}
@@ -62,11 +61,12 @@ document is solely dedicated to entries in relation with the OSHWL
 field \emph{energy}.}
 
 
-\author{Léonard Favre}
+\author{Léonard Favre, Aug. 2013}
+
+
+\institution{Open Source HardWare Library (OSHWL)}
 
 \maketitle
-Aug. 2013
-
 \tableofcontents{}
 
 \listoftables
@@ -98,7 +98,7 @@ title & OSHWL path & short description & keywords from OIP\tabularnewline
  &  &  & sun, heating, electricity, solar cooking,\tabularnewline
  &  &  & solar concentration, heliostat\tabularnewline
 \hline 
-\textbf{OS BHKW} & energy/thermal/cogen &  & -\tabularnewline
+\textbf{OS BHKW} & energy/thermal/cogen & micro CHP & -\tabularnewline
 \hline 
 \textbf{Solar Cooking} & \multirow{2}{*}{energy/solar/thermal} &  & \multirow{2}{*}{-}\tabularnewline
 \textbf{Archive (SCA)} &  &  & \tabularnewline
@@ -126,11 +126,11 @@ to the following OSHWL \emph{energy} projects, not listed by OIP (\tabref{OSHWL-
 title & OSHWL path & short description\tabularnewline
 \hline 
 \hline 
-\emph{Global Anchor} & energy/hydro & \tabularnewline
+\emph{Global Anchor} & energy/hydro & micro hydropower\tabularnewline
 \hline 
-\emph{SolarFire} & energy/solar/thermal & \tabularnewline
+\emph{SolarFire} & energy/solar/thermal & concentrated solar power\tabularnewline
 \hline 
-\emph{SolarFlower} & energy/solar/thermal & \tabularnewline
+\emph{SolarFlower} & energy/solar/thermal & concentrated solar power\tabularnewline
 \hline 
 \end{tabular}
 
@@ -212,14 +212,6 @@ mostly because of perceived subjectivity and lack of comparability.
 First, a description of the categories in the tables directly following.
 
 
-\paragraph{project type}
-\begin{lyxlist}{00.00.0000}
-\item [{single\ project\hspace{3.3em}}] \noindent one or more specific
-product(s) is/are shown and/or developed 
-\item [{collection\ of\ projects}] overview over several different projects
-or product, e.g. OIP itself
-\end{lyxlist}
-
 \paragraph{development Status}
 
 current stage of development according to the following:
@@ -255,20 +247,16 @@ or the office location.
 year in which the project was initiated.
 
 \begin{table}[H]
-\begin{tabular}{|c|cc|c|ccccccc|c|c|}
+\begin{tabular}{|c|c|ccccccc|c|c|}
 \hline 
-\multirow{2}{*}{title} & \multicolumn{2}{c|}{entry type} & \multirow{2}{*}{\begin{sideways}
+\multirow{2}{*}{title} & \multirow{2}{*}{\begin{sideways}
 dev. status
 \end{sideways}} & \multicolumn{7}{c|}{licence (and TM)} & \multirow{2}{*}{\begin{sideways}
 country
 \end{sideways}} & \multirow{2}{*}{\begin{sideways}
 start year
 \end{sideways}}\tabularnewline
- & \begin{sideways}
-collection of projects
-\end{sideways} & \begin{sideways}
-single project
-\end{sideways} &  & \begin{sideways}
+ &  & \begin{sideways}
 GPL, LGPL or similar copyleft
 \end{sideways} & \begin{sideways}
 BSD, MIT or similar permissive
@@ -285,53 +273,53 @@ registered trademark
 \end{sideways} &  & \tabularnewline
 \hline 
 \hline 
-\textbf{3G Stoves} & x &  & 3 &  &  &  &  & x &  & x & IN & 2008\tabularnewline
+\textbf{3G Stoves} & 3 &  &  &  &  & x &  & x & IN & 2008\tabularnewline
 \hline 
-\textbf{Absorber Roof} &  & x & 3 & - & - & - & - & - & - & - & - & -\tabularnewline
+\textbf{Absorber Roof} & 3 & - & - & - & - & - & - & - & - & -\tabularnewline
 \hline 
-\textbf{Greenwatts} &  & x & 3 &  &  &  &  &  & x &  & CA & 2008\tabularnewline
+\textbf{Greenwatts} & 3 &  &  &  &  &  & x &  & CA & 2008\tabularnewline
 \hline 
-\textbf{OS BHKW} & - & - & 2 &  &  &  &  &  & x &  & D & 2006\tabularnewline
+\textbf{OS BHKW} & 2 &  &  &  &  &  & x &  & D & 2006\tabularnewline
 \hline 
-\textbf{SCA} &  & x & 4 &  &  & x &  &  &  &  & - & -\tabularnewline
+\textbf{SCA} & 4 &  &  & x &  &  &  &  & - & -\tabularnewline
 \hline 
-\emph{Global Anchor} &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\emph{Global Anchor} &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-\emph{SolarFire} &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\emph{SolarFire} &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-\emph{SolarFlower} &  &  &  &  &  &  &  &  &  &  &  & \tabularnewline
+\emph{SolarFlower} &  &  &  &  &  &  &  &  &  & \tabularnewline
 \hline 
-Arduino &  & x & 5 & x &  & x &  &  &  & x & IT & 2005\tabularnewline
+Arduino & 5 & x &  & x &  &  &  & x & IT & 2005\tabularnewline
 \hline 
-AVR BL &  & x & 3 &  & x &  &  &  &  &  & UK & 2003\tabularnewline
+AVR BL & 3 &  & x &  &  &  &  &  & UK & 2003\tabularnewline
 \hline 
-Balloon &  & x & 3 &  &  &  & x &  &  &  & - & 1999\tabularnewline
+Balloon & 3 &  &  &  & x &  &  &  & - & 1999\tabularnewline
 \hline 
-Beagle Board &  & x & 4 & x &  & x &  &  & x (?) &  & US & 2007\tabularnewline
+Beagle Board & 4 & x &  & x &  &  & x (?) &  & US & 2007\tabularnewline
 \hline 
-Ben NanoNote & x &  & 4 & x &  & x &  &  &  & x & HK & 2009\tabularnewline
+Ben NanoNote & 4 & x &  & x &  &  &  & x & HK & 2009\tabularnewline
 \hline 
-Ethernut & x &  & 4 &  & x &  &  &  &  &  & D & 2001\tabularnewline
+Ethernut & 4 &  & x &  &  &  &  &  & D & 2001\tabularnewline
 \hline 
-Etherrape &  & x & 3 & - & - & - & - & - & - & - & - & 2006\tabularnewline
+Etherrape & 3 & - & - & - & - & - & - & - & - & 2006\tabularnewline
 \hline 
-Flash-Plaice &  & x & 1 & x &  &  &  &  &  &  & - & 2007\tabularnewline
+Flash-Plaice & 1 & x &  &  &  &  &  &  & - & 2007\tabularnewline
 \hline 
-Freeduino &  & x & 3 &  &  & x &  &  &  &  & - & -\tabularnewline
+Freeduino & 3 &  &  & x &  &  &  &  & - & -\tabularnewline
 \hline 
-Gumstix &  & x & 4 &  &  & x &  &  &  & x & US & 2003\tabularnewline
+Gumstix & 4 &  &  & x &  &  &  & x & US & 2003\tabularnewline
 \hline 
-openenergymonitor &  & x & 3 & x &  &  &  &  &  &  & UK & 2009\tabularnewline
+openenergymonitor & 3 & x &  &  &  &  &  &  & UK & 2009\tabularnewline
 \hline 
-OpenRemote &  & x & 3 &  &  & x &  &  &  & x & - & 2008\tabularnewline
+OpenRemote & 3 &  &  & x &  &  &  & x & - & 2008\tabularnewline
 \hline 
-OpenServo &  & x & 3 &  & x &  &  &  &  &  & - & -\tabularnewline
+OpenServo & 3 &  & x &  &  &  &  &  & - & -\tabularnewline
 \hline 
-OpenWrt &  & x & 4 & x &  &  &  &  &  &  & - & -\tabularnewline
+OpenWrt & 4 & x &  &  &  &  &  &  & - & -\tabularnewline
 \hline 
-Sanguino &  & x & 3 &  &  & x &  &  &  &  & US & 2008\tabularnewline
+Sanguino & 3 &  &  & x &  &  &  &  & US & 2008\tabularnewline
 \hline 
-SquidBee &  & x & 4 &  &  & x &  &  &  & x & E & -\tabularnewline
+SquidBee & 4 &  &  & x &  &  &  & x & E & -\tabularnewline
 \hline 
 \end{tabular}
 
@@ -395,7 +383,7 @@ party is paid for supplying components. \vfill{}
 \begin{table}[H]
 \begin{tabular}{|l|ll|cccc|c|cccccccc|}
 \hline 
-\multirow{2}{*}{title} & \multicolumn{2}{c|}{contribution} & \multicolumn{4}{c|}{type of collab.} & \multirow{2}{*}{\begin{sideways}
+\multirow{2}{*}{title} & \multicolumn{2}{c|}{contrib.} & \multicolumn{4}{c|}{type of collab.} & \multirow{2}{*}{\begin{sideways}
 entirety of openness, as ticked or not in OIP
 \end{sideways}} & \multicolumn{8}{c|}{product produced by}\tabularnewline
  & \begin{sideways}

@@ -1,127 +1,142 @@
 .
-├── audio-visual
-│   └── optics
-├── cleaning
-│   ├── agents
-│   ├── body
-│   ├── dishes
-│   ├── environmental
-│   ├── laundry
-│   └── vacuum
-├── electro-it-monitoring
-│   ├── energy-monitoring
-│   ├── gas-monitoring
-│   └── geiger-monitoring
-├── energy
-│   ├── electric
-│   │   ├── batteries
-│   │   ├── grid
-│   │   ├── machines
-│   │   └── thermo
-│   ├── fuels
-│   │   ├── bio
-│   │   └── cells
-│   ├── human
-│   ├── hvac
-│   ├── hydraulics
-│   ├── hydro
-│   │   ├── conventional
-│   │   └── low-head
-│   │       ├── ror
-│   │       ├── tidal
-│   │       └── turbines
-│   ├── light
-│   ├── marine
-│   │   ├── osmotic
-│   │   └── wave
-│   ├── molecular-machines
-│   ├── pneumatics
-│   ├── solar
-│   │   ├── pv
-│   │   ├── thermal
-│   │   └── tracking
-│   ├── thermal
-│   │   ├── bio
-│   │   ├── cogen
-│   │   ├── geo
-│   │   ├── heat-engines
-│   │   ├── heat-pumps
-│   │   ├── insulation
-│   │   ├── refrigeration
-│   │   └── stoves
-│   │       └── gasifier
-│   └── wind
-├── food
-│   ├── grow
-│   │   ├── draft-animals
-│   │   ├── french-adabio-barre
-│   │   ├── french-adabio-bascule
-│   │   │   └── files
-│   │   ├── french-adabio-butteuse
-│   │   ├── french-adabio-cultibutte
-│   │   ├── french-adabio-planteuse
-│   │   │   └── files
-│   │   ├── french-adabio-rouleau
-│   │   ├── french-adabio-triangle
-│   │   ├── french-adabio-vibroplanche
-│   │   ├── ose-lifetrac
-│   │   ├── ose-microtrac
-│   │   └── ose-rototiller
-│   └── prepare
-├── health
-├── materials
-│   ├── ceramics
-│   │   └── glass
-│   ├── composite
-│   ├── fibers
-│   ├── foams
-│   ├── membrane-like
-│   ├── metals
-│   │   ├── Al
-│   │   ├── Cu
-│   │   ├── Fe
-│   │   └── induction
-│   ├── minerals
-│   │   └── mining
-│   ├── oils
-│   ├── plastics
-│   │   └── elastomers
-│   ├── resins
-│   ├── waste
-│   └── wood
-│       ├── bamboo
-│       ├── forestry
-│       └── woodworking
-├── oshw-mgmt
-│   ├── fablabs
-│   └── floss4oshw
-├── robotics-manufacturing
-│   └── manufacturing
-│       ├── additive
-│       ├── casting-molding
-│       ├── forming
-│       ├── subtractive
-│       └── textile
-├── structures
-│   ├── assemblies
-│   │   └── locks
-│   └── construction
-│       └── ceb
-├── transport
-│   ├── aerospace
-│   ├── propulsion
-│   ├── road
-│   │   ├── cars
-│   │   └── pedals
-│   │       ├── freight
-│   │       └── velomobile
-│   └── water
-│       └── triloboat
-└── water
-    ├── harvesting
-    ├── irrigation
-    ├── plumbing
-    ├── storage
-    └── treatment
+|-- audio-visual
+|   `-- optics
+|
+|-- cleaning
+|   |-- agents
+|   |-- body
+|   |-- dishes
+|   |-- environmental
+|   |-- laundry
+|   `-- vacuum
+|
+|-- electro-it-monit
+|   |-- energy-monitoring
+|   |-- gas-monitoring
+|   `-- geiger-monitoring
+|
+|-- energy
+|   |-- electric
+|   |   |-- batteries
+|   |   |-- grid
+|   |   |-- machines
+|   |   `-- thermo
+|   |-- fuels
+|   |   |-- bio
+|   |   `-- cells
+|   |-- human
+|   |-- hvac
+|   |-- hydraulics
+|   |-- hydro
+|   |   |-- conventional
+|   |   `-- low-head
+|   |       |-- ror
+|   |       |-- tidal
+|   |       `-- turbines
+|   |-- light
+|   |-- marine
+|   |   |-- osmotic
+|   |   `-- wave
+|   |-- molecular-machines
+|   |-- pneumatics
+|   |-- solar
+|   |   |-- pv
+|   |   |-- thermal
+|   |   `-- tracking
+|   |-- thermal
+|   |   |-- bio
+|   |   |-- cogen
+|   |   |-- geo
+|   |   |-- heat-engines
+|   |   |-- heat-pumps
+|   |   |-- insulation
+|   |   |-- refrigeration
+|   |   `-- stoves
+|   |       `-- gasifier
+|   `-- wind
+|
+|-- food
+|   |-- grow
+|   |   |-- draft-animals
+|   |   |-- french-adabio-barre
+|   |   |-- french-adabio-bascule
+|   |   |   `-- files
+|   |   |-- french-adabio-butteuse
+|   |   |-- french-adabio-cultibutte
+|   |   |-- french-adabio-planteuse
+|   |   |   `-- files
+|   |   |-- french-adabio-rouleau
+|   |   |-- french-adabio-triangle
+|   |   |-- french-adabio-vibroplanche
+|   |   |-- ose-lifetrac
+|   |   |-- ose-microtrac
+|   |   `-- ose-rototiller
+|   `-- prepare
+|
+|-- health
+|
+|-- materials
+|   |-- ceramics
+|   |   `-- glass
+|   |-- composite
+|   |-- fibers
+|   |-- foams
+|   |-- membrane-like
+|   |-- metals
+|   |   |-- Al
+|   |   |-- Cu
+|   |   |-- Fe
+|   |   `-- induction
+|   |-- minerals
+|   |   `-- mining
+|   |-- oils
+|   |-- plastics
+|   |   `-- elastomers
+|   |-- resins
+|   |-- waste
+|   `-- wood
+|       |-- bamboo
+|       |-- forestry
+|       `-- woodworking
+|
+|-- oshw-mgmt
+|   |-- fablabs
+|   |-- floss4oshw
+|   `-- open-innovation-projects
+|       |-- oip-energy
+|       `-- oip-selected-content
+|
+|-- robo-manuf
+|   `-- manuf
+|       |-- additive
+|       |-- casting-molding
+|       |-- forming
+|       |-- subtractive
+|       `-- textile
+|
+|-- structures
+|   |-- assemblies
+|   |   `-- locks
+|   `-- construction
+|       `-- ceb
+|
+|-- transport
+|   |-- aerospace
+|   |-- propulsion
+|   |-- road
+|   |   |-- cars
+|   |   `-- pedals
+|   |       |-- freight
+|   |       `-- velomobile
+|   `-- water
+|       `-- triloboat
+|
+`-- water
+    |-- harvesting
+    |-- irrigation
+    |-- plumbing
+    |-- storage
+    `-- treatment
 
-124 directories
+127 directories
+

@@ -1,3 +1,5 @@
+###list of potentially relevant projects:
+
 http://wiki.gekgasifier.com
 
 http://www.fundamentalform.com/html/biomass_gasifier_breakthrough.html
