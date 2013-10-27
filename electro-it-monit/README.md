@@ -35,9 +35,9 @@ obviously, this is both a huge field* and the one in OSHW that's already benefit
 - http://dangerousprototypes.com/docs/Main_Page
 - hackerspaces.org (a few examples):
 
-	-[Generic Hardware Components] (http://hackerspaces.org/wiki/GenericHardwareComponents)
-	-[BUS] (http://hackerspaces.org/wiki/BUS)
-	- RIPE Atlas probe ([hackerspaces.org page] (http://hackerspaces.org/wiki/RIPE_Atlas), [main page] (https://atlas.ripe.net/))
+	- [Generic Hardware Components] (http://hackerspaces.org/wiki/GenericHardwareComponents)
+	- [BUS] (http://hackerspaces.org/wiki/BUS)
+	- RIPE Atlas probe: [hackerspaces.org page] (http://hackerspaces.org/wiki/RIPE_Atlas), [main page] (https://atlas.ripe.net/)
 
 - sparkfun: [tutorials] (https://learn.sparkfun.com/tutorials), [products by category] (https://www.sparkfun.com/categories)
 - "Balestrino"
@@ -71,7 +71,6 @@ obviously, this is both a huge field* and the one in OSHW that's already benefit
 	- Traxmod
 	- Zoybar
 	- Always Innovating Touch Book
-	- Arduino
 	- Atari Coldfire Project
 	- AVR Butterfly Logger
 	- Balloon
