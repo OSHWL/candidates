@@ -12,6 +12,21 @@ http://en.wikipedia.org/wiki/Category:Measuring_instruments
 
 http://en.wikipedia.org/wiki/Environmental_monitoring
 
+obviously, this is both a huge field* and the one in OSHW that's already benefiting of the largest cumulated effort in documenting and sharing. Hence, in this case, OSHWL's job might better be one of redirecting the reader to the *right* external webpage, rather than documenting OSHW internally.
+
+*: actually more than one (sometimes it's difficult to tell categories apart), so if you have suggestions of (sub-) categories, please do suggest.
+
+****************
+****************
+
+###those three look quite mature:
+
+http://www.ohwr.org/
+
+http://opencircuits.com (at the time of writing, the (wiki's) main page was completely hijacked, so if you're suspicious, check http://opencircuits.com/index.php?title=Main_Page&action=history)
+
+http://oshpark.com/
+
 ****************
 ****************
 
@@ -59,7 +74,7 @@ http://hackerspaces.org/wiki/RIPE_Atlas
 
 *****************
 
-check out: PLOTS
+http://publiclab.org/
 
 ***************
 
@@ -73,118 +88,117 @@ http://dangerousprototypes.com/docs/Main_Page
 ***************
 ****************
 
-###list of potentially relevant projects (mostly from OIP, see oshw-mgmt/open-innovation-projects):
+###list of other potentially relevant projects (mostly from OIP, see oshw-mgmt/open-innovation-projects):
 
-(ignore the " - Open Innovation Projects.xhtml" suffix)
-
-.
-├── Aurora Open Source Mixer - Open Innovation Projects.xhtml
-
-├── AVR Butterfly MP3 - Open Innovation Projects.xhtml
-
-├── AX84 Firefly - Open Innovation Projects.xhtml
-
-├── Daisy mp3 - Open Innovation Projects.xhtml
-
-├── Elphel - Open Innovation Projects.xhtml
-
-├── Fab Camera - Open Innovation Projects.xhtml
-
-├── Fnordlicht - Open Innovation Projects.xhtml
-
-├── HD Video Capture - Open Innovation Projects.xhtml
-
-├── LED Stripe - Open Innovation Projects.xhtml
-
-├── Milkymist - Open Innovation Projects.xhtml
-
-├── MISA - Open Innovation Projects.xhtml
-
-├── Neuros Link - Open Innovation Projects.xhtml
-
-├── Neuros OSD - Open Innovation Projects.xhtml
-
-├── Open Pandora - Open Innovation Projects.xhtml
-
-├── Semitone Dimmers - Open Innovation Projects.xhtml
-
-├── Spiffchorder - Open Innovation Projects.xhtml
-
-├── Stribe - Open Innovation Projects.xhtml
-
-├── StrobIt Triggr - Open Innovation Projects.xhtml
-
-├── Traxmod - Open Innovation Projects.xhtml
-
-└── Zoybar - Open Innovation Projects.xhtml
 
 .
-├── Always Innovating Touch Book - Open Innovation Projects.xhtml
+├── Aurora Open Source Mixer
 
-├── Arduino - Open Innovation Projects.xhtml
+├── AVR Butterfly MP3
 
-├── Atari Coldfire Project - Open Innovation Projects.xhtml
+├── AX84 Firefly
 
-├── AVR Butterfly Logger - Open Innovation Projects.xhtml
+├── Daisy mp3
 
-├── Balloon - Open Innovation Projects.xhtml
+├── Elphel
 
-├── Beagle Board - Open Innovation Projects.xhtml
+├── Fab Camera
 
-├── Ben NanoNote - Open Innovation Projects.xhtml
+├── Fnordlicht
 
-├── Chumby - Open Innovation Projects.xhtml
+├── HD Video Capture
 
-├── Crypto Stick - Open Innovation Projects.xhtml
+├── LED Stripe
 
-├── Ethernut - Open Innovation Projects.xhtml
+├── Milkymist
 
-├── Etherrape - Open Innovation Projects.xhtml
+├── MISA
 
-├── Flash-Plaice - Open Innovation Projects.xhtml
+├── Neuros Link
 
-├── Freeduino - Open Innovation Projects.xhtml
+├── Neuros OSD
 
-├── Gumstix - Open Innovation Projects.xhtml
+├── Open Pandora
 
-├── IP04 Four Port IP-PBX - Open Innovation Projects.xhtml
+├── Semitone Dimmers
 
-├── IP08 Eight Port IP-PBX - Open Innovation Projects.xhtml
+├── Spiffchorder
 
-├── Linux-omap - Open Innovation Projects.xhtml
+├── Stribe
 
-├── Manticore - Open Innovation Projects.xhtml
+├── StrobIt Triggr
 
-├── MyOpenRouter - Open Innovation Projects.xhtml
+├── Traxmod
 
-├── Niftymitter - Open Innovation Projects.xhtml
+└── Zoybar
 
-├── OMFootCtrl - Open Innovation Projects.xhtml
+.
+├── Always Innovating Touch Book
 
-├── One laptop per child - Open Innovation Projects.xhtml
+├── Arduino
 
-├── OpenBeacon - Open Innovation Projects.xhtml
+├── Atari Coldfire Project
 
-├── openenergymonitor - Open Innovation Projects.xhtml
+├── AVR Butterfly Logger
 
-├── openEyes - Open Innovation Projects.xhtml
+├── Balloon
 
-├── OpenMoko - Open Innovation Projects.xhtml
+├── Beagle Board
 
-├── OpenPCD - Open Innovation Projects.xhtml
+├── Ben NanoNote
 
-├── OpenRemote - Open Innovation Projects.xhtml
+├── Chumby
 
-├── OpenSPARC - Open Innovation Projects.xhtml
+├── Crypto Stick
 
-├── OpenWrt.html
+├── Ethernut
 
-├── PC Engines - Open Innovation Projects.xhtml
+├── Etherrape
 
-├── Rallylog - Open Innovation Projects.xhtml
+├── Flash-Plaice
 
-├── Sanguino - Open Innovation Projects.xhtml
+├── Freeduino
 
-├── SquidBee - Open Innovation Projects.xhtml
+├── Gumstix
 
-└── zeroclock - Open Innovation Projects.xhtml
+├── IP04 Four Port IP-PBX
+
+├── IP08 Eight Port IP-PBX
+
+├── Linux-omap
+
+├── Manticore
+
+├── MyOpenRouter
+
+├── Niftymitter
+
+├── OMFootCtrl
+
+├── One laptop per child
+
+├── OpenBeacon
+
+├── openenergymonitor
+
+├── openEyes
+
+├── OpenMoko
+
+├── OpenPCD
+
+├── OpenRemote
+
+├── OpenSPARC
+
+├── OpenWrt
+
+├── PC Engines
+
+├── Rallylog
+
+├── Sanguino
+
+├── SquidBee
+
+└── zeroclock
