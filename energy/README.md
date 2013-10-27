@@ -1,5 +1,6 @@
-a few potentially interesting links:
+the idea:
 
-http://en.wikiversity.org/wiki/Energy_storage
+- http://en.wikipedia.org/wiki/Energy
+- http://en.wikiversity.org/wiki/Energy
 
-http://www.bine.info/bine-informationsdienst/
+hint: OSHWL's founder thinks this is important. also, this is the field he initially intends to use OSHWL for.
