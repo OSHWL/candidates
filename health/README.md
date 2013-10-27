@@ -1,7 +1,7 @@
-###list of potentially relevant projects (mostly from OIP, see oshw-mgmt/open-innovation-projects):
+list of potentially relevant projects:
 
-biobricks
+(mostly from OIP, see oshw-mgmt/open-innovation-projects)
 
-openeeg
-
-open prosthetics project
+- biobricks
+- openeeg
+- open prosthetics project

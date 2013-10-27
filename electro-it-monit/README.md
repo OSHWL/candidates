@@ -1,4 +1,4 @@
-##the idea:
+##the idea
 
 list of wikipedia pages:
 

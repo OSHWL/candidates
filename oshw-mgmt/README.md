@@ -1,30 +1,23 @@
-to do: introduce...:
+to do: introduce the following:
 
 - fablabs
 - actors
-- appropedia and the like
+- appropedia
+- OIP
 
 *****************
 
 "floss4oshw" denotes Free/Libre and Open Source Software for Open Source HardWare
 
-*****************
-
-potentially helpful:
-
-http://peerbhairobotics.com/2012/08/23/lumenlab-micro-postmortem/
-
 
 ***************
 
-###list of potentially relevant projects (mostly from OIP, see oshw-mgmt/open-innovation-projects):
+###list of potentially relevant projects 
 
-openspace
+(mostly from OIP, see oshw-mgmt/open-innovation-projects)
 
-ose
-
-k people
-
-free art bureau
-
-craftster
+- openspace
+- ose
+- k people
+- free art bureau
+- craftster
