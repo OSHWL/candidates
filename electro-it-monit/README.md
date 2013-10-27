@@ -1,30 +1,27 @@
-#the idea:
+##the idea:
+
 list of wikipedia pages:
 
 - [Electronics] (http://en.wikipedia.org/wiki/Electronics)
-- [System_Monitoring] http://en.wikipedia.org/wiki/System_Monitoring
-- [Measuring_instrument] http://en.wikipedia.org/wiki/Measuring_instrument
-- [List_of_measuring_devices] http://en.wikipedia.org/wiki/List_of_measuring_devices
-- [Category:Measuring_instruments] http://en.wikipedia.org/wiki/Category:Measuring_instruments
-- [Environmental_monitoring] http://en.wikipedia.org/wiki/Environmental_monitoring
+- [System_Monitoring] (http://en.wikipedia.org/wiki/System_Monitoring)
+- [Measuring_instrument] (http://en.wikipedia.org/wiki/Measuring_instrument)
+- [List_of_measuring_devices] (http://en.wikipedia.org/wiki/List_of_measuring_devices)
+- [Category:Measuring_instruments] (http://en.wikipedia.org/wiki/Category:Measuring_instruments)
+- [Environmental_monitoring] (http://en.wikipedia.org/wiki/Environmental_monitoring)
 
 obviously, this is both a huge field* and the one in OSHW that's already benefiting of the largest cumulated effort in documenting and sharing. Hence, in this case, OSHWL's job might better be one of redirecting the reader to the *right* external webpage, rather than documenting OSHW internally.
 
 *: actually more than one (sometimes it's difficult to tell categories apart), so if you have suggestions of (sub-) categories, please do suggest.
 
-****************
-****************
 
 ##those three look quite mature:
 
-http://www.ohwr.org/
+- http://www.ohwr.org/
 
-http://opencircuits.com (at the time of writing, the (wiki's) main page was completely hijacked, so if you're suspicious, check http://opencircuits.com/index.php?title=Main_Page&action=history)
+- http://opencircuits.com (at the time of writing, the (wiki's) main page was completely hijacked, so if you're suspicious, check http://opencircuits.com/index.php?title=Main_Page&action=history)
 
-http://oshpark.com/
+- http://oshpark.com/
 
-****************
-****************
 
 ##list of potentially relevant webpages
 
@@ -50,7 +47,7 @@ http://oshpark.com/
 -http://jeelabs.net/projects/cafe/wiki/
 -http://dangerousprototypes.com/docs/Main_Page
 
-###other potentially relevant projects (from OIP, see oshw-mgmt/open-innovation-projects):
+other potentially relevant projects (from OIP, see oshw-mgmt/open-innovation-projects):
 
 - Aurora Open Source Mixer
 - AVR Butterfly MP3
