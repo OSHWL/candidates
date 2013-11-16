@@ -1,20 +1,29 @@
-to do: introduce this category!
+to the author's understanding, should be considered *assemblies*:
+
+structures that don't fit into the *construction* sub-category, such as mechanisms.
+
+Wikipedia articles on some aspects of the more general field *structures*: [Structural_system] (http://en.wikipedia.org/wiki/Structural_system), [Structural_engineering] (http://en.wikipedia.org/wiki/Structural_engineering), [Structural_engineer] (http://en.wikipedia.org/wiki/Structural_engineer), [Non-building_structure] (http://en.wikipedia.org/wiki/Non-building_structure).
+
+Wikipedia articles on some aspects of *the other* sub-category *construction*: [Construction] (http://en.wikipedia.org/wiki/Construction), [Construction_engineering] (http://en.wikipedia.org/wiki/Construction_engineering).
 
 ****************
 
 part of the idea: [Fastener (wikipedia article)] (http://en.wikipedia.org/wiki/Fastener)
 
+a folder ("sub-sub-category") is dedicated to *locks*.
+
 ****************
 
-for assemblies that move: [Mechanism (engineering) (wikipedia article)] (http://en.wikipedia.org/wiki/Mechanism_%28engineering%29)
+###for assemblies that move
 
-one important aspect (wikipedia articles): [Lubrication] (http://en.wikipedia.org/wiki/Lubrication), [Lubricant] (http://en.wikipedia.org/wiki/Lubricant)
+Wikipedia articles:
+
+- [Mechanism (engineering)] (http://en.wikipedia.org/wiki/Mechanism_%28engineering%29)
+- one important aspect: [Lubrication] (http://en.wikipedia.org/wiki/Lubrication), [Lubricant] (http://en.wikipedia.org/wiki/Lubricant)
 
 ***************
 
-project that might be of interest:
-
-http://opensourceecology.org/wiki/Universal_Rotor
+project that might be of interest: [OSE's Universal Rotor] (http://opensourceecology.org/wiki/Universal_Rotor)
 
 ***************
 

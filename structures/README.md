@@ -8,7 +8,7 @@ Wikipedia articles on some aspects of this field:
 this is one of OSHWL's big categories that aren't easy to define, which also applies to its sub-categories:
 
 - construction (the idea behind it: [Construction] (http://en.wikipedia.org/wiki/Construction), [Construction_engineering] (http://en.wikipedia.org/wiki/Construction_engineering))
-- assemblies (typically structures that don't fit into the "construction" sub-category, such as mechanisms)
+- assemblies (typically structures that don't fit into the *construction* sub-category, such as mechanisms)
 
 *********
 
