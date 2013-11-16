@@ -8,6 +8,7 @@ list of wikipedia pages:
 - [List_of_measuring_devices] (http://en.wikipedia.org/wiki/List_of_measuring_devices)
 - [Category:Measuring_instruments] (http://en.wikipedia.org/wiki/Category:Measuring_instruments)
 - [Environmental_monitoring] (http://en.wikipedia.org/wiki/Environmental_monitoring)
+- [Sensor] (http://en.wikipedia.org/wiki/Sensor)
 
 obviously, this is both a huge field* and the one in OSHW that's already benefiting of the largest cumulated effort in documenting and sharing. Hence, in this case, OSHWL's job might better be one of redirecting the reader to the *right* external webpage, rather than documenting OSHW internally.
 
