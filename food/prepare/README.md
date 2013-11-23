@@ -1,6 +1,6 @@
 this folder is about OSHW for cooking, or other food preparation methods.
 
-wikipedia articles: [Food_preparation: What_is_food_preparation] (http://en.wikipedia.org/wiki/Food_preparation#What_is_food_preparation.3F), [Cooking] (http://en.wikipedia.org/wiki/Cooking) http://en.wikipedia.org/wiki/Food_preparation#What_is_food_preparation.3F
+wikipedia articles: [Food_preparation: What_is_food_preparation] (http://en.wikipedia.org/wiki/Food_preparation#What_is_food_preparation.3F), [Cooking] (http://en.wikipedia.org/wiki/Cooking) http://en.wikipedia.org/wiki/Food_preparation#What_is_food_preparation.3F)
 
 for ovens, see energy/thermal/stoves
 

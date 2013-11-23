@@ -1,13 +1,5 @@
-the idea:
+[Aerospace (Wikipedia article)] (http://en.wikipedia.org/wiki/Aerospace)
 
-http://en.wikipedia.org/wiki/Aerospace
-
-
-
-
-##list of potentially relevant projects/URLs:
-
-
-http://www.copenhagensuborbitals.com/
-
-mikrokopter
+potentially relevant projects/URLs:
+- [Copenhagen Suborbitals] (http://www.copenhagensuborbitals.com/)
+- [mikrokopter (?)] (http://www.mikrokopter.de/en/home)

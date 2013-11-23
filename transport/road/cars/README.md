@@ -1,10 +1,4 @@
-##list of potentially relevant projects/URLs:
-
-http://wikispeed.org/
-
-
-http://localmotors.com/
-
-http://www.40fires.org/
-
-(oscar project)
+potentially relevant projects/URLs:
+- [wikispeed] (http://wikispeed.org/)
+- [localmotors] (http://localmotors.com/)
+- [40fires] (http://www.40fires.org/)
