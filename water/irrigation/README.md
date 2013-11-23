@@ -1,10 +1,5 @@
-the idea:
+[Wikipedia article] (http://en.wikipedia.org/wiki/Irrigation)
 
-http://en.wikipedia.org/wiki/Irrigation
-
-
-##potentially relevant:
-
-http://opensourceecology.org/wiki/Trencher
-
-http://en.wikipedia.org/wiki/Trencher_%28machine%29
+potentially relevant:
+- [OSE's Trencher] (http://opensourceecology.org/wiki/Trencher)
+- [Trencher (machine)] (http://en.wikipedia.org/wiki/Trencher_%28machine%29) (wikipedia article) 
