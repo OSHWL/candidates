@@ -1,9 +1,3 @@
-the idea:
+[Wikipedia article] (http://en.wikipedia.org/wiki/Fuel_cell)
 
-http://en.wikipedia.org/wiki/Fuel_cell
-
-**************
-
-potentially interesting:
-
-http://wiki.opensourceecology.de/Zn/O-Brennstoffzelle
+potentially interesting: http://wiki.opensourceecology.de/Zn/O-Brennstoffzelle
