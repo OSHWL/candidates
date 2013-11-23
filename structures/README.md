@@ -5,10 +5,10 @@ Wikipedia articles on some aspects of this field:
 - [Structural_engineer] (http://en.wikipedia.org/wiki/Structural_engineer)
 - [Non-building_structure] (http://en.wikipedia.org/wiki/Non-building_structure)
 
-this is one of OSHWL's big categories that aren't easy to define, which also applies to its sub-categories:
+this is one of OSHWL's big categories that aren't easy to define. such unclarity also applies to *structures*' sub-categories:
 
-- construction (the idea behind it: [Construction] (http://en.wikipedia.org/wiki/Construction), [Construction_engineering] (http://en.wikipedia.org/wiki/Construction_engineering))
-- assemblies (typically structures that don't fit into the *construction* sub-category, such as mechanisms)
+- *construction* (the idea behind it: [Construction] (http://en.wikipedia.org/wiki/Construction), [Construction_engineering] (http://en.wikipedia.org/wiki/Construction_engineering))
+- *assemblies*: structures that don't qualify for the *construction* sub-category
 
 *********
 

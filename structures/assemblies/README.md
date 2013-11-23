@@ -1,6 +1,4 @@
-to the author's understanding, should be considered *assemblies*:
-
-structures that don't fit into the *construction* sub-category, such as mechanisms.
+here, structures that don't qualify for the *construction* sub-category are considered *assemblies*
 
 Wikipedia articles on some aspects of the more general field *structures*: [Structural_system] (http://en.wikipedia.org/wiki/Structural_system), [Structural_engineering] (http://en.wikipedia.org/wiki/Structural_engineering), [Structural_engineer] (http://en.wikipedia.org/wiki/Structural_engineer), [Non-building_structure] (http://en.wikipedia.org/wiki/Non-building_structure).
 
