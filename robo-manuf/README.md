@@ -1,13 +1,11 @@
+#*robo-manuf*: Robotics and manufacturing techniques
+
 this is also one of OSHWL's big categories that were not easy to define. it has two sub-categories:
 
 - robotics
 - manufacturing techniques
 
-even though they are clearly different concepts, those were grouped because many OSHW projects tend to qualify for both (achieve the latter through the first).
-
-in case you haven't realized yet, this is where the iconic "3D printing" fits in (see /manuf/additive). 
-
-*******
+even though they are clearly different concepts, those were grouped because many OSHW projects tend to qualify for both (achieve the latter through the first, like the iconic "3D printing": see /manuf/additive).
 
 potentially relevant projects/URLs:
 

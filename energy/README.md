@@ -1,10 +1,12 @@
-(the field OSHWL was initially intended for)
+#Energy
+
+The field OSHWL was initially intended for...
 
 - [Energy (Wikipedia article)] (http://en.wikipedia.org/wiki/Energy)
 - [Energy (Wikiversity article)] (http://en.wikiversity.org/wiki/Energy)
 
 
-folder tree:
+folders tree:
 - electric
 	- batteries
 	- grid
@@ -14,7 +16,6 @@ folder tree:
 	- bio
 	- cells
 - human
-- hvac
 - hydraulics
 - hydro
 	- conventional
@@ -41,6 +42,7 @@ folder tree:
 	- geo
 	- heat-engines
 	- heat-pumps
+	- hvac
 	- insulation
 	- refrigeration
 	- stoves

@@ -7,13 +7,13 @@ Wikipedia articles:
 - [Category:Cleaning_tools] (http://en.wikipedia.org/wiki/Category:Cleaning_tools)
 - [Parts_cleaning] (http://en.wikipedia.org/wiki/Parts_cleaning)
 
-although rather considered "application oriented" OSHW projects ("making something open source that cleans"), they may also be used as intermediates for OSHW projects that belong to other categories ("cleaning OSHW").
+although rather considered *application oriented* OSHW projects (*making something open source that cleans*), they may also be used as intermediates for OSHW projects that belong to other categories (*cleaning OSHW*).
 
 sub-categories:
-- cleaning how/with what:
+- *cleaning how/with what*:
 	- cleaning agents
 	- vacuum
-- cleaning what:
+- *cleaning what*:
 	- our bodies
 	- dishes
 	- our environment

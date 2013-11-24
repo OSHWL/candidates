@@ -12,14 +12,11 @@ to do: introduce the following content of this category:
 "floss4oshw" denotes Free/Libre and Open Source Software for Open Source HardWare
 
 
-***************
 
-###list of potentially relevant projects 
 
-(mostly from OIP, see oshw-mgmt/open-innovation-projects)
-
+potentially relevant projects (mostly from OIP, see oshw-mgmt/open-innovation-projects):
 - openspace
-- ose
+- OSE
 - k people
 - free art bureau
 - craftster
