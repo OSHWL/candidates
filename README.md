@@ -1,10 +1,10 @@
 #OSHWL *candidate* documents
 
-these documents have not yet been ["selected"](http://oshwl.github.io/SELECTION), please improve them or add new ones!
+the documents in the above folders have not yet been ["selected"](http://oshwl.github.io/SELECTION), please improve them or add new ones!
 
 [criteria](https://raw.github.com/OSHWL/candidates/master/criteria.md)
 
-these documents are categorized into folders (if you're reading this from github.com/OSHWL/candidates, those folders are the ones you see above this text). the big categories that constitute those folders are listed under oshwl.github.io/candidates/ and further detailed [here] (https://raw.github.com/OSHWL/candidates/master/contents.txt).
+categories: see [oshwl.github.io/candidates/] (oshwl.github.io/candidates/), details  [(see here)] (https://raw.github.com/OSHWL/candidates/master/contents.txt).
 
 ##for your information
 
